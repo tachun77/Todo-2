@@ -1,0 +1,31 @@
+PODS:
+  - BTNavigationDropdownMenu (0.4.1)
+  - BubbleTransition (2.0.2)
+  - MCSwipeTableViewCell (2.1.4)
+  - XLPagerTabStrip (7.0.0)
+
+DEPENDENCIES:
+  - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
+  - BubbleTransition (~> 2.0.0)
+  - MCSwipeTableViewCell (~> 2.1.4)
+  - XLPagerTabStrip (~> 7.0)
+
+EXTERNAL SOURCES:
+  BTNavigationDropdownMenu:
+    :branch: swift-3.0
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+CHECKOUT OPTIONS:
+  BTNavigationDropdownMenu:
+    :commit: 2c08c8579cf7a53ecb3dbf578e6e1034080a9859
+    :git: https://github.com/PhamBaTho/BTNavigationDropdownMenu.git
+
+SPEC CHECKSUMS:
+  BTNavigationDropdownMenu: 093f3cbfad1572f2c222bdf8d17584d1e13380d4
+  BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
+  MCSwipeTableViewCell: 1b303e16c3a26b1982f3a68386e9b8c5fc8344c3
+  XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
+
+PODFILE CHECKSUM: 0576e1f54abec9156521d1e33c6242535c8bd40d
+
+COCOAPODS: 1.0.1

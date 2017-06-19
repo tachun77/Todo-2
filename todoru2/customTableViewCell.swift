@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import MCSwipeTableViewCell
 
-class customTableViewCell: UITableViewCell {
+class customTableViewCell: MCSwipeTableViewCell{
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var importance: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,4 +25,6 @@ class customTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+
+    
 }

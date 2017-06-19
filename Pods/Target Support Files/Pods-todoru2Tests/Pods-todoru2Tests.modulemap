@@ -1,0 +1,6 @@
+framework module Pods_todoru2Tests {
+  umbrella header "Pods-todoru2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

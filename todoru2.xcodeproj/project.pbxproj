@@ -16,6 +16,7 @@
 		270CD1BF1ED817C100790669 /* todoru2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD1BE1ED817C100790669 /* todoru2UITests.swift */; };
 		270CD1CD1ED820F400790669 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD1CC1ED820F400790669 /* AddTodoViewController.swift */; };
 		270CD1D11ED8882E00790669 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD1D01ED8882E00790669 /* customTableViewCell.swift */; };
+		2715681B1F05578800B208B3 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2715681A1F05578800B208B3 /* EditViewController.swift */; };
 		2720A8871EDAEF7D0095638F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2720A8861EDAEF7D0095638F /* UIColorExtension.swift */; };
 		2720A88B1EDB31CB0095638F /* contentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2720A88A1EDB31CB0095638F /* contentsViewController.swift */; };
 		2720A8951EDBEC6B0095638F /* contentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */; };
@@ -57,6 +58,7 @@
 		270CD1C01ED817C100790669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		270CD1CC1ED820F400790669 /* AddTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		270CD1D01ED8882E00790669 /* customTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
+		2715681A1F05578800B208B3 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		2720A8861EDAEF7D0095638F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2720A88A1EDB31CB0095638F /* contentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contentsViewController.swift; sourceTree = "<group>"; };
 		2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contentsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				270CD1D01ED8882E00790669 /* customTableViewCell.swift */,
 				270CD19C1ED817C100790669 /* AppDelegate.swift */,
 				270CD19E1ED817C100790669 /* FirstViewController.swift */,
+				2715681A1F05578800B208B3 /* EditViewController.swift */,
 				270CD1CC1ED820F400790669 /* AddTodoViewController.swift */,
 				2720A88A1EDB31CB0095638F /* contentsViewController.swift */,
 				270CD1A21ED817C100790669 /* Main.storyboard */,
@@ -451,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2715681B1F05578800B208B3 /* EditViewController.swift in Sources */,
 				2720A88B1EDB31CB0095638F /* contentsViewController.swift in Sources */,
 				270CD1CD1ED820F400790669 /* AddTodoViewController.swift in Sources */,
 				270CD1D11ED8882E00790669 /* customTableViewCell.swift in Sources */,

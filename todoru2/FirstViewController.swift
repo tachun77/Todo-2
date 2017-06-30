@@ -19,16 +19,18 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
     @IBOutlet var toadd : UIButton!
     
     
-    var todoArray:[AnyObject] = []
+    var todoArray:[Dictionary<String,Any>] = []
     var contentArray:[String] = []
     let saveData = UserDefaults.standard
     var itemsCount: Int = 0
     var keiken: Int = 0
+    var selectedcontent = String()
     
     var menuView: BTNavigationDropdownMenu!
 
-    
- 
+    var selectedtodoArray : [Dictionary<String,Any>] = []
+    var timelytext = String()
+    var timelynumber = Int()
     
     //BubbleTransitionの設定
     
@@ -71,7 +73,9 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return todoArray.count
+        
+        
+        return selectedtodoArray.count
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,11 +83,10 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         // create
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as! customTableViewCell
     
-        let nowIndexPathDictionary: (AnyObject) = todoArray[indexPath.row]
+        let nowIndexPathDictionary: (AnyObject) = selectedtodoArray[indexPath.row] as (AnyObject)
 //        let exp : AnyObject = saveData.integer(forKey: "keikenchi") as AnyObject
         
 
-        
         cell.name.text = nowIndexPathDictionary["task"] as? String
         cell.importance.text = nowIndexPathDictionary["importance"] as? String
         
@@ -94,18 +97,49 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         
         cell.defaultColor = .lightGray
         
+        if cell.importance.text == String(1){
+            
+            cell.backgroundColor = UIColor.red
+        }
+        
+        cell.secondTrigger = 0.5
+        
         cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "check")!), color: .green, mode: .exit, state: .state1, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
             
             
             if let cell = cell, let indexPath = tableView.indexPath(for: cell) {
                 
+          
+                
                 // 該当のセルを削除
-                self.todoArray.remove(at: indexPath.row)
+                self.selectedtodoArray.remove(at: indexPath.row)
                 self.tableView.deleteRows(at: [indexPath], with: .fade)
                 
+                self.todoArray = self.selectedtodoArray
                 self.saveData.set(self.todoArray, forKey:"todo")
             }
             })
+        cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "cross")), color: .blue, mode: .exit, state: .state2, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
+            
+            
+            if let cell = cell, let indexPath = tableView.indexPath(for: cell) {
+                
+                self.timelytext = (nowIndexPathDictionary["task"] as? String)!
+                self.timelynumber = indexPath.row
+                
+                print(self.timelytext)
+                print(self.timelynumber)
+                
+                let timely = [self.timelytext,self.timelynumber] as [Any]
+                self.saveData.set(timely, forKey:"timely")
+                
+                //segueをstroyboard上で引かないでsegueを発動させるコード
+                let storyboard: UIStoryboard = self.storyboard!
+                let nextView = storyboard.instantiateViewController(withIdentifier: "next") as! EditViewController
+                self.present(nextView, animated: true, completion: nil)
+                
+                            }
+        })
         
         return cell
     }
@@ -124,7 +158,7 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         // Do any additional setup after loading the view, typically from a nib.
         
         if saveData.array(forKey: "todo") != nil{
-            todoArray = saveData.array(forKey: "todo")! as [AnyObject]
+            todoArray = saveData.array(forKey: "todo") as! [Dictionary<String, Any>]
             
         }
         
@@ -137,6 +171,8 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         }
         
         contentArray.insert("All",at: 0)
+        
+        selectedtodoArray = todoArray
 
         //Dropdownmenuの設定
     
@@ -147,7 +183,7 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: "Todo List", items: items as [AnyObject])
-//        menuView.cellHeight = 50
+        menuView.cellHeight = 50
         menuView.cellBackgroundColor = self.navigationController?.navigationBar.barTintColor
         menuView.cellSelectionColor = UIColor(red: 0.0/255.0, green:160.0/255.0, blue:195.0/255.0, alpha: 1.0)
         menuView.shouldKeepSelectedCellColor = true
@@ -160,8 +196,25 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
             
+            self.selectedcontent = self.contentArray[indexPath]
             print("Did select item at index: \(indexPath)")
+            print(self.selectedcontent)
             
+            if self.selectedcontent == "All" {
+                
+                self.selectedtodoArray = self.todoArray
+                
+                self.tableView.reloadData()
+                
+            }else{
+                
+                //contents毎に表示するためにデータにfilterをかける
+                self.selectedtodoArray =  self.todoArray.filter{ $0["content"] as! String == self.selectedcontent}
+                
+                self.tableView.reloadData()
+                
+            }
+            print(self.selectedtodoArray)
         }
         
         self.navigationItem.titleView = menuView
@@ -169,15 +222,22 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
         
         print(todoArray)
         tableView.reloadData()
-        print( )
         
     }
     
+//    func prepareforSegue(segue: UIStoryboardSegue, sender: Any){
+//
+//        let EditViewController = segue.destination as! EditViewController
+//        
+//        EditViewController.task = timelytext
+//        
+//        print(timelytext)
+//    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 //        if saveData.array(forKey: "todo") != nil{
 //            todoArray = saveData.array(forKey: "todo")! as [AnyObject]
-//            
+//
 //        }
         
         tableView.reloadData()

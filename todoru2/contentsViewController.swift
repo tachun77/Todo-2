@@ -7,9 +7,23 @@
 //
 
 import UIKit
+import ElasticTransition
 
-class contentsViewController: UIViewController {
+
+class contentsViewController: UIViewController, ElasticMenuTransitionDelegate {
     
+    var customColor : UIColor!
+    
+    func getRandomColor(){
+        let randomRed:CGFloat = CGFloat(drand48())
+        let randomGreen:CGFloat = CGFloat(drand48())
+        let randomBlue:CGFloat = CGFloat(drand48())
+        customColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+    }
+    
+    var dismissByBackgroundTouch = true
+    var dismissByBackgroundDrag = true
+    var dismissByForegroundDrag = true
     
     @IBOutlet var contentLabel : UILabel!
     @IBOutlet var tasklabel : UILabel!
@@ -17,11 +31,11 @@ class contentsViewController: UIViewController {
     var selectedcontent = String()
     var writtentask = String()
     var importance = String()
-    var keiken = Int()
     
     let saveData = UserDefaults.standard
     var todoArray = [Any]()
     var exp = Int()
+    var expcompare = Int()
     var content = String()
 
     override func viewDidLoad() {
@@ -29,52 +43,46 @@ class contentsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-         content = saveData.object(forKey: "content2") as! String
+        getRandomColor()
+        view.backgroundColor = customColor
         
         contentLabel.text = content
         tasklabel.text = writtentask
         
-         exp = saveData.integer(forKey: "keikenchi")
+        if saveData.object(forKey:"content2") != nil{
         
-        
-        if saveData.array(forKey: "todo") != nil{
-            todoArray = saveData.array(forKey: "todo")! as [AnyObject]
-            
+         content = saveData.object(forKey: "content2") as! String!
         }
         
+        
+        if saveData.integer(forKey: "exp") != nil{
+            exp = saveData.integer(forKey:"exp") as Int
+            expcompare = saveData.integer(forKey: "exp") as Int
+        }
+        if saveData.array(forKey: "todo") != nil{
+            todoArray = saveData.array(forKey: "todo")! as [AnyObject]
+        }
         print(selectedcontent)
     }
 
     @IBAction func importance(_ sender: UISegmentedControl){
         switch sender.selectedSegmentIndex{
             
-            
         case 0 : importance = "1"
-        self.view.backgroundColor = UIColor.blue
-     
-        print(keiken)
+
         case 1 : importance = "2"
-        print(keiken)
-        self.view.backgroundColor = UIColor(red: 25, green: 148, blue: 252, alpha: 0.8)
-      
-        print(keiken)
+    
         case 2 : importance = "3"
-        self.view.backgroundColor = UIColor.blue
        
-        print(keiken)
         case 3 : importance = "4"
-        self.view.backgroundColor = UIColor.blue
         
-        print(keiken)
         case 4 : importance = "5"
-        self.view.backgroundColor = UIColor.blue
         
-        print(keiken)
         default : importance = "1"
-        self.view.backgroundColor = UIColor.blue
             
         }
-        saveData.set(keiken, forKey:"keikenchi")
+        exp = Int(arc4random_uniform(100))
+
     }
 
     
@@ -83,23 +91,19 @@ class contentsViewController: UIViewController {
         let todoDictionary = ["task":writtentask,"content":content,"importance":importance]
         
         //保存
-        
-        
-            keiken = exp + 50
+            exp = exp*10
         
             todoArray.append(todoDictionary as AnyObject)
             saveData.set(todoArray, forKey:"todo")
-            saveData.set(keiken, forKey:"keiken" )
+            saveData.set(exp, forKey:"exp")
             saveData.synchronize()
             print(todoArray)
+            print("現在の経験値は"+String(exp)+"です")
             
             performSegue(withIdentifier: "complete", sender: nil)
             
             //self.presentViewController(CompleteViewController, animated: true, completion: nil)        // Viewの移動
         }
-        
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

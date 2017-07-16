@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import ElasticTransition
 import BubbleTransition
+import TextFieldEffects
 
-
-
-class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
-
+class AddTodoViewController: UIViewController, ElasticMenuTransitionDelegate,UIViewControllerTransitioningDelegate,UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    var customColor : UIColor!
+    
+    func getRandomColor(){
+        let randomRed:CGFloat = CGFloat(drand48())
+        let randomGreen:CGFloat = CGFloat(drand48())
+        let randomBlue:CGFloat = CGFloat(drand48())
+        customColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+    }
+    
     var todoArray : [AnyObject]=[]
     var contentArray = [String]()
     
     let saveData = UserDefaults.standard
     var keiken: Int = 0
-        
     
     @IBOutlet var taskTextField : UITextField!
     @IBOutlet var newcontentTextField : UITextField!
@@ -32,44 +40,38 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
     @IBOutlet var newView : UIView!
     
     
+    var transition = ElasticTransition()
+    let lgr = UIScreenEdgePanGestureRecognizer()
+    let rgr = UIScreenEdgePanGestureRecognizer()
     
+   
+    var contentLength:CGFloat = 0
+    var dismissByBackgroundTouch = true
+    var dismissByBackgroundDrag = true
+    var dismissByForegroundDrag = true
     
-    let transition = BubbleTransition()
-    var startingPoint = CGPoint.zero
-    var duration = -10.0
-    var transitionMode: BubbleTransitionMode = .pop
-    var bubbleColor: UIColor = .yellow
+    public var sticky:Bool = true
+    public var startingPoint:CGPoint?
+    public var damping:CGFloat = 0.0
+    public var stiffness:CGFloat = 0.6
+    public var radiusFactor:CGFloat = 10
+    public var containerColor:UIColor = UIColor(red: 152/255, green: 174/255, blue: 196/255, alpha: 1.0)
+    public var overlayColor:UIColor = UIColor(red: 152/255, green: 174/255, blue: 196/255, alpha: 0.5)
 
-    
-    // MARK: UIViewControllerTransitioningDelegate
-    
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.transitionMode = .present
-        transition.startingPoint = self.cancel.center
-        transition.bubbleColor = UIColor.blue
-        return transition
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.transitionMode = .dismiss
-        transition.startingPoint = self.cancel.center
-        transition.bubbleColor = cancel.backgroundColor!
-        return transition
-    }
-
-       
-    
 //    var nextdecidedcontent = String()
     
     //セル選択時に呼び出されるメソッド
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath, sender: UICollectionView) {
         
         decidedcontent2 = contentArray[indexPath.row]
         saveData.set(decidedcontent2,forKey:"content2")
         
         print(decidedcontent2)
-//        performSegue(withIdentifier:"tonextview",sender: nil)
+        
+        transition.edge = .right
+        transition.startingPoint = sender.center
+        performSegue(withIdentifier:"tonextview",sender: nil)
 //        nextdecidedcontent = decidedcontent2
 
     }
@@ -79,17 +81,27 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
         
         if segue.identifier == "tonextview"{
             let contentsViewController:contentsViewController = segue.destination as! contentsViewController
-        
             contentsViewController.writtentask = taskTextField.text!
+            
+            let vc = segue.destination
+            vc.transitioningDelegate = transition
+            vc.modalPresentationStyle = .custom
         }else{
             
+            let controller = segue.destination
+            controller.transitioningDelegate = self
+            controller.modalPresentationStyle = .custom
+//            let vc = segue.destination
+//            vc.transitioningDelegate = transition
+//            vc.modalPresentationStyle = .custom
+
         }
+
     }
     
     //データの個数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        
         return contentArray.count
     }
     
@@ -105,44 +117,75 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
                                        green: CGFloat(drand48()),
                                        blue: CGFloat(drand48()),
                                        alpha: 0.8)
-        
         cell.contentslabel.text = contentArray[indexPath.row]
         cell.contentslabel.textColor = UIColor.white
-        
         
         return cell
         
     }
-
-    
-    
-    let exp = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        getRandomColor()
+        
         if saveData.array(forKey: "todo") != nil{
             todoArray = saveData.array(forKey: "todo")! as [AnyObject]
         }
-        view.backgroundColor = UIColor.rgb(r: 25, g: 148, b: 252, alpha: 1.0)
+        view.backgroundColor = customColor
+        collectionView.backgroundColor = customColor
+        taskTextField.backgroundColor = customColor
+        
         importance = String(1)
         
         newView.isHidden = true
-
+        
+        // customization of ElasticTransition
+        transition.sticky = true
+        transition.showShadow = true
+        transition.panThreshold = 0.6
+        transition.transformType = .subtle
+        
+        transition.overlayColor = UIColor(white: 0, alpha: 0.5)
+        transition.shadowColor = UIColor(white: 0, alpha: 0.5)
+    
+        // gesture recognizer
+        lgr.addTarget(self, action: #selector(AddTodoViewController.handlePan(_:)))
+//        rgr.addTarget(self, action: #selector(AddTodoViewController.handleRightPan(_:)))
+        lgr.edges = .left
+//        rgr.edges = .right
+        view.addGestureRecognizer(lgr)
+//        view.addGestureRecognizer(rgr)
+  
     }
     
+    func handlePan(_ pan:UIPanGestureRecognizer){
+        if pan.state == .began{
+            transition.edge = .left
+            transition.startInteractiveTransition(self, segueIdentifier: "modoru", gestureRecognizer: pan)
+        }else{
+            _ = transition.updateInteractiveTransition(gestureRecognizer: pan)
+        }
+    }
+    
+//    func handleRightPan(_ pan:UIPanGestureRecognizer){
+//        if pan.state == .began{
+//            transition.edge = .right
+//            transition.startInteractiveTransition(self, segueIdentifier: "about", gestureRecognizer: pan)
+//        }else{
+//            _ = transition.updateInteractiveTransition(gestureRecognizer: pan)
+//        }
+//    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if saveData.array(forKey: "content") != nil{
             
             contentArray = saveData.array(forKey: "content") as! [String]
-            
         }
-        
         collectionView.reloadData()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -150,14 +193,11 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
         // Dispose of any resources that can be recreated.
     }
     
-   
-    
     @IBAction func save(_ sender: UIButton){
         
         let todoDictionary = ["task":taskTextField.text!,"importance":importance]
         
         //保存
-        
         if taskTextField.text!.isEmpty == true {
             
             print("empty")
@@ -184,8 +224,7 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
             performSegue(withIdentifier: "complete", sender: nil)
 
         //self.presentViewController(CompleteViewController, animated: true, completion: nil)        // Viewの移動
-    }
-        
+        }
     }
     
     @IBAction func endediting(sender : UIButton){
@@ -196,15 +235,30 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
     
     @IBAction func addcontent(_ sender : UIButton){
         
+        if newcontentTextField.text!.isEmpty == true {
+            
+            print("empty")
+            let alert = UIAlertController(
+                title : "",
+                message : "Contentが空欄です",
+                preferredStyle : UIAlertControllerStyle.alert)
+            alert.addAction(
+                UIAlertAction(
+                    title: "OK",
+                    style: UIAlertActionStyle.default,
+                    handler : nil
+                )
+            )
+            self.present(alert, animated : true, completion : nil)
+        }else{
         contentArray.append(newcontentTextField.text!)
         saveData.set(contentArray,forKey:"content")
-        
         
         print("\(contentArray.count)")
         
         collectionView.reloadData()
         newView.isHidden = true
-        
+        }
     }
     
     @IBAction func toaddcontent(){
@@ -217,9 +271,14 @@ class AddTodoViewController:  UIViewController, UIViewControllerTransitioningDel
         
         newView.isHidden = true
     }
-    
-    @IBAction func cancel(_ sender: UIButton){
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func codeBtnTouched(_ sender: AnyObject) {
+        
+        let transition = BubbleTransition()
+        transition.transitionMode = .present
+        transition.startingPoint = cancel.center
+        transition.bubbleColor = customColor
+        
+       dismiss(animated: true, completion: nil )
     }
     
 

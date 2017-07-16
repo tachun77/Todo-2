@@ -7,179 +7,287 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C57309E2EF9E7025552938EFD9E244 /* BTNavigationDropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D11BAB6C084DB4AE382EC8A1632C1903 /* BTNavigationDropdownMenu-dummy.m */; };
-		0614AA6F5860B967841AB027AA27FA95 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B2C34A8A0C8C86F5597BE0773FC40F /* PagerTabStripViewController.swift */; };
-		064537A4D2690D42BA12CB6F36EA8914 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F122D2BFEAC6F68426765FEC81CECBE7 /* BTNavigationDropdownMenu.bundle */; };
+		01C57309E2EF9E7025552938EFD9E244 /* BTNavigationDropdownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24781BCEEC76EA846BF5791A2534CAF4 /* BTNavigationDropdownMenu-dummy.m */; };
+		064537A4D2690D42BA12CB6F36EA8914 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92682AB8F37BC087D5C1A5E5D54F4215 /* BTNavigationDropdownMenu.bundle */; };
+		077E944FB9D612B2B290A73846C17E84 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB934A15747B403CD9EBC4DA5FF5F536 /* Util.swift */; };
 		0798FC0EC3B059767ABF3B2F180F2292 /* Pods-todoru2Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFFB86D0AAC5D2CBCFCFCDC117919F3 /* Pods-todoru2Tests-dummy.m */; };
+		08BD1C16696CB64F460B140A589C2A40 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA38ADC683654706F28A5F0E90FE4376 /* YokoTextField.swift */; };
 		0A4BCE84C20540198A079F1AEB3CC461 /* Pods-todoru2UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E80F140B9E54115627120B8174E067 /* Pods-todoru2UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C9199DCBBDBA523326CB614B7B75A4B /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3B0D2C7A896669275C81190C83C8601F /* ButtonCell.xib */; };
-		189AAB658440F78A72118CB3B5640602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		21D284A75F9F88509C6F8FDEA847C586 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 461F9AE805EF5BCAEF15E9A68AE824A9 /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22E29613AAF2D92EFA09978065A64692 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B0D2C7A896669275C81190C83C8601F /* ButtonCell.xib */; };
-		266B571606D27849FB6F1349B5F2A58D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		2CECDF0E55CEEBB162558240AB8AEBC2 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26564ED9AC9EC4744C0C14485C46E852 /* BarView.swift */; };
-		31375D677778F2B217957BFB3AAAB316 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90C1C906137A10924C3DEDD403310E /* BTNavigationDropdownMenu.swift */; };
-		3456C0FFC8BED26EC8992B580F17E319 /* MCSwipeTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FD5AE24E0A329FDBBD472D90F005DA27 /* MCSwipeTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		409D5E488C3DBB14A526ECE090384891 /* MCSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04700B6B4FF32985C0D595E767A024FD /* MCSwipeTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		442D45D074A6A0B9DA96110C2C304EFF /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C6A574554899B8EA3D39DA20A46DD9 /* PagerTabStripBehaviour.swift */; };
-		47253011C122F961A0623A3CB8C2E1BA /* Pods-todoru2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADDD501F0EF629A4324C6C9FC35A68E /* Pods-todoru2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		502F33AF1C8399A76CE5EA7C2FE7B639 /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB3D26103F5792056469DD1D3994BF9 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EC15CA15A97333F0191251BA3DBEB6F /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E240C0E74D0189DCAD98CA9B11F60C /* SegmentedPagerTabStripViewController.swift */; };
-		6849FAAD72F79DF11E5ED301BB57035F /* BubbleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8E09C140CAC371363C94E39418135E /* BubbleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BA0E9B64373B44AA8F4AF291F9EF5D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		70FA936E2BDB695E0B06CAE172DB7014 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 11441D62A50872C76689B1DCC7345185 /* FXPageControl.m */; };
-		710340C9C09ECBC50B3E1BF0D912F9C9 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28FDAB138FE77177EB15845F0A4F056D /* XLPagerTabStrip.bundle */; };
-		752E6B42E6206B1EA6B016B19AAF4652 /* BTNavigationDropdownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF0004F6E608452FD7BC5EB94B281D4 /* BTNavigationDropdownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		783D09E6FEFC6B29AA8024206E692CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		7D7ADF2ED7EEAA6C53A72BE4B1CC00A5 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5415946FCA830E794459349E626D12 /* IndicatorInfo.swift */; };
-		7FAA228F6F7D453C14718977A29C7195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		896CD7A18C78E5B5492B51E28EBE1176 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C6927D23DE53A399CA2EA1ABD225B /* BaseButtonBarPagerTabStripViewController.swift */; };
-		8DF0E9C1C433F150D9C1E977003842CE /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BDD4583124CF61F433FC98AFCCFDF1 /* TwitterPagerTabStripViewController.swift */; };
-		8FA3D8E5D07BDE6A39C8EC6095586DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		1061F90846C77E48DF6F0676632F62D2 /* Pods-todoru2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADDD501F0EF629A4324C6C9FC35A68E /* Pods-todoru2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10D74F53C3E11A68E6B7789BC4FEAB65 /* ValueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A523DE95AD1247DBE49E2A58D559352 /* ValueAnimation.swift */; };
+		1169AF208DE822FD75F46BE24B9DB3B8 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1467C9322811F55905523010E418B490 /* PagerTabStripViewController.swift */; };
+		189AAB658440F78A72118CB3B5640602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		1CA6B93D92519A59C2437010E2B3514F /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05705B2147DCC606FB528D4386C64388 /* BarView.swift */; };
+		1DD791ADE9014AB004EDEB358DA1555F /* EdgePanTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B4F17CFE728507A392689112A9481 /* EdgePanTransition.swift */; };
+		20DBB77B5CC34734403D00B5F2AC0074 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E454B1C0881AB21A914F53B7D79E5BC6 /* ButtonBarPagerTabStripViewController.swift */; };
+		22968A1C73A690A7DC16065D1D2BE357 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921BECBB198489BF39D45EF7CB45FB8 /* SegmentedPagerTabStripViewController.swift */; };
+		266B571606D27849FB6F1349B5F2A58D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		271AEA93CBD322CD1626CE21282D6B42 /* MotionAnimationPropertyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDFDE127465A97E4465E2CACC9BCBD /* MotionAnimationPropertyState.swift */; };
+		2FC7A5383336D207039B3E0AE474873A /* ElasticModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B213DA6D7644BAA4F6E14E19D757047 /* ElasticModalViewController.swift */; };
+		31375D677778F2B217957BFB3AAAB316 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3041D689E620EBAD26E552A959063DBC /* BTNavigationDropdownMenu.swift */; };
+		3456C0FFC8BED26EC8992B580F17E319 /* MCSwipeTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8773823799AD7689EE7E513325D943D5 /* MCSwipeTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37DD19CE3077E81A735964B0C4A60245 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		3BB7691C7BEE318A0F588E8B5263E2E8 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC24AE835256A93B241700278D5F0EC /* ButtonBarView.swift */; };
+		3E5135C3573667A4B443EF63AB7CC84E /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A7306443136BCA21F29A18C44CC8C92 /* XLPagerTabStrip.bundle */; };
+		3EF30E3FE1299865B6971E93B91FF793 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18717849D059E395B29D0A8538D572C8 /* MinoruTextField.swift */; };
+		409D5E488C3DBB14A526ECE090384891 /* MCSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CEDBEC03FFF0F7C155A8EB6C31278 /* MCSwipeTableViewCell.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		409D6DBA9DB28CB77B60DFF91E3009D9 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38AAF50AFAA5710B464BDBE671DF1B8 /* PagerTabStripError.swift */; };
+		42DF1118F14061B05853E9F02DAC7605 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D371B94E1EC712BF5D9419157DD3DE7 /* SwipeDirection.swift */; };
+		4699E40C0F9598ADAF71B5F0DF7B603B /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B56FC98FB1C0464739B6F3BC7D5D6612 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5382F24B2D81DB14F69D254658A023A8 /* MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10ACFF909D54EE57B4D8600728D0298B /* MotionAnimation.swift */; };
+		55E5A9C1AA87724F00B4F28E78FD7589 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584DB528D960B908BB74BE7DC53E9BAA /* ButtonCell.xib */; };
+		61C2FE776964CD50A131A306E69C3D89 /* MotionAnimation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B47472CB58095F532FFC55376D5E0C33 /* MotionAnimation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62060AE0AF48F837501BD9CC9D096870 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D032673F78C29F814F74DD550E270 /* BaseButtonBarPagerTabStripViewController.swift */; };
+		655C49683C596DC821C03C13A3D6C753 /* MotionAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32399A8D44DBED056F34A76533E4645 /* MotionAnimation.framework */; };
+		65EE74DE805D6C0E12464003F3FAD7D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		6849FAAD72F79DF11E5ED301BB57035F /* BubbleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DA429B9D719B165F547A9B4D3A45F8 /* BubbleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A78811103E158340413278D528E3711 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F299A3C143C699A9677CDE8CBBDA5 /* AkiraTextField.swift */; };
+		6B8A552BB8D5056EF0732A10BABF9B41 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D154F51310D9C7125445B594395F323 /* BarPagerTabStripViewController.swift */; };
+		70FBBD734F607410357F7F30E3275716 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F22508C71A00329705CF7201EC04A717 /* FXPageControl.m */; };
+		71DD046A57BA7C2EB64220AAE1B6B10A /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956502F0C4B040D70D516F5794587408 /* TextFieldEffects.swift */; };
+		752E6B42E6206B1EA6B016B19AAF4652 /* BTNavigationDropdownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7F1F327FF9EAECA6786B80DF47E81E /* BTNavigationDropdownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783D09E6FEFC6B29AA8024206E692CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		7AE79547EFA39EBCE9F232852A153EF3 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C56510ED15B1503EA6E2A3CDCC729AA /* IsaoTextField.swift */; };
+		7D0191ACF8660DFEDA3E27F08C6F19B6 /* SpringValueAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC28512684FD6858EC9F17BD80C190E /* SpringValueAnimation.swift */; };
+		82476DDC66831593B02A46490940C20B /* NSObject+MotionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D84AC33E7D19D28945558C6BED023 /* NSObject+MotionAnimation.swift */; };
+		84FAE47A997ECCDEBED9468A576FFAA1 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D0BE96C105ED75519372350154553A /* IndicatorInfo.swift */; };
+		879D62C372826A8A6161460EA28FA526 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01DE0B3CE99A672E168D25FEAFC871B /* TwitterPagerTabStripViewController.swift */; };
+		88035705FB30FB471E5853E94A1CDD76 /* MotionAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 423D1C08E340AC38AFC5C3D71FE1DAB3 /* MotionAnimation-dummy.m */; };
+		8BAB447564733F45CCC5B86DCFAF73B3 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD28C50E99309551D69A49B46ABEA5A /* MadokaTextField.swift */; };
+		8F831F3741D1CFA56C6635E383097033 /* ElasticTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3125F6A1776B03D71714B78F2A0BD94 /* ElasticTransition-dummy.m */; };
+		931CB547880A9688713395D7F7EDB89E /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CDE2CBF89334C8B72CA8220966C3309 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9848316F220D647300D802634ED4F2F4 /* Pods-todoru2Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02BB4EFA9E3A8849AAF61A27F2F7DA70 /* Pods-todoru2Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A64A1B3604E09D0F920F66A1DC31D15E /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69936B08A2C964BF350464E89C4DE730 /* SwipeDirection.swift */; };
-		A99A69A35B0FCF9415BA63572BB4B050 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7EB4C8E92F140EAFCBA8C70B66B49D /* ButtonBarView.swift */; };
-		AB16BF667199151545E17992D55C9B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		ABA73B71CEAD1C7CC1DB4DDDE10A1705 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C5C82FE151CA7E8740238AC06A2D7 /* BarPagerTabStripViewController.swift */; };
-		AC390B8CF70FBCD27C6B6B09A2FA21FD /* Pods-todoru2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C559A1A4A9F221D271458030F17DA88 /* Pods-todoru2-dummy.m */; };
-		B63F9D13941AFDBE4889C480096E522B /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3E38BD2E5C0FEAFCAD1F45E517010 /* ButtonBarViewCell.swift */; };
-		B81B7D7A298297298B5781977723CDE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		C4E79DABD14CC24E9BDC4DABC9818652 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B13E268F3462C8C1046030EF2464D9 /* BubbleTransition.swift */; };
-		C9FD2D1EDA1DF772423A8E58EE2DC666 /* BubbleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3BF13117E471D7D303E956487B0B46 /* BubbleTransition-dummy.m */; };
-		D8CC2BBD20117D3D52D9F7D77FC5227C /* MCSwipeTableViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23273B1A6AD43198648306A2AF6041 /* MCSwipeTableViewCell-dummy.m */; };
+		9D6EFF1F88AC1285BE1F690ABE2CC8E3 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 584DB528D960B908BB74BE7DC53E9BAA /* ButtonCell.xib */; };
+		A3D1BC982B1D13E123098125A3D460D7 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9033685886A18882B457EB488FB9245 /* TextFieldEffects-dummy.m */; };
+		A567896C60CD9E3AA78D28B219089EA5 /* Pods-todoru2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C559A1A4A9F221D271458030F17DA88 /* Pods-todoru2-dummy.m */; };
+		A906E0073BB7F7F7816F062879EF9D22 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6AE65F8DF4E658AE387C1A0D0D7FD /* HoshiTextField.swift */; };
+		AB16BF667199151545E17992D55C9B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		B526DC290F44C6C4CBD0AD8C53C2B8E5 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3486E17367C0D6A7C912D7FE210DAB27 /* JiroTextField.swift */; };
+		B75A33940768C4A5256D9764D9AC65CE /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EDF87457EC5940AEEECE66059CB116B /* XLPagerTabStrip-dummy.m */; };
+		B7876B7C4FC4C3628A911C0B78CBE22A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993FC950E66FF60B510C412131742C32 /* UIKit.framework */; };
+		B81B7D7A298297298B5781977723CDE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		B9F7B12441A92D57E4C0CB6DFF721409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993FC950E66FF60B510C412131742C32 /* UIKit.framework */; };
+		BA1A1C247FFB952DAB406BA026715BE1 /* ElasticTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D30DB341A8AB59226903C85E378119F /* ElasticTransition.swift */; };
+		C4E79DABD14CC24E9BDC4DABC9818652 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B78D998C863ED996CC341284109F1 /* BubbleTransition.swift */; };
+		C7B87F2FBFC0C72CD9729DCCC6CE0C3B /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E50122F0B6F7C6BE6521428D72C88 /* KaedeTextField.swift */; };
+		C9FD2D1EDA1DF772423A8E58EE2DC666 /* BubbleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FEC5A9C7796C330233A8B8BD36FF56 /* BubbleTransition-dummy.m */; };
+		CD3ADA9330B5EF7842D522ED56FAA788 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297AF66F2A2DA79C441B82BF4E7ADA0 /* YoshikoTextField.swift */; };
+		CFBB279B20AE4756B4D1BD6E2F5A8F37 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB006B3CE0332539AC8C7593FE00BF /* Types.swift */; };
+		D564BDABF9CA32F6299B8C280C6A5918 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993FC950E66FF60B510C412131742C32 /* UIKit.framework */; };
+		D8CC2BBD20117D3D52D9F7D77FC5227C /* MCSwipeTableViewCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2B521896198CCE5AAA18FF6DE80E9 /* MCSwipeTableViewCell-dummy.m */; };
+		DB5E506564C6DA91DED626021F074904 /* ElasticTransitionPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F19C84C961E1991D443BA4E4B85426 /* ElasticTransitionPresentationController.swift */; };
+		DDB402D33C7E832B5AA2F99A95AB8B66 /* ElasticTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE80B0022BE2CC65C7D58A34BD6C17AF /* ElasticTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DED174FEBD872DB43B4351C209F766C0 /* Pods-todoru2UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5C3B75B257B944C3CCBAFC848F5F92 /* Pods-todoru2UITests-dummy.m */; };
-		E77591C595B3D47949D3CDD2CFF97134 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6ACF4A29029546680EC6F42718E98 /* XLPagerTabStrip-dummy.m */; };
-		EFC4C2E4B8EB237F7DE2D38C2F015EE6 /* MCSwipeTableViewCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C65AD050F290BD6063EEEE85F0240F8 /* MCSwipeTableViewCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F22A18CD354DD62775B28DD011885632 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99381C667F813A85F00ADBEDC40E32 /* ButtonBarPagerTabStripViewController.swift */; };
-		F874211FBD96741346E4F7E462F67C32 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCBA5D70C0B49F4C59C43AE28559110 /* PagerTabStripError.swift */; };
+		DF926F570E6D9EC2A858D31828EB4DA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		E8F6FA86779A37D6B48B9F9BA5FF2F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		EC30E9919533F3F8C83DB5A25923C289 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681998AACFD3F9A6DA19332C06A83D17 /* PagerTabStripBehaviour.swift */; };
+		ED0988B48BBBD0CBCD090B670A169946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */; };
+		EFC4C2E4B8EB237F7DE2D38C2F015EE6 /* MCSwipeTableViewCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F508DC3AB9F52D276019F1773D863009 /* MCSwipeTableViewCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1A105BFEFF3FC4E1105A08BA7852727 /* ElasticShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F36DEE97473DE06AFCEADD96A1F346 /* ElasticShapeLayer.swift */; };
+		F30781FE94A0893279A64B2C2FE4FC06 /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B35BCBE1096316D2B7D8B8EB9FD95D0 /* ButtonBarViewCell.swift */; };
+		F578BFA4E0134052ECAF1A4A44F2B098 /* MotionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B1C015C708CDA2A73F6ED0C2B2B273 /* MotionAnimator.swift */; };
+		FDEAE46518549B157EE3AA753D746120 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9FCC39A826824FE0D4166CC78A9E98 /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0BEFFD766FCED85E68EC8B344AE96BF4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19A80B4DFB910368BB6A2C68268E6F7F;
-			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
-		};
-		14190C6AF2BAC397650D88AD47319C87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0003E8B0DE7EAF0A1E3C9404F7137022;
-			remoteInfo = MCSwipeTableViewCell;
-		};
-		784655682A460C81BB8AA4385CA70B53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FD23F1DA220A44C7E84F356B64871271;
-			remoteInfo = BTNavigationDropdownMenu;
-		};
-		D9A06591D58E2FD5B3EA45AF4CD92FDA /* PBXContainerItemProxy */ = {
+		15BEE90792A8E7E1B156C457257D35A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7372CA79CE92E7AC032175441663EBE4;
 			remoteInfo = BubbleTransition;
 		};
-		E354CC9A2D8BEFB5F81AD047204CF985 /* PBXContainerItemProxy */ = {
+		1D0BF076D200EF94CC0E438E3595C586 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5A077A2D3061FB2799C9936088CBBCB8;
+			remoteGlobalIDString = 9F2CA59D318CC50BC7AC13B792DE5AA2;
+			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
+		};
+		21E6A3E40082A63C8EEC132CD62423EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7240B44ADA7C299C0DFFFAF35383DDFD;
+			remoteInfo = TextFieldEffects;
+		};
+		2BD1F00D4C60EA2A9BF8408679B5047E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7031ED9D7E985343BFF4CFFEA25D2EB0;
+			remoteInfo = ElasticTransition;
+		};
+		2CA273CCF1823AC6C1116103E8BE2880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5264177E0F0611895CABBD7D119E00;
+			remoteInfo = MotionAnimation;
+		};
+		38A908456B9471BAD3E3F16C181C1198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD23F1DA220A44C7E84F356B64871271;
+			remoteInfo = BTNavigationDropdownMenu;
+		};
+		82CDDA1BF9F1E63A6427C6D89F16CC4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5264177E0F0611895CABBD7D119E00;
+			remoteInfo = MotionAnimation;
+		};
+		CA91BFC81AFF225D72DB34453D001519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0003E8B0DE7EAF0A1E3C9404F7137022;
+			remoteInfo = MCSwipeTableViewCell;
+		};
+		EB0FFB4959AE5070560586DC547A0519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36DFC256CC8338F58D26335BBC651076;
 			remoteInfo = XLPagerTabStrip;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02B13E268F3462C8C1046030EF2464D9 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = Source/BubbleTransition.swift; sourceTree = "<group>"; };
 		02BB4EFA9E3A8849AAF61A27F2F7DA70 /* Pods-todoru2Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-todoru2Tests-umbrella.h"; sourceTree = "<group>"; };
-		02E240C0E74D0189DCAD98CA9B11F60C /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		03E80F140B9E54115627120B8174E067 /* Pods-todoru2UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-todoru2UITests-umbrella.h"; sourceTree = "<group>"; };
-		04700B6B4FF32985C0D595E767A024FD /* MCSwipeTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MCSwipeTableViewCell.m; path = MCSwipeTableViewCell/MCSwipeTableViewCell.m; sourceTree = "<group>"; };
-		085A9ADB03851B458B495795AF306F76 /* MCSwipeTableViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCSwipeTableViewCell-prefix.pch"; sourceTree = "<group>"; };
+		05705B2147DCC606FB528D4386C64388 /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
+		06175553F31CAA4434607D7C046A5484 /* Pods_todoru2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08814D9309CF05BAFC10AA282CBC8A2A /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
 		09D749BD1713B2EABBBBEB54D3E1116F /* Pods-todoru2Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-todoru2Tests-resources.sh"; sourceTree = "<group>"; };
-		0C9B1089319CB8D9AEF5462D7033D022 /* MCSwipeTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCSwipeTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D937B074EEDF842ACC41A9C63136067 /* Pods_todoru2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11441D62A50872C76689B1DCC7345185 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
+		0A523DE95AD1247DBE49E2A58D559352 /* ValueAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueAnimation.swift; path = MotionAnimation/ValueAnimation.swift; sourceTree = "<group>"; };
+		0A7306443136BCA21F29A18C44CC8C92 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D30DB341A8AB59226903C85E378119F /* ElasticTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticTransition.swift; path = ElasticTransition/ElasticTransition.swift; sourceTree = "<group>"; };
+		0EDF87457EC5940AEEECE66059CB116B /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
+		1085E1862E26257CEED6872E71F4C42B /* BubbleTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubbleTransition.xcconfig; sourceTree = "<group>"; };
+		10ACFF909D54EE57B4D8600728D0298B /* MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimation.swift; path = MotionAnimation/MotionAnimation.swift; sourceTree = "<group>"; };
+		11FDB3EED90320F5B305C8826108C12B /* MotionAnimation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MotionAnimation.xcconfig; sourceTree = "<group>"; };
+		12D8134C213803A39308DF5A2F2C1196 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1300A248000B714D7C8035C9D2087C3F /* Pods-todoru2Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-todoru2Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		14E3E38BD2E5C0FEAFCAD1F45E517010 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		1467C9322811F55905523010E418B490 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
 		169AB4DF177F242B4A7612EFC20D543F /* Pods-todoru2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-todoru2.modulemap"; sourceTree = "<group>"; };
-		1B09D6FDBEDC0B86D3EA5EAE4F11B62E /* BubbleTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-prefix.pch"; sourceTree = "<group>"; };
-		1B1C6927D23DE53A399CA2EA1ABD225B /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		1B7BE6795D2D3295E89A80B0A245D8E4 /* BTNavigationDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BTNavigationDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D8E09C140CAC371363C94E39418135E /* BubbleTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-umbrella.h"; sourceTree = "<group>"; };
+		17C1774B37741948A56ECAEF91710AE3 /* ElasticTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElasticTransition.xcconfig; sourceTree = "<group>"; };
+		18717849D059E395B29D0A8538D572C8 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		1A25B90DF1782474E36E99AB18755E30 /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		1B2CA156E54ABDC5AB0B65CDCDEF17E5 /* BTNavigationDropdownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTNavigationDropdownMenu.xcconfig; sourceTree = "<group>"; };
+		1BC4D6F28F14688046E061FBD5CB2E64 /* BTNavigationDropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-prefix.pch"; sourceTree = "<group>"; };
+		1C6CB2FADA4DA4B54BE734C3A4EFBED3 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		1DC0BB5453019547352E36F485E5371B /* MotionAnimation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MotionAnimation-prefix.pch"; sourceTree = "<group>"; };
+		1F88F78D08DFACBAABC8E34F9A2D6490 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF16B3732B149D46AC055EB5559B867 /* Pods-todoru2UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-todoru2UITests-frameworks.sh"; sourceTree = "<group>"; };
-		26564ED9AC9EC4744C0C14485C46E852 /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
-		28FDAB138FE77177EB15845F0A4F056D /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		24781BCEEC76EA846BF5791A2534CAF4 /* BTNavigationDropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTNavigationDropdownMenu-dummy.m"; sourceTree = "<group>"; };
 		2AFF214F009AF8C1E253B5425F9A597F /* Pods-todoru2Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-todoru2Tests.modulemap"; sourceTree = "<group>"; };
-		2DA0458A5E82222CC94B040DB1C8B465 /* BTNavigationDropdownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-prefix.pch"; sourceTree = "<group>"; };
+		2D154F51310D9C7125445B594395F323 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		3041D689E620EBAD26E552A959063DBC /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTNavigationDropdownMenu.swift; path = Source/BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
+		327CEDBEC03FFF0F7C155A8EB6C31278 /* MCSwipeTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MCSwipeTableViewCell.m; path = MCSwipeTableViewCell/MCSwipeTableViewCell.m; sourceTree = "<group>"; };
+		3486E17367C0D6A7C912D7FE210DAB27 /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		356D032673F78C29F814F74DD550E270 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		369A524C2F754F06947F051E38BAECB4 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		37CB7B909CD7C41EF31BC4AA6C8ED2D0 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38564A04C18C986924BACEC067C839C6 /* Pods-todoru2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-todoru2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AC28512684FD6858EC9F17BD80C190E /* SpringValueAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringValueAnimation.swift; path = MotionAnimation/SpringValueAnimation.swift; sourceTree = "<group>"; };
 		3ADDD501F0EF629A4324C6C9FC35A68E /* Pods-todoru2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-todoru2-umbrella.h"; sourceTree = "<group>"; };
-		3B0D2C7A896669275C81190C83C8601F /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
-		3FE2F6B6544FE21242A79F802A6375D6 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
-		461F9AE805EF5BCAEF15E9A68AE824A9 /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
+		3C5D84AC33E7D19D28945558C6BED023 /* NSObject+MotionAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+MotionAnimation.swift"; path = "MotionAnimation/NSObject+MotionAnimation.swift"; sourceTree = "<group>"; };
+		3D371B94E1EC712BF5D9419157DD3DE7 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
+		423D1C08E340AC38AFC5C3D71FE1DAB3 /* MotionAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MotionAnimation-dummy.m"; sourceTree = "<group>"; };
+		4AAE4DD0EF5CEAB9EAB6CA24C7174E58 /* BubbleTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-prefix.pch"; sourceTree = "<group>"; };
+		4ABB006B3CE0332539AC8C7593FE00BF /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Types.swift; path = MotionAnimation/Types.swift; sourceTree = "<group>"; };
+		4B35BCBE1096316D2B7D8B8EB9FD95D0 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		4B6D02B5A9DFFBD65BC247CECD29FFDB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E403021BAD58C058E69B1C81B0F3AFC /* Pods-todoru2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-todoru2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4E8684510411237AB0F19BE6A29F0879 /* MotionAnimation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MotionAnimation.modulemap; sourceTree = "<group>"; };
 		4FFFB86D0AAC5D2CBCFCFCDC117919F3 /* Pods-todoru2Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-todoru2Tests-dummy.m"; sourceTree = "<group>"; };
-		54F6ACF4A29029546680EC6F42718E98 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
+		50DA429B9D719B165F547A9B4D3A45F8 /* BubbleTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-umbrella.h"; sourceTree = "<group>"; };
+		584DB528D960B908BB74BE7DC53E9BAA /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		59D0BE96C105ED75519372350154553A /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
 		5B74A4EDD6EC134299BEF72CCAD0E04B /* Pods-todoru2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-todoru2UITests.release.xcconfig"; sourceTree = "<group>"; };
-		5BD40C0173A090B93E10525233FAB735 /* BubbleTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BubbleTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FEE641924FE52B6325DC7EC8B1ED27F /* ElasticTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElasticTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64129CC85E1AD7165064BA2C938FE495 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		678A35FFECE8AEBE8E49AD31A7C88643 /* MCSwipeTableViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MCSwipeTableViewCell.xcconfig; sourceTree = "<group>"; };
-		69936B08A2C964BF350464E89C4DE730 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
-		6A3BF13117E471D7D303E956487B0B46 /* BubbleTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubbleTransition-dummy.m"; sourceTree = "<group>"; };
-		6CB3D26103F5792056469DD1D3994BF9 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
+		681998AACFD3F9A6DA19332C06A83D17 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		6DA6AE65F8DF4E658AE387C1A0D0D7FD /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
+		709F555BB3FB46D3BB2C73D0584C1E9A /* BTNavigationDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BTNavigationDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		764DF88342EA3DD9F77D06CFCC59560A /* Pods_todoru2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B809DD9A3D47A9F42A0FFD7B7A992AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CB03CED20D2EBF7B1EBD26C33E6974D /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
-		7E9A6F57D22D80CB86C595802FF41E6C /* BTNavigationDropdownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BTNavigationDropdownMenu.modulemap; sourceTree = "<group>"; };
-		7F5415946FCA830E794459349E626D12 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
+		7BE3FE19A60724101C992B1F05A310F8 /* MCSwipeTableViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MCSwipeTableViewCell.xcconfig; sourceTree = "<group>"; };
+		7CBDFDE127465A97E4465E2CACC9BCBD /* MotionAnimationPropertyState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimationPropertyState.swift; path = MotionAnimation/MotionAnimationPropertyState.swift; sourceTree = "<group>"; };
+		7E7F1F327FF9EAECA6786B80DF47E81E /* BTNavigationDropdownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-umbrella.h"; sourceTree = "<group>"; };
+		80637F2C6FEE5707CFCA957F3414BB1C /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
 		814CD599E5FF8E85C084018B7253A666 /* Pods-todoru2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-todoru2.release.xcconfig"; sourceTree = "<group>"; };
-		8503B6CA9E7EFE3658071D10C93BCBFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85BDD4583124CF61F433FC98AFCCFDF1 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		860DA7F62D3962BD4E445FE79E4B2243 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		869641A9B58E422E3BB48F6C2A07C41B /* MCSwipeTableViewCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCSwipeTableViewCell-prefix.pch"; sourceTree = "<group>"; };
+		86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8773823799AD7689EE7E513325D943D5 /* MCSwipeTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCSwipeTableViewCell.h; path = MCSwipeTableViewCell/MCSwipeTableViewCell.h; sourceTree = "<group>"; };
 		89968D77FE0CD2E250E0EE99D86DC363 /* Pods-todoru2UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-todoru2UITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8A5C3B75B257B944C3CCBAFC848F5F92 /* Pods-todoru2UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-todoru2UITests-dummy.m"; sourceTree = "<group>"; };
-		8A64AF58A5AE13A528DDA3537DB2C514 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CA227A314AFECB7B3FC6AB195BE679D /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		8C6F299A3C143C699A9677CDE8CBBDA5 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
 		8CAFBD90BD70E7E7FE005BEF1A38A1DC /* Pods-todoru2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-todoru2-resources.sh"; sourceTree = "<group>"; };
-		8EE3085F819A66D814E98A52B460FC03 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		8DD28C50E99309551D69A49B46ABEA5A /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		8F8945ED5EEE987DB4007C0BA94B5C2B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9216257B47874049279D2686DEE8FE69 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		92682AB8F37BC087D5C1A5E5D54F4215 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BTNavigationDropdownMenu.bundle; path = Source/BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
+		92F36DEE97473DE06AFCEADD96A1F346 /* ElasticShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticShapeLayer.swift; path = ElasticTransition/ElasticShapeLayer.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94C6A574554899B8EA3D39DA20A46DD9 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		94F19C84C961E1991D443BA4E4B85426 /* ElasticTransitionPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticTransitionPresentationController.swift; path = ElasticTransition/ElasticTransitionPresentationController.swift; sourceTree = "<group>"; };
+		956502F0C4B040D70D516F5794587408 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		9934A89C40ED7F59C304C0F9900F04CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993FC950E66FF60B510C412131742C32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		99CC3A704F9B7EAD28DBBA604165EADA /* Pods-todoru2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-todoru2UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9BF0004F6E608452FD7BC5EB94B281D4 /* BTNavigationDropdownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BTNavigationDropdownMenu-umbrella.h"; sourceTree = "<group>"; };
+		9B213DA6D7644BAA4F6E14E19D757047 /* ElasticModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElasticModalViewController.swift; path = ElasticTransition/ElasticModalViewController.swift; sourceTree = "<group>"; };
 		9C559A1A4A9F221D271458030F17DA88 /* Pods-todoru2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-todoru2-dummy.m"; sourceTree = "<group>"; };
-		9C65AD050F290BD6063EEEE85F0240F8 /* MCSwipeTableViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCSwipeTableViewCell-umbrella.h"; sourceTree = "<group>"; };
-		A167F251A9A707FEE4D826E3FA56235E /* Pods_todoru2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A5B2C34A8A0C8C86F5597BE0773FC40F /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
-		AB7EB4C8E92F140EAFCBA8C70B66B49D /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
-		AD23273B1A6AD43198648306A2AF6041 /* MCSwipeTableViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MCSwipeTableViewCell-dummy.m"; sourceTree = "<group>"; };
-		AE90C1C906137A10924C3DEDD403310E /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BTNavigationDropdownMenu.swift; path = Source/BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
+		9C56510ED15B1503EA6E2A3CDCC729AA /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		9CDE2CBF89334C8B72CA8220966C3309 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		9D3971A112A7AA8838CAEF36860AE50A /* MCSwipeTableViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MCSwipeTableViewCell.modulemap; sourceTree = "<group>"; };
+		AB934A15747B403CD9EBC4DA5FF5F536 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = ElasticTransition/Util.swift; sourceTree = "<group>"; };
+		B276710256DEA766FCD0A1E7D816AEA5 /* BubbleTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BubbleTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28C75DF05BE262F1311E6A90EE0D880 /* Pods-todoru2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-todoru2.debug.xcconfig"; sourceTree = "<group>"; };
-		B29C5C82FE151CA7E8740238AC06A2D7 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		B2F2B521896198CCE5AAA18FF6DE80E9 /* MCSwipeTableViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MCSwipeTableViewCell-dummy.m"; sourceTree = "<group>"; };
+		B2FBCC8E3C73F4D59880E620CD3BADC8 /* Pods_todoru2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32399A8D44DBED056F34A76533E4645 /* MotionAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MotionAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47472CB58095F532FFC55376D5E0C33 /* MotionAnimation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MotionAnimation-umbrella.h"; sourceTree = "<group>"; };
+		B56FC98FB1C0464739B6F3BC7D5D6612 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
 		B58497E09F15C0EE95159F00694506D9 /* Pods-todoru2UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-todoru2UITests.modulemap"; sourceTree = "<group>"; };
-		BC8D3452742E44DF703B044CC0E473A8 /* BubbleTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BubbleTransition.modulemap; sourceTree = "<group>"; };
-		BCCBA5D70C0B49F4C59C43AE28559110 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
-		BD99381C667F813A85F00ADBEDC40E32 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		C0354521DEB918F9E11ECA15D996DCBC /* BubbleTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubbleTransition.xcconfig; sourceTree = "<group>"; };
+		B60B4F17CFE728507A392689112A9481 /* EdgePanTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgePanTransition.swift; path = ElasticTransition/EdgePanTransition.swift; sourceTree = "<group>"; };
+		B8FEC5A9C7796C330233A8B8BD36FF56 /* BubbleTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubbleTransition-dummy.m"; sourceTree = "<group>"; };
+		B9B1C015C708CDA2A73F6ED0C2B2B273 /* MotionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionAnimator.swift; path = MotionAnimation/MotionAnimator.swift; sourceTree = "<group>"; };
+		BB0E50122F0B6F7C6BE6521428D72C88 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		BB7E353DAE5604ABEF85D1AC5853EBBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C11342AEB2AB355C6277AFB0A9B7D3C2 /* Pods-todoru2UITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-todoru2UITests-resources.sh"; sourceTree = "<group>"; };
+		C38AAF50AFAA5710B464BDBE671DF1B8 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		C4089CA4B37FF098C4FF6712557E0765 /* ElasticTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElasticTransition-prefix.pch"; sourceTree = "<group>"; };
 		C4DB292BB0D21B60A95C638D5F41B070 /* Pods-todoru2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-todoru2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6871FC0F00DD90E1E6F0A444ABDE4ED /* Pods-todoru2Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-todoru2Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CEFC317B5457D8B3269DD179CF5F2536 /* BTNavigationDropdownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BTNavigationDropdownMenu.xcconfig; sourceTree = "<group>"; };
-		D11BAB6C084DB4AE382EC8A1632C1903 /* BTNavigationDropdownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BTNavigationDropdownMenu-dummy.m"; sourceTree = "<group>"; };
+		C9033685886A18882B457EB488FB9245 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		C921BECBB198489BF39D45EF7CB45FB8 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		CCC24AE835256A93B241700278D5F0EC /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		CCE187659F8497D865B306300CB3DCBE /* MotionAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MotionAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD863CC15E259488A9F0322A082799E1 /* BubbleTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BubbleTransition.modulemap; sourceTree = "<group>"; };
+		D297AF66F2A2DA79C441B82BF4E7ADA0 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		D3125F6A1776B03D71714B78F2A0BD94 /* ElasticTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElasticTransition-dummy.m"; sourceTree = "<group>"; };
+		D71462BB0E3742A811ABDD0F50736804 /* BTNavigationDropdownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BTNavigationDropdownMenu.modulemap; sourceTree = "<group>"; };
+		DA38ADC683654706F28A5F0E90FE4376 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
 		DB4A74D190AA581995CE89C2C5C11BD8 /* Pods-todoru2Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-todoru2Tests-frameworks.sh"; sourceTree = "<group>"; };
+		DE24F092DB2BDB8CDCB22072EE50C582 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF267C5E8B8775E6203864C5A59FD79D /* Pods-todoru2UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-todoru2UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2F3A078C3A27A2DFA3ACE190342E1A8 /* Pods_todoru2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E9C587B9F55FAC3435F9F8E713BC2EBF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE9AE7BBA66D0AC6E169D4593F853E28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F122D2BFEAC6F68426765FEC81CECBE7 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BTNavigationDropdownMenu.bundle; path = Source/BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
-		F39C5B854F0752FEBECD799D511B152B /* MCSwipeTableViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MCSwipeTableViewCell.modulemap; sourceTree = "<group>"; };
+		E297581D77E50D14727C09228B05A1EC /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
+		E454B1C0881AB21A914F53B7D79E5BC6 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		F01B78D998C863ED996CC341284109F1 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = Source/BubbleTransition.swift; sourceTree = "<group>"; };
+		F01DE0B3CE99A672E168D25FEAFC871B /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		F22508C71A00329705CF7201EC04A717 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
+		F24D5FA98E52E365549037B16C615A77 /* MCSwipeTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MCSwipeTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D62B52274F9BB33CC751969BDF3952 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41F7839D97FBE8C05FBA566C18A8F64 /* Pods-todoru2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-todoru2-acknowledgements.plist"; sourceTree = "<group>"; };
+		F508DC3AB9F52D276019F1773D863009 /* MCSwipeTableViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MCSwipeTableViewCell-umbrella.h"; sourceTree = "<group>"; };
+		FA9FCC39A826824FE0D4166CC78A9E98 /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
 		FBF759750468FD59CFB563FE77405DC6 /* Pods-todoru2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-todoru2-frameworks.sh"; sourceTree = "<group>"; };
-		FD5AE24E0A329FDBBD472D90F005DA27 /* MCSwipeTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MCSwipeTableViewCell.h; path = MCSwipeTableViewCell/MCSwipeTableViewCell.h; sourceTree = "<group>"; };
-		FE1B0F4F85686D071290B7C5D07FAFD2 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2344A1F59623AA8044674CEAD108BF /* ElasticTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ElasticTransition.modulemap; sourceTree = "<group>"; };
+		FE80B0022BE2CC65C7D58A34BD6C17AF /* ElasticTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElasticTransition-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,11 +299,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		150DDE87D0F22CA7292048CCCC82B61F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0988B48BBBD0CBCD090B670A169946 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		366E09354561C799A49CA36E2844E92C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				783D09E6FEFC6B29AA8024206E692CE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4024C37417D215661854C851D349E07F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,12 +330,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85BCA84FF9490558063C0647531C861B /* Frameworks */ = {
+		84954CE654885ED9F50A2F7493ECD775 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA3D8E5D07BDE6A39C8EC6095586DE7 /* Foundation.framework in Frameworks */,
-				6BA0E9B64373B44AA8F4AF291F9EF5D6 /* UIKit.framework in Frameworks */,
+				E8F6FA86779A37D6B48B9F9BA5FF2F09 /* Foundation.framework in Frameworks */,
+				655C49683C596DC821C03C13A3D6C753 /* MotionAnimation.framework in Frameworks */,
+				B9F7B12441A92D57E4C0CB6DFF721409 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,11 +348,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2E387F43EDFF6C1DDD570A113ECA132 /* Frameworks */ = {
+		AF7E2E45FA460CD3ED1034CB99FC987F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FAA228F6F7D453C14718977A29C7195 /* Foundation.framework in Frameworks */,
+				37DD19CE3077E81A735964B0C4A60245 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63B110D425D79F1F712FA85B96EE4B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EE74DE805D6C0E12464003F3FAD7D9 /* Foundation.framework in Frameworks */,
+				D564BDABF9CA32F6299B8C280C6A5918 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,35 +373,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0DAA5FBA01EC8CAA8C1C7A97089A3A5 /* Frameworks */ = {
+		F7306A16F7B0FA162FA642CA52E219AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF926F570E6D9EC2A858D31828EB4DA6 /* Foundation.framework in Frameworks */,
+				B7876B7C4FC4C3628A911C0B78CBE22A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		027C4B861BFA140F8C7ACFD87B5C3E49 /* BTNavigationDropdownMenu */ = {
+		09648D3356D6E36215FD8D78B44908D3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE90C1C906137A10924C3DEDD403310E /* BTNavigationDropdownMenu.swift */,
-				9DE09A6460D7DE83039E2286224C249E /* Resources */,
-				053FA8FC797A426F21C3E36D964AA896 /* Support Files */,
-			);
-			path = BTNavigationDropdownMenu;
-			sourceTree = "<group>";
-		};
-		053FA8FC797A426F21C3E36D964AA896 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7E9A6F57D22D80CB86C595802FF41E6C /* BTNavigationDropdownMenu.modulemap */,
-				CEFC317B5457D8B3269DD179CF5F2536 /* BTNavigationDropdownMenu.xcconfig */,
-				D11BAB6C084DB4AE382EC8A1632C1903 /* BTNavigationDropdownMenu-dummy.m */,
-				2DA0458A5E82222CC94B040DB1C8B465 /* BTNavigationDropdownMenu-prefix.pch */,
-				9BF0004F6E608452FD7BC5EB94B281D4 /* BTNavigationDropdownMenu-umbrella.h */,
-				EE9AE7BBA66D0AC6E169D4593F853E28 /* Info.plist */,
+				D71462BB0E3742A811ABDD0F50736804 /* BTNavigationDropdownMenu.modulemap */,
+				1B2CA156E54ABDC5AB0B65CDCDEF17E5 /* BTNavigationDropdownMenu.xcconfig */,
+				24781BCEEC76EA846BF5791A2534CAF4 /* BTNavigationDropdownMenu-dummy.m */,
+				1BC4D6F28F14688046E061FBD5CB2E64 /* BTNavigationDropdownMenu-prefix.pch */,
+				7E7F1F327FF9EAECA6786B80DF47E81E /* BTNavigationDropdownMenu-umbrella.h */,
+				4B6D02B5A9DFFBD65BC247CECD29FFDB /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BTNavigationDropdownMenu";
@@ -292,21 +417,6 @@
 			path = "Target Support Files/Pods-todoru2Tests";
 			sourceTree = "<group>";
 		};
-		22A4186ECFDAACAC44CB14037101057A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8A64AF58A5AE13A528DDA3537DB2C514 /* Info.plist */,
-				8CA227A314AFECB7B3FC6AB195BE679D /* ResourceBundle-XLPagerTabStrip-Info.plist */,
-				8EE3085F819A66D814E98A52B460FC03 /* XLPagerTabStrip.modulemap */,
-				3FE2F6B6544FE21242A79F802A6375D6 /* XLPagerTabStrip.xcconfig */,
-				54F6ACF4A29029546680EC6F42718E98 /* XLPagerTabStrip-dummy.m */,
-				7CB03CED20D2EBF7B1EBD26C33E6974D /* XLPagerTabStrip-prefix.pch */,
-				6CB3D26103F5792056469DD1D3994BF9 /* XLPagerTabStrip-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XLPagerTabStrip";
-			sourceTree = "<group>";
-		};
 		2AC51458E9A092715E47542B3FD50424 /* Pods-todoru2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,67 +435,168 @@
 			path = "Target Support Files/Pods-todoru2";
 			sourceTree = "<group>";
 		};
-		33F9C75A1E021315A362AE91B7F9BAE7 /* Products */ = {
+		314999C131759020DAA29869D386A6E1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1B7BE6795D2D3295E89A80B0A245D8E4 /* BTNavigationDropdownMenu.framework */,
-				5BD40C0173A090B93E10525233FAB735 /* BubbleTransition.framework */,
-				0C9B1089319CB8D9AEF5462D7033D022 /* MCSwipeTableViewCell.framework */,
-				A167F251A9A707FEE4D826E3FA56235E /* Pods_todoru2.framework */,
-				E2F3A078C3A27A2DFA3ACE190342E1A8 /* Pods_todoru2Tests.framework */,
-				0D937B074EEDF842ACC41A9C63136067 /* Pods_todoru2UITests.framework */,
-				28FDAB138FE77177EB15845F0A4F056D /* XLPagerTabStrip.bundle */,
-				FE1B0F4F85686D071290B7C5D07FAFD2 /* XLPagerTabStrip.framework */,
 			);
-			name = Products;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		4140A80A805BB0DC72A8639B8CD496C8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+				FE2344A1F59623AA8044674CEAD108BF /* ElasticTransition.modulemap */,
+				17C1774B37741948A56ECAEF91710AE3 /* ElasticTransition.xcconfig */,
+				D3125F6A1776B03D71714B78F2A0BD94 /* ElasticTransition-dummy.m */,
+				C4089CA4B37FF098C4FF6712557E0765 /* ElasticTransition-prefix.pch */,
+				FE80B0022BE2CC65C7D58A34BD6C17AF /* ElasticTransition-umbrella.h */,
+				F3D62B52274F9BB33CC751969BDF3952 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/ElasticTransition";
 			sourceTree = "<group>";
 		};
-		6CB941E9796AE10897121CED317709AB /* Support Files */ = {
+		48AB25945BA0FDE9BC45D9BD9E977BC2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				8503B6CA9E7EFE3658071D10C93BCBFA /* Info.plist */,
-				F39C5B854F0752FEBECD799D511B152B /* MCSwipeTableViewCell.modulemap */,
-				678A35FFECE8AEBE8E49AD31A7C88643 /* MCSwipeTableViewCell.xcconfig */,
-				AD23273B1A6AD43198648306A2AF6041 /* MCSwipeTableViewCell-dummy.m */,
-				085A9ADB03851B458B495795AF306F76 /* MCSwipeTableViewCell-prefix.pch */,
-				9C65AD050F290BD6063EEEE85F0240F8 /* MCSwipeTableViewCell-umbrella.h */,
+				CD863CC15E259488A9F0322A082799E1 /* BubbleTransition.modulemap */,
+				1085E1862E26257CEED6872E71F4C42B /* BubbleTransition.xcconfig */,
+				B8FEC5A9C7796C330233A8B8BD36FF56 /* BubbleTransition-dummy.m */,
+				4AAE4DD0EF5CEAB9EAB6CA24C7174E58 /* BubbleTransition-prefix.pch */,
+				50DA429B9D719B165F547A9B4D3A45F8 /* BubbleTransition-umbrella.h */,
+				9934A89C40ED7F59C304C0F9900F04CA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BubbleTransition";
+			sourceTree = "<group>";
+		};
+		4CF2F33886D13CDBEE07BCA68B1C3363 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE24F092DB2BDB8CDCB22072EE50C582 /* Info.plist */,
+				9D3971A112A7AA8838CAEF36860AE50A /* MCSwipeTableViewCell.modulemap */,
+				7BE3FE19A60724101C992B1F05A310F8 /* MCSwipeTableViewCell.xcconfig */,
+				B2F2B521896198CCE5AAA18FF6DE80E9 /* MCSwipeTableViewCell-dummy.m */,
+				869641A9B58E422E3BB48F6C2A07C41B /* MCSwipeTableViewCell-prefix.pch */,
+				F508DC3AB9F52D276019F1773D863009 /* MCSwipeTableViewCell-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MCSwipeTableViewCell";
+			sourceTree = "<group>";
+		};
+		546A16A612956CB110E44E916F181B56 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				860DA7F62D3962BD4E445FE79E4B2243 /* Info.plist */,
+				4E8684510411237AB0F19BE6A29F0879 /* MotionAnimation.modulemap */,
+				11FDB3EED90320F5B305C8826108C12B /* MotionAnimation.xcconfig */,
+				423D1C08E340AC38AFC5C3D71FE1DAB3 /* MotionAnimation-dummy.m */,
+				1DC0BB5453019547352E36F485E5371B /* MotionAnimation-prefix.pch */,
+				B47472CB58095F532FFC55376D5E0C33 /* MotionAnimation-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MotionAnimation";
+			sourceTree = "<group>";
+		};
+		65F8E40482550F2F771FBE683D807935 /* BubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				F01B78D998C863ED996CC341284109F1 /* BubbleTransition.swift */,
+				48AB25945BA0FDE9BC45D9BD9E977BC2 /* Support Files */,
+			);
+			path = BubbleTransition;
+			sourceTree = "<group>";
+		};
+		6CF039745A298BD785D48AF0157047DD /* BTNavigationDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3041D689E620EBAD26E552A959063DBC /* BTNavigationDropdownMenu.swift */,
+				FCD893C656A0A4A7BD4CB325E86BA35E /* Resources */,
+				09648D3356D6E36215FD8D78B44908D3 /* Support Files */,
+			);
+			path = BTNavigationDropdownMenu;
+			sourceTree = "<group>";
+		};
+		6F3A1322D39D018D073B63D8C76BEFA5 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				8C6F299A3C143C699A9677CDE8CBBDA5 /* AkiraTextField.swift */,
+				6DA6AE65F8DF4E658AE387C1A0D0D7FD /* HoshiTextField.swift */,
+				9C56510ED15B1503EA6E2A3CDCC729AA /* IsaoTextField.swift */,
+				3486E17367C0D6A7C912D7FE210DAB27 /* JiroTextField.swift */,
+				BB0E50122F0B6F7C6BE6521428D72C88 /* KaedeTextField.swift */,
+				8DD28C50E99309551D69A49B46ABEA5A /* MadokaTextField.swift */,
+				18717849D059E395B29D0A8538D572C8 /* MinoruTextField.swift */,
+				956502F0C4B040D70D516F5794587408 /* TextFieldEffects.swift */,
+				DA38ADC683654706F28A5F0E90FE4376 /* YokoTextField.swift */,
+				D297AF66F2A2DA79C441B82BF4E7ADA0 /* YoshikoTextField.swift */,
+				CEF0B9211EB72E8FCFAE8C6D76AA8652 /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		7BE179758C0A23D9837E1B0C578FF05C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF039745A298BD785D48AF0157047DD /* BTNavigationDropdownMenu */,
+				65F8E40482550F2F771FBE683D807935 /* BubbleTransition */,
+				83ED345E1FE443EF03D54E3F010B7C60 /* ElasticTransition */,
+				FE50998F7305CABAEC91E6C89FD370E1 /* MCSwipeTableViewCell */,
+				F5CD73B64736587DF3FAD7095C4083CD /* MotionAnimation */,
+				6F3A1322D39D018D073B63D8C76BEFA5 /* TextFieldEffects */,
+				99327D476B3E5E1904BEFB79E301DED2 /* XLPagerTabStrip */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				C09C1A9904A18BA640B57767CA02B9EA /* Pods */,
-				33F9C75A1E021315A362AE91B7F9BAE7 /* Products */,
+				CB7AE1D83928E889E062A217743ABE6E /* Frameworks */,
+				7BE179758C0A23D9837E1B0C578FF05C /* Pods */,
+				CDC7A038F9B560B754D1EDCC95E80DE0 /* Products */,
 				A49D247F54A5BD0A575F373C9B4730F5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		961396C24505B58FA884916F086105E3 /* Resources */ = {
+		83ED345E1FE443EF03D54E3F010B7C60 /* ElasticTransition */ = {
 			isa = PBXGroup;
 			children = (
+				B60B4F17CFE728507A392689112A9481 /* EdgePanTransition.swift */,
+				9B213DA6D7644BAA4F6E14E19D757047 /* ElasticModalViewController.swift */,
+				92F36DEE97473DE06AFCEADD96A1F346 /* ElasticShapeLayer.swift */,
+				0D30DB341A8AB59226903C85E378119F /* ElasticTransition.swift */,
+				94F19C84C961E1991D443BA4E4B85426 /* ElasticTransitionPresentationController.swift */,
+				AB934A15747B403CD9EBC4DA5FF5F536 /* Util.swift */,
+				4140A80A805BB0DC72A8639B8CD496C8 /* Support Files */,
 			);
-			name = Resources;
+			path = ElasticTransition;
 			sourceTree = "<group>";
 		};
-		9DE09A6460D7DE83039E2286224C249E /* Resources */ = {
+		99327D476B3E5E1904BEFB79E301DED2 /* XLPagerTabStrip */ = {
 			isa = PBXGroup;
 			children = (
-				F122D2BFEAC6F68426765FEC81CECBE7 /* BTNavigationDropdownMenu.bundle */,
+				2D154F51310D9C7125445B594395F323 /* BarPagerTabStripViewController.swift */,
+				05705B2147DCC606FB528D4386C64388 /* BarView.swift */,
+				356D032673F78C29F814F74DD550E270 /* BaseButtonBarPagerTabStripViewController.swift */,
+				E454B1C0881AB21A914F53B7D79E5BC6 /* ButtonBarPagerTabStripViewController.swift */,
+				CCC24AE835256A93B241700278D5F0EC /* ButtonBarView.swift */,
+				4B35BCBE1096316D2B7D8B8EB9FD95D0 /* ButtonBarViewCell.swift */,
+				584DB528D960B908BB74BE7DC53E9BAA /* ButtonCell.xib */,
+				FA9FCC39A826824FE0D4166CC78A9E98 /* FXPageControl.h */,
+				F22508C71A00329705CF7201EC04A717 /* FXPageControl.m */,
+				59D0BE96C105ED75519372350154553A /* IndicatorInfo.swift */,
+				681998AACFD3F9A6DA19332C06A83D17 /* PagerTabStripBehaviour.swift */,
+				C38AAF50AFAA5710B464BDBE671DF1B8 /* PagerTabStripError.swift */,
+				1467C9322811F55905523010E418B490 /* PagerTabStripViewController.swift */,
+				C921BECBB198489BF39D45EF7CB45FB8 /* SegmentedPagerTabStripViewController.swift */,
+				3D371B94E1EC712BF5D9419157DD3DE7 /* SwipeDirection.swift */,
+				F01DE0B3CE99A672E168D25FEAFC871B /* TwitterPagerTabStripViewController.swift */,
+				314999C131759020DAA29869D386A6E1 /* Resources */,
+				EA8CAD34AA6EC53ACF57F3D250E6F852 /* Support Files */,
 			);
-			name = Resources;
+			path = XLPagerTabStrip;
 			sourceTree = "<group>";
 		};
 		A49D247F54A5BD0A575F373C9B4730F5 /* Targets Support Files */ = {
@@ -398,15 +609,45 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C09C1A9904A18BA640B57767CA02B9EA /* Pods */ = {
+		CB7AE1D83928E889E062A217743ABE6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				027C4B861BFA140F8C7ACFD87B5C3E49 /* BTNavigationDropdownMenu */,
-				F22B32E91A03B4FD647E826FFE8F361C /* BubbleTransition */,
-				ECD61AE60F47AA0A3A86975B860299B7 /* MCSwipeTableViewCell */,
-				FF54C013E60A5066B440D41225F71374 /* XLPagerTabStrip */,
+				B32399A8D44DBED056F34A76533E4645 /* MotionAnimation.framework */,
+				F42D5A737AD37AAAB3BD875922A3F6CB /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDC7A038F9B560B754D1EDCC95E80DE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				709F555BB3FB46D3BB2C73D0584C1E9A /* BTNavigationDropdownMenu.framework */,
+				B276710256DEA766FCD0A1E7D816AEA5 /* BubbleTransition.framework */,
+				5FEE641924FE52B6325DC7EC8B1ED27F /* ElasticTransition.framework */,
+				F24D5FA98E52E365549037B16C615A77 /* MCSwipeTableViewCell.framework */,
+				CCE187659F8497D865B306300CB3DCBE /* MotionAnimation.framework */,
+				06175553F31CAA4434607D7C046A5484 /* Pods_todoru2.framework */,
+				764DF88342EA3DD9F77D06CFCC59560A /* Pods_todoru2Tests.framework */,
+				B2FBCC8E3C73F4D59880E620CD3BADC8 /* Pods_todoru2UITests.framework */,
+				37CB7B909CD7C41EF31BC4AA6C8ED2D0 /* TextFieldEffects.framework */,
+				0A7306443136BCA21F29A18C44CC8C92 /* XLPagerTabStrip.bundle */,
+				1F88F78D08DFACBAABC8E34F9A2D6490 /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF0B9211EB72E8FCFAE8C6D76AA8652 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D8134C213803A39308DF5A2F2C1196 /* Info.plist */,
+				369A524C2F754F06947F051E38BAECB4 /* TextFieldEffects.modulemap */,
+				80637F2C6FEE5707CFCA957F3414BB1C /* TextFieldEffects.xcconfig */,
+				C9033685886A18882B457EB488FB9245 /* TextFieldEffects-dummy.m */,
+				9216257B47874049279D2686DEE8FE69 /* TextFieldEffects-prefix.pch */,
+				9CDE2CBF89334C8B72CA8220966C3309 /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
 		DABE1B0EC3CF324F2629FA14D29884A0 /* Pods-todoru2UITests */ = {
@@ -427,90 +668,95 @@
 			path = "Target Support Files/Pods-todoru2UITests";
 			sourceTree = "<group>";
 		};
-		EBE7E6600E2D7E380C5F9F43182856DE /* Support Files */ = {
+		EA8CAD34AA6EC53ACF57F3D250E6F852 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC8D3452742E44DF703B044CC0E473A8 /* BubbleTransition.modulemap */,
-				C0354521DEB918F9E11ECA15D996DCBC /* BubbleTransition.xcconfig */,
-				6A3BF13117E471D7D303E956487B0B46 /* BubbleTransition-dummy.m */,
-				1B09D6FDBEDC0B86D3EA5EAE4F11B62E /* BubbleTransition-prefix.pch */,
-				1D8E09C140CAC371363C94E39418135E /* BubbleTransition-umbrella.h */,
-				E9C587B9F55FAC3435F9F8E713BC2EBF /* Info.plist */,
+				BB7E353DAE5604ABEF85D1AC5853EBBA /* Info.plist */,
+				1A25B90DF1782474E36E99AB18755E30 /* ResourceBundle-XLPagerTabStrip-Info.plist */,
+				1C6CB2FADA4DA4B54BE734C3A4EFBED3 /* XLPagerTabStrip.modulemap */,
+				08814D9309CF05BAFC10AA282CBC8A2A /* XLPagerTabStrip.xcconfig */,
+				0EDF87457EC5940AEEECE66059CB116B /* XLPagerTabStrip-dummy.m */,
+				E297581D77E50D14727C09228B05A1EC /* XLPagerTabStrip-prefix.pch */,
+				B56FC98FB1C0464739B6F3BC7D5D6612 /* XLPagerTabStrip-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BubbleTransition";
+			path = "../Target Support Files/XLPagerTabStrip";
 			sourceTree = "<group>";
 		};
-		ECD61AE60F47AA0A3A86975B860299B7 /* MCSwipeTableViewCell */ = {
+		F42D5A737AD37AAAB3BD875922A3F6CB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FD5AE24E0A329FDBBD472D90F005DA27 /* MCSwipeTableViewCell.h */,
-				04700B6B4FF32985C0D595E767A024FD /* MCSwipeTableViewCell.m */,
-				6CB941E9796AE10897121CED317709AB /* Support Files */,
-			);
-			path = MCSwipeTableViewCell;
-			sourceTree = "<group>";
-		};
-		F22B32E91A03B4FD647E826FFE8F361C /* BubbleTransition */ = {
-			isa = PBXGroup;
-			children = (
-				02B13E268F3462C8C1046030EF2464D9 /* BubbleTransition.swift */,
-				EBE7E6600E2D7E380C5F9F43182856DE /* Support Files */,
-			);
-			path = BubbleTransition;
-			sourceTree = "<group>";
-		};
-		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
-				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+				86BDECE4909545D5830BBD9827F8ACEF /* Foundation.framework */,
+				993FC950E66FF60B510C412131742C32 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FF54C013E60A5066B440D41225F71374 /* XLPagerTabStrip */ = {
+		F5CD73B64736587DF3FAD7095C4083CD /* MotionAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				B29C5C82FE151CA7E8740238AC06A2D7 /* BarPagerTabStripViewController.swift */,
-				26564ED9AC9EC4744C0C14485C46E852 /* BarView.swift */,
-				1B1C6927D23DE53A399CA2EA1ABD225B /* BaseButtonBarPagerTabStripViewController.swift */,
-				BD99381C667F813A85F00ADBEDC40E32 /* ButtonBarPagerTabStripViewController.swift */,
-				AB7EB4C8E92F140EAFCBA8C70B66B49D /* ButtonBarView.swift */,
-				14E3E38BD2E5C0FEAFCAD1F45E517010 /* ButtonBarViewCell.swift */,
-				3B0D2C7A896669275C81190C83C8601F /* ButtonCell.xib */,
-				461F9AE805EF5BCAEF15E9A68AE824A9 /* FXPageControl.h */,
-				11441D62A50872C76689B1DCC7345185 /* FXPageControl.m */,
-				7F5415946FCA830E794459349E626D12 /* IndicatorInfo.swift */,
-				94C6A574554899B8EA3D39DA20A46DD9 /* PagerTabStripBehaviour.swift */,
-				BCCBA5D70C0B49F4C59C43AE28559110 /* PagerTabStripError.swift */,
-				A5B2C34A8A0C8C86F5597BE0773FC40F /* PagerTabStripViewController.swift */,
-				02E240C0E74D0189DCAD98CA9B11F60C /* SegmentedPagerTabStripViewController.swift */,
-				69936B08A2C964BF350464E89C4DE730 /* SwipeDirection.swift */,
-				85BDD4583124CF61F433FC98AFCCFDF1 /* TwitterPagerTabStripViewController.swift */,
-				961396C24505B58FA884916F086105E3 /* Resources */,
-				22A4186ECFDAACAC44CB14037101057A /* Support Files */,
+				10ACFF909D54EE57B4D8600728D0298B /* MotionAnimation.swift */,
+				7CBDFDE127465A97E4465E2CACC9BCBD /* MotionAnimationPropertyState.swift */,
+				B9B1C015C708CDA2A73F6ED0C2B2B273 /* MotionAnimator.swift */,
+				3C5D84AC33E7D19D28945558C6BED023 /* NSObject+MotionAnimation.swift */,
+				3AC28512684FD6858EC9F17BD80C190E /* SpringValueAnimation.swift */,
+				4ABB006B3CE0332539AC8C7593FE00BF /* Types.swift */,
+				0A523DE95AD1247DBE49E2A58D559352 /* ValueAnimation.swift */,
+				546A16A612956CB110E44E916F181B56 /* Support Files */,
 			);
-			path = XLPagerTabStrip;
+			path = MotionAnimation;
+			sourceTree = "<group>";
+		};
+		FCD893C656A0A4A7BD4CB325E86BA35E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92682AB8F37BC087D5C1A5E5D54F4215 /* BTNavigationDropdownMenu.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FE50998F7305CABAEC91E6C89FD370E1 /* MCSwipeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8773823799AD7689EE7E513325D943D5 /* MCSwipeTableViewCell.h */,
+				327CEDBEC03FFF0F7C155A8EB6C31278 /* MCSwipeTableViewCell.m */,
+				4CF2F33886D13CDBEE07BCA68B1C3363 /* Support Files */,
+			);
+			path = MCSwipeTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4D41F13DFCCAA2507CC950CC73216C68 /* Headers */ = {
+		3C1737424545C6DFE128B48CC97D1677 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D284A75F9F88509C6F8FDEA847C586 /* FXPageControl.h in Headers */,
-				502F33AF1C8399A76CE5EA7C2FE7B639 /* XLPagerTabStrip-umbrella.h in Headers */,
+				61C2FE776964CD50A131A306E69C3D89 /* MotionAnimation-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8D3A76579C0A421AB57DB0CD58634B9 /* Headers */ = {
+		58BC9A1798F8284B6082CD61B19E7D55 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47253011C122F961A0623A3CB8C2E1BA /* Pods-todoru2-umbrella.h in Headers */,
+				DDB402D33C7E832B5AA2F99A95AB8B66 /* ElasticTransition-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8256637DB1D27D1229CF540A2D0B5C11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931CB547880A9688713395D7F7EDB89E /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C0D0F188057BE19D7BFDB1D2037220 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1061F90846C77E48DF6F0676632F62D2 /* Pods-todoru2-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +801,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4CEC0873D27AADA3E9A8B9238BA029D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEAE46518549B157EE3AA753D746120 /* FXPageControl.h in Headers */,
+				4699E40C0F9598ADAF71B5F0DF7B603B /* XLPagerTabStrip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -572,43 +827,78 @@
 			);
 			name = MCSwipeTableViewCell;
 			productName = MCSwipeTableViewCell;
-			productReference = 0C9B1089319CB8D9AEF5462D7033D022 /* MCSwipeTableViewCell.framework */;
+			productReference = F24D5FA98E52E365549037B16C615A77 /* MCSwipeTableViewCell.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		19A80B4DFB910368BB6A2C68268E6F7F /* XLPagerTabStrip-XLPagerTabStrip */ = {
+		0D5264177E0F0611895CABBD7D119E00 /* MotionAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B09A2D86A11849CA03C5735E01BE0A34 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildConfigurationList = F5D52F8639EF2ABC6503E79517391AA4 /* Build configuration list for PBXNativeTarget "MotionAnimation" */;
 			buildPhases = (
-				3D0E50ADF34F8C67E8D6CB2C6D33D3A2 /* Sources */,
-				F0DAA5FBA01EC8CAA8C1C7A97089A3A5 /* Frameworks */,
-				DB27F268471C6F8C248654CF90FFCABA /* Resources */,
+				1AB73203F56FD81D457ADE8CB9FCB6F8 /* Sources */,
+				C63B110D425D79F1F712FA85B96EE4B4 /* Frameworks */,
+				3C1737424545C6DFE128B48CC97D1677 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "XLPagerTabStrip-XLPagerTabStrip";
-			productName = "XLPagerTabStrip-XLPagerTabStrip";
-			productReference = 28FDAB138FE77177EB15845F0A4F056D /* XLPagerTabStrip.bundle */;
-			productType = "com.apple.product-type.bundle";
+			name = MotionAnimation;
+			productName = MotionAnimation;
+			productReference = CCE187659F8497D865B306300CB3DCBE /* MotionAnimation.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		5A077A2D3061FB2799C9936088CBBCB8 /* XLPagerTabStrip */ = {
+		36DFC256CC8338F58D26335BBC651076 /* XLPagerTabStrip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B54672B9133C1921660C3D9B849FF2F /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
+			buildConfigurationList = AB59E3B7E5AF0A73F7FFD756847F33D7 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
 			buildPhases = (
-				11AA8481945E0E4C7E2BA93D534A9568 /* Sources */,
-				85BCA84FF9490558063C0647531C861B /* Frameworks */,
-				0F6A47F55861A4C8DC01A2F503948054 /* Resources */,
-				4D41F13DFCCAA2507CC950CC73216C68 /* Headers */,
+				9FBA83A347ED16991AA3E3EEF915B84E /* Sources */,
+				F7306A16F7B0FA162FA642CA52E219AB /* Frameworks */,
+				46080157091F47D2956E81C711CC30B8 /* Resources */,
+				F4CEC0873D27AADA3E9A8B9238BA029D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				831761F3886A6737D38DD5B3D33D5076 /* PBXTargetDependency */,
+				3F83E5507CD541F167470E9A2540D3EA /* PBXTargetDependency */,
 			);
 			name = XLPagerTabStrip;
 			productName = XLPagerTabStrip;
-			productReference = FE1B0F4F85686D071290B7C5D07FAFD2 /* XLPagerTabStrip.framework */;
+			productReference = 1F88F78D08DFACBAABC8E34F9A2D6490 /* XLPagerTabStrip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7031ED9D7E985343BFF4CFFEA25D2EB0 /* ElasticTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FA97292C8522C3EE2C8019BBF432CF /* Build configuration list for PBXNativeTarget "ElasticTransition" */;
+			buildPhases = (
+				E526CFC74D7813876A94F359E791A5EB /* Sources */,
+				84954CE654885ED9F50A2F7493ECD775 /* Frameworks */,
+				58BC9A1798F8284B6082CD61B19E7D55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4BB40503F2399BCCEB64BDA6653FD8F /* PBXTargetDependency */,
+			);
+			name = ElasticTransition;
+			productName = ElasticTransition;
+			productReference = 5FEE641924FE52B6325DC7EC8B1ED27F /* ElasticTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7240B44ADA7C299C0DFFFAF35383DDFD /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A62B9FF951408248CF8D143F5F291A0 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				68E9223B107D3AE953F9DDB85B17F469 /* Sources */,
+				AF7E2E45FA460CD3ED1034CB99FC987F /* Frameworks */,
+				8256637DB1D27D1229CF540A2D0B5C11 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 37CB7B909CD7C41EF31BC4AA6C8ED2D0 /* TextFieldEffects.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7372CA79CE92E7AC032175441663EBE4 /* BubbleTransition */ = {
@@ -625,8 +915,25 @@
 			);
 			name = BubbleTransition;
 			productName = BubbleTransition;
-			productReference = 5BD40C0173A090B93E10525233FAB735 /* BubbleTransition.framework */;
+			productReference = B276710256DEA766FCD0A1E7D816AEA5 /* BubbleTransition.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		9F2CA59D318CC50BC7AC13B792DE5AA2 /* XLPagerTabStrip-XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA88982265D1A014E331BC1CE2DFF25 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildPhases = (
+				8AC5CBF931B83D55B8DC1B820ED71BBF /* Sources */,
+				4024C37417D215661854C851D349E07F /* Frameworks */,
+				901DE75383725B4C6465C27036A9790B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			productName = "XLPagerTabStrip-XLPagerTabStrip";
+			productReference = 0A7306443136BCA21F29A18C44CC8C92 /* XLPagerTabStrip.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		AB779DC37120DC0BC370FD8D2E3277BA /* Pods-todoru2UITests */ = {
 			isa = PBXNativeTarget;
@@ -642,7 +949,7 @@
 			);
 			name = "Pods-todoru2UITests";
 			productName = "Pods-todoru2UITests";
-			productReference = 0D937B074EEDF842ACC41A9C63136067 /* Pods_todoru2UITests.framework */;
+			productReference = B2FBCC8E3C73F4D59880E620CD3BADC8 /* Pods_todoru2UITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CFE627AA57687C258E3E0CEADFB4BE0F /* Pods-todoru2Tests */ = {
@@ -659,28 +966,31 @@
 			);
 			name = "Pods-todoru2Tests";
 			productName = "Pods-todoru2Tests";
-			productReference = E2F3A078C3A27A2DFA3ACE190342E1A8 /* Pods_todoru2Tests.framework */;
+			productReference = 764DF88342EA3DD9F77D06CFCC59560A /* Pods_todoru2Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D3611F6B15B598348FD5A200A272A6EE /* Pods-todoru2 */ = {
+		E1633C6FDC515BF7D5EB199AA1C33720 /* Pods-todoru2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 197BCF390B95421CF2F7B3A612065C84 /* Build configuration list for PBXNativeTarget "Pods-todoru2" */;
+			buildConfigurationList = B83873BA94FE388589471F5BA2D5053C /* Build configuration list for PBXNativeTarget "Pods-todoru2" */;
 			buildPhases = (
-				DA3801BE00C9B899EFD8263DD0F72AFF /* Sources */,
-				A2E387F43EDFF6C1DDD570A113ECA132 /* Frameworks */,
-				B8D3A76579C0A421AB57DB0CD58634B9 /* Headers */,
+				96FAD57140B072EB8CE3671CF9B05ABB /* Sources */,
+				150DDE87D0F22CA7292048CCCC82B61F /* Frameworks */,
+				A2C0D0F188057BE19D7BFDB1D2037220 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2836B95E94D57E7BAA4AF86485315EA1 /* PBXTargetDependency */,
-				B48184BBDA84DA8121CF8B31E41751B2 /* PBXTargetDependency */,
-				67548FC1A9DBF2F8807A41C5EBCBC04E /* PBXTargetDependency */,
-				1A9D2CFFCF4D05DEE60E97A392ECDB95 /* PBXTargetDependency */,
+				B2C965A61C5357A5F2B8C9AB0CA91A96 /* PBXTargetDependency */,
+				C6A6058024C6A7656F11044E8390568D /* PBXTargetDependency */,
+				688D507EC4C59EB18E08C48CD29F6A85 /* PBXTargetDependency */,
+				83C042A180AB17F76839E255C1E598C9 /* PBXTargetDependency */,
+				DA8BA731E280C3CE2E47D88B9E07044A /* PBXTargetDependency */,
+				86E720CF363D6AE814BC30B92C09F9B6 /* PBXTargetDependency */,
+				42FEFE73DFAFB7422CF9B82CE1DF54AA /* PBXTargetDependency */,
 			);
 			name = "Pods-todoru2";
 			productName = "Pods-todoru2";
-			productReference = A167F251A9A707FEE4D826E3FA56235E /* Pods_todoru2.framework */;
+			productReference = 06175553F31CAA4434607D7C046A5484 /* Pods_todoru2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */ = {
@@ -698,7 +1008,7 @@
 			);
 			name = BTNavigationDropdownMenu;
 			productName = BTNavigationDropdownMenu;
-			productReference = 1B7BE6795D2D3295E89A80B0A245D8E4 /* BTNavigationDropdownMenu.framework */;
+			productReference = 709F555BB3FB46D3BB2C73D0584C1E9A /* BTNavigationDropdownMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -710,13 +1020,22 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
-					5A077A2D3061FB2799C9936088CBBCB8 = {
+					0D5264177E0F0611895CABBD7D119E00 = {
+						LastSwiftMigration = 0830;
+					};
+					36DFC256CC8338F58D26335BBC651076 = {
+						LastSwiftMigration = 0830;
+					};
+					7031ED9D7E985343BFF4CFFEA25D2EB0 = {
+						LastSwiftMigration = 0830;
+					};
+					7240B44ADA7C299C0DFFFAF35383DDFD = {
 						LastSwiftMigration = 0830;
 					};
 					7372CA79CE92E7AC032175441663EBE4 = {
 						LastSwiftMigration = 0830;
 					};
-					D3611F6B15B598348FD5A200A272A6EE = {
+					E1633C6FDC515BF7D5EB199AA1C33720 = {
 						LastSwiftMigration = 0830;
 					};
 					FD23F1DA220A44C7E84F356B64871271 = {
@@ -732,28 +1051,39 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 33F9C75A1E021315A362AE91B7F9BAE7 /* Products */;
+			productRefGroup = CDC7A038F9B560B754D1EDCC95E80DE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */,
 				7372CA79CE92E7AC032175441663EBE4 /* BubbleTransition */,
+				7031ED9D7E985343BFF4CFFEA25D2EB0 /* ElasticTransition */,
 				0003E8B0DE7EAF0A1E3C9404F7137022 /* MCSwipeTableViewCell */,
-				D3611F6B15B598348FD5A200A272A6EE /* Pods-todoru2 */,
+				0D5264177E0F0611895CABBD7D119E00 /* MotionAnimation */,
+				E1633C6FDC515BF7D5EB199AA1C33720 /* Pods-todoru2 */,
 				CFE627AA57687C258E3E0CEADFB4BE0F /* Pods-todoru2Tests */,
 				AB779DC37120DC0BC370FD8D2E3277BA /* Pods-todoru2UITests */,
-				5A077A2D3061FB2799C9936088CBBCB8 /* XLPagerTabStrip */,
-				19A80B4DFB910368BB6A2C68268E6F7F /* XLPagerTabStrip-XLPagerTabStrip */,
+				7240B44ADA7C299C0DFFFAF35383DDFD /* TextFieldEffects */,
+				36DFC256CC8338F58D26335BBC651076 /* XLPagerTabStrip */,
+				9F2CA59D318CC50BC7AC13B792DE5AA2 /* XLPagerTabStrip-XLPagerTabStrip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0F6A47F55861A4C8DC01A2F503948054 /* Resources */ = {
+		46080157091F47D2956E81C711CC30B8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710340C9C09ECBC50B3E1BF0D912F9C9 /* XLPagerTabStrip.bundle in Resources */,
+				3E5135C3573667A4B443EF63AB7CC84E /* XLPagerTabStrip.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901DE75383725B4C6465C27036A9790B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5A9C1AA87724F00B4F28E78FD7589 /* ButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,37 +1095,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB27F268471C6F8C248654CF90FFCABA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22E29613AAF2D92EFA09978065A64692 /* ButtonCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		11AA8481945E0E4C7E2BA93D534A9568 /* Sources */ = {
+		1AB73203F56FD81D457ADE8CB9FCB6F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA73B71CEAD1C7CC1DB4DDDE10A1705 /* BarPagerTabStripViewController.swift in Sources */,
-				2CECDF0E55CEEBB162558240AB8AEBC2 /* BarView.swift in Sources */,
-				896CD7A18C78E5B5492B51E28EBE1176 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
-				F22A18CD354DD62775B28DD011885632 /* ButtonBarPagerTabStripViewController.swift in Sources */,
-				A99A69A35B0FCF9415BA63572BB4B050 /* ButtonBarView.swift in Sources */,
-				B63F9D13941AFDBE4889C480096E522B /* ButtonBarViewCell.swift in Sources */,
-				0C9199DCBBDBA523326CB614B7B75A4B /* ButtonCell.xib in Sources */,
-				70FA936E2BDB695E0B06CAE172DB7014 /* FXPageControl.m in Sources */,
-				7D7ADF2ED7EEAA6C53A72BE4B1CC00A5 /* IndicatorInfo.swift in Sources */,
-				442D45D074A6A0B9DA96110C2C304EFF /* PagerTabStripBehaviour.swift in Sources */,
-				F874211FBD96741346E4F7E462F67C32 /* PagerTabStripError.swift in Sources */,
-				0614AA6F5860B967841AB027AA27FA95 /* PagerTabStripViewController.swift in Sources */,
-				5EC15CA15A97333F0191251BA3DBEB6F /* SegmentedPagerTabStripViewController.swift in Sources */,
-				A64A1B3604E09D0F920F66A1DC31D15E /* SwipeDirection.swift in Sources */,
-				8DF0E9C1C433F150D9C1E977003842CE /* TwitterPagerTabStripViewController.swift in Sources */,
-				E77591C595B3D47949D3CDD2CFF97134 /* XLPagerTabStrip-dummy.m in Sources */,
+				88035705FB30FB471E5853E94A1CDD76 /* MotionAnimation-dummy.m in Sources */,
+				5382F24B2D81DB14F69D254658A023A8 /* MotionAnimation.swift in Sources */,
+				271AEA93CBD322CD1626CE21282D6B42 /* MotionAnimationPropertyState.swift in Sources */,
+				F578BFA4E0134052ECAF1A4A44F2B098 /* MotionAnimator.swift in Sources */,
+				82476DDC66831593B02A46490940C20B /* NSObject+MotionAnimation.swift in Sources */,
+				7D0191ACF8660DFEDA3E27F08C6F19B6 /* SpringValueAnimation.swift in Sources */,
+				CFBB279B20AE4756B4D1BD6E2F5A8F37 /* Types.swift in Sources */,
+				10D74F53C3E11A68E6B7789BC4FEAB65 /* ValueAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,18 +1131,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D0E50ADF34F8C67E8D6CB2C6D33D3A2 /* Sources */ = {
+		5A8E55062D60C6D83EFC10982093D36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED174FEBD872DB43B4351C209F766C0 /* Pods-todoru2UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E9223B107D3AE953F9DDB85B17F469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A78811103E158340413278D528E3711 /* AkiraTextField.swift in Sources */,
+				A906E0073BB7F7F7816F062879EF9D22 /* HoshiTextField.swift in Sources */,
+				7AE79547EFA39EBCE9F232852A153EF3 /* IsaoTextField.swift in Sources */,
+				B526DC290F44C6C4CBD0AD8C53C2B8E5 /* JiroTextField.swift in Sources */,
+				C7B87F2FBFC0C72CD9729DCCC6CE0C3B /* KaedeTextField.swift in Sources */,
+				8BAB447564733F45CCC5B86DCFAF73B3 /* MadokaTextField.swift in Sources */,
+				3EF30E3FE1299865B6971E93B91FF793 /* MinoruTextField.swift in Sources */,
+				A3D1BC982B1D13E123098125A3D460D7 /* TextFieldEffects-dummy.m in Sources */,
+				71DD046A57BA7C2EB64220AAE1B6B10A /* TextFieldEffects.swift in Sources */,
+				08BD1C16696CB64F460B140A589C2A40 /* YokoTextField.swift in Sources */,
+				CD3ADA9330B5EF7842D522ED56FAA788 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC5CBF931B83D55B8DC1B820ED71BBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A8E55062D60C6D83EFC10982093D36C /* Sources */ = {
+		96FAD57140B072EB8CE3671CF9B05ABB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DED174FEBD872DB43B4351C209F766C0 /* Pods-todoru2UITests-dummy.m in Sources */,
+				A567896C60CD9E3AA78D28B219089EA5 /* Pods-todoru2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FBA83A347ED16991AA3E3EEF915B84E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8A552BB8D5056EF0732A10BABF9B41 /* BarPagerTabStripViewController.swift in Sources */,
+				1CA6B93D92519A59C2437010E2B3514F /* BarView.swift in Sources */,
+				62060AE0AF48F837501BD9CC9D096870 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				20DBB77B5CC34734403D00B5F2AC0074 /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				3BB7691C7BEE318A0F588E8B5263E2E8 /* ButtonBarView.swift in Sources */,
+				F30781FE94A0893279A64B2C2FE4FC06 /* ButtonBarViewCell.swift in Sources */,
+				9D6EFF1F88AC1285BE1F690ABE2CC8E3 /* ButtonCell.xib in Sources */,
+				70FBBD734F607410357F7F30E3275716 /* FXPageControl.m in Sources */,
+				84FAE47A997ECCDEBED9468A576FFAA1 /* IndicatorInfo.swift in Sources */,
+				EC30E9919533F3F8C83DB5A25923C289 /* PagerTabStripBehaviour.swift in Sources */,
+				409D6DBA9DB28CB77B60DFF91E3009D9 /* PagerTabStripError.swift in Sources */,
+				1169AF208DE822FD75F46BE24B9DB3B8 /* PagerTabStripViewController.swift in Sources */,
+				22968A1C73A690A7DC16065D1D2BE357 /* SegmentedPagerTabStripViewController.swift in Sources */,
+				42DF1118F14061B05853E9F02DAC7605 /* SwipeDirection.swift in Sources */,
+				879D62C372826A8A6161460EA28FA526 /* TwitterPagerTabStripViewController.swift in Sources */,
+				B75A33940768C4A5256D9764D9AC65CE /* XLPagerTabStrip-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,11 +1203,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA3801BE00C9B899EFD8263DD0F72AFF /* Sources */ = {
+		E526CFC74D7813876A94F359E791A5EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC390B8CF70FBCD27C6B6B09A2FA21FD /* Pods-todoru2-dummy.m in Sources */,
+				1DD791ADE9014AB004EDEB358DA1555F /* EdgePanTransition.swift in Sources */,
+				2FC7A5383336D207039B3E0AE474873A /* ElasticModalViewController.swift in Sources */,
+				F1A105BFEFF3FC4E1105A08BA7852727 /* ElasticShapeLayer.swift in Sources */,
+				8F831F3741D1CFA56C6635E383097033 /* ElasticTransition-dummy.m in Sources */,
+				BA1A1C247FFB952DAB406BA026715BE1 /* ElasticTransition.swift in Sources */,
+				DB5E506564C6DA91DED626021F074904 /* ElasticTransitionPresentationController.swift in Sources */,
+				077E944FB9D612B2B290A73846C17E84 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,42 +1229,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A9D2CFFCF4D05DEE60E97A392ECDB95 /* PBXTargetDependency */ = {
+		3F83E5507CD541F167470E9A2540D3EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			target = 9F2CA59D318CC50BC7AC13B792DE5AA2 /* XLPagerTabStrip-XLPagerTabStrip */;
+			targetProxy = 1D0BF076D200EF94CC0E438E3595C586 /* PBXContainerItemProxy */;
+		};
+		42FEFE73DFAFB7422CF9B82CE1DF54AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XLPagerTabStrip;
-			target = 5A077A2D3061FB2799C9936088CBBCB8 /* XLPagerTabStrip */;
-			targetProxy = E354CC9A2D8BEFB5F81AD047204CF985 /* PBXContainerItemProxy */;
+			target = 36DFC256CC8338F58D26335BBC651076 /* XLPagerTabStrip */;
+			targetProxy = EB0FFB4959AE5070560586DC547A0519 /* PBXContainerItemProxy */;
 		};
-		2836B95E94D57E7BAA4AF86485315EA1 /* PBXTargetDependency */ = {
+		688D507EC4C59EB18E08C48CD29F6A85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = BTNavigationDropdownMenu;
-			target = FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */;
-			targetProxy = 784655682A460C81BB8AA4385CA70B53 /* PBXContainerItemProxy */;
+			name = ElasticTransition;
+			target = 7031ED9D7E985343BFF4CFFEA25D2EB0 /* ElasticTransition */;
+			targetProxy = 2BD1F00D4C60EA2A9BF8408679B5047E /* PBXContainerItemProxy */;
 		};
-		67548FC1A9DBF2F8807A41C5EBCBC04E /* PBXTargetDependency */ = {
+		83C042A180AB17F76839E255C1E598C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MCSwipeTableViewCell;
 			target = 0003E8B0DE7EAF0A1E3C9404F7137022 /* MCSwipeTableViewCell */;
-			targetProxy = 14190C6AF2BAC397650D88AD47319C87 /* PBXContainerItemProxy */;
+			targetProxy = CA91BFC81AFF225D72DB34453D001519 /* PBXContainerItemProxy */;
 		};
-		831761F3886A6737D38DD5B3D33D5076 /* PBXTargetDependency */ = {
+		86E720CF363D6AE814BC30B92C09F9B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "XLPagerTabStrip-XLPagerTabStrip";
-			target = 19A80B4DFB910368BB6A2C68268E6F7F /* XLPagerTabStrip-XLPagerTabStrip */;
-			targetProxy = 0BEFFD766FCED85E68EC8B344AE96BF4 /* PBXContainerItemProxy */;
+			name = TextFieldEffects;
+			target = 7240B44ADA7C299C0DFFFAF35383DDFD /* TextFieldEffects */;
+			targetProxy = 21E6A3E40082A63C8EEC132CD62423EF /* PBXContainerItemProxy */;
 		};
-		B48184BBDA84DA8121CF8B31E41751B2 /* PBXTargetDependency */ = {
+		B2C965A61C5357A5F2B8C9AB0CA91A96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BTNavigationDropdownMenu;
+			target = FD23F1DA220A44C7E84F356B64871271 /* BTNavigationDropdownMenu */;
+			targetProxy = 38A908456B9471BAD3E3F16C181C1198 /* PBXContainerItemProxy */;
+		};
+		C6A6058024C6A7656F11044E8390568D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BubbleTransition;
 			target = 7372CA79CE92E7AC032175441663EBE4 /* BubbleTransition */;
-			targetProxy = D9A06591D58E2FD5B3EA45AF4CD92FDA /* PBXContainerItemProxy */;
+			targetProxy = 15BEE90792A8E7E1B156C457257D35A4 /* PBXContainerItemProxy */;
+		};
+		DA8BA731E280C3CE2E47D88B9E07044A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MotionAnimation;
+			target = 0D5264177E0F0611895CABBD7D119E00 /* MotionAnimation */;
+			targetProxy = 82CDDA1BF9F1E63A6427C6D89F16CC4D /* PBXContainerItemProxy */;
+		};
+		E4BB40503F2399BCCEB64BDA6653FD8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MotionAnimation;
+			target = 0D5264177E0F0611895CABBD7D119E00 /* MotionAnimation */;
+			targetProxy = 2CA273CCF1823AC6C1116103E8BE2880 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		02489410174AF4B5C95CB1CB42F6D1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0354521DEB918F9E11ECA15D996DCBC /* BubbleTransition.xcconfig */;
+			baseConfigurationReference = 1085E1862E26257CEED6872E71F4C42B /* BubbleTransition.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -924,9 +1317,71 @@
 			};
 			name = Debug;
 		};
-		12FEA9E7D90584086D41C39353384292 /* Release */ = {
+		0770797C168542C03BDB956E1E87F05F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FE2F6B6544FE21242A79F802A6375D6 /* XLPagerTabStrip.xcconfig */;
+			baseConfigurationReference = 08814D9309CF05BAFC10AA282CBC8A2A /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		08E998ED08899A865B0CB7C9EC10D2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C1774B37741948A56ECAEF91710AE3 /* ElasticTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ElasticTransition/ElasticTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ElasticTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ElasticTransition/ElasticTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ElasticTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		092C018ED46D03C2B38AF713779D7AAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08814D9309CF05BAFC10AA282CBC8A2A /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -941,9 +1396,9 @@
 			};
 			name = Release;
 		};
-		238AFFF9735FE909ED70312BABBD0473 /* Debug */ = {
+		157F9885101C5BF5D4E89983EC1C5769 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28C75DF05BE262F1311E6A90EE0D880 /* Pods-todoru2.debug.xcconfig */;
+			baseConfigurationReference = 80637F2C6FEE5707CFCA957F3414BB1C /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -954,18 +1409,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-todoru2/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-todoru2/Pods-todoru2.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_todoru2;
+				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -976,7 +1427,70 @@
 			};
 			name = Debug;
 		};
-		3702779FF98B49356CA3A48449646CAF /* Release */ = {
+		1878732F805895CA8BAFDC77F0B4620B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CC3A704F9B7EAD28DBBA604165EADA /* Pods-todoru2UITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-todoru2UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_todoru2UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		20318B13E81F6315969EAE7E72FE7963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FDB3EED90320F5B305C8826108C12B /* MotionAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MotionAnimation/MotionAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MotionAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MotionAnimation/MotionAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MotionAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		249FC6212F1212A48761D816ABF23E79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E403021BAD58C058E69B1C81B0F3AFC /* Pods-todoru2Tests.release.xcconfig */;
 			buildSettings = {
@@ -991,7 +1505,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-todoru2Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-todoru2Tests/Pods-todoru2Tests.modulemap";
@@ -1009,7 +1523,37 @@
 			};
 			name = Release;
 		};
-		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+		311AA682610F8C294B08FE1E99595F2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C1774B37741948A56ECAEF91710AE3 /* ElasticTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ElasticTransition/ElasticTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ElasticTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ElasticTransition/ElasticTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ElasticTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5184430A2EB74B2F1AD2C0FC42C7F5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1040,16 +1584,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4FEB4408F6C1222CF06CD7D1353CFDB7 /* Release */ = {
+		600FEC170F62243E6864C4BD9AD27F03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FE2F6B6544FE21242A79F802A6375D6 /* XLPagerTabStrip.xcconfig */;
+			baseConfigurationReference = 08814D9309CF05BAFC10AA282CBC8A2A /* XLPagerTabStrip.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1076,124 +1620,10 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		520E56ECFE811F38AB5A6ADCF71C63EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99CC3A704F9B7EAD28DBBA604165EADA /* Pods-todoru2UITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-todoru2UITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_todoru2UITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5BAB347CB5CB8574E0628663D0605604 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FE2F6B6544FE21242A79F802A6375D6 /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5FD42F32FC3136E919F2AB39A651C40E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FE2F6B6544FE21242A79F802A6375D6 /* XLPagerTabStrip.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = XLPagerTabStrip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		681689953FB89F91A688D1E81B9A054F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4DB292BB0D21B60A95C638D5F41B070 /* Pods-todoru2Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-todoru2Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-todoru2Tests/Pods-todoru2Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_todoru2Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		6E50E43B91B97DB0A051234DB86F8127 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 678A35FFECE8AEBE8E49AD31A7C88643 /* MCSwipeTableViewCell.xcconfig */;
+			baseConfigurationReference = 7BE3FE19A60724101C992B1F05A310F8 /* MCSwipeTableViewCell.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1220,160 +1650,7 @@
 			};
 			name = Release;
 		};
-		8119CFAB6C672CA9CE37B216D7B1DBF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B74A4EDD6EC134299BEF72CCAD0E04B /* Pods-todoru2UITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-todoru2UITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_todoru2UITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8420CDD626EF5E600E0B29AC7AB95746 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0354521DEB918F9E11ECA15D996DCBC /* BubbleTransition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BubbleTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		875C02D1AD6137E1127DDADF4851B9D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 678A35FFECE8AEBE8E49AD31A7C88643 /* MCSwipeTableViewCell.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MCSwipeTableViewCell/MCSwipeTableViewCell-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MCSwipeTableViewCell/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MCSwipeTableViewCell/MCSwipeTableViewCell.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MCSwipeTableViewCell;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8AA444D9B3DE9C29543A27CA8BEE10B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEFC317B5457D8B3269DD179CF5F2536 /* BTNavigationDropdownMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BTNavigationDropdownMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BTNavigationDropdownMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		989F7944327ADBDE4C39777729675AE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEFC317B5457D8B3269DD179CF5F2536 /* BTNavigationDropdownMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BTNavigationDropdownMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BTNavigationDropdownMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+		73D845169C007274504228832AD8E243 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1408,14 +1685,313 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D3605FA9D5AAFD0DA5F55D2930E28CB5 /* Release */ = {
+		821BEC71860096D0D33C7DCBF7786BA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FDB3EED90320F5B305C8826108C12B /* MotionAnimation.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MotionAnimation/MotionAnimation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MotionAnimation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MotionAnimation/MotionAnimation.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MotionAnimation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8420CDD626EF5E600E0B29AC7AB95746 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1085E1862E26257CEED6872E71F4C42B /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		875C02D1AD6137E1127DDADF4851B9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BE3FE19A60724101C992B1F05A310F8 /* MCSwipeTableViewCell.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MCSwipeTableViewCell/MCSwipeTableViewCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MCSwipeTableViewCell/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MCSwipeTableViewCell/MCSwipeTableViewCell.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MCSwipeTableViewCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AA444D9B3DE9C29543A27CA8BEE10B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2CA156E54ABDC5AB0B65CDCDEF17E5 /* BTNavigationDropdownMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BTNavigationDropdownMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BTNavigationDropdownMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		989F7944327ADBDE4C39777729675AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2CA156E54ABDC5AB0B65CDCDEF17E5 /* BTNavigationDropdownMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BTNavigationDropdownMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BTNavigationDropdownMenu/BTNavigationDropdownMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BTNavigationDropdownMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A27E234095779BA1E43023A2994343F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80637F2C6FEE5707CFCA957F3414BB1C /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A31AEF491D62275F7BEC8B55299997EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DB292BB0D21B60A95C638D5F41B070 /* Pods-todoru2Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-todoru2Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-todoru2Tests/Pods-todoru2Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_todoru2Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFE61599836FB5B8C66AD8871AA5FDE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08814D9309CF05BAFC10AA282CBC8A2A /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DF87633A99DA19A19D9E11C5B7A3C155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B74A4EDD6EC134299BEF72CCAD0E04B /* Pods-todoru2UITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-todoru2UITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_todoru2UITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6D29111AF699F631040DD5A07D5B1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28C75DF05BE262F1311E6A90EE0D880 /* Pods-todoru2.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-todoru2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-todoru2/Pods-todoru2.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_todoru2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4C7BB13959E01D3B964FD63C81509A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 814CD599E5FF8E85C084018B7253A666 /* Pods-todoru2.release.xcconfig */;
 			buildSettings = {
@@ -1430,7 +2006,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-todoru2/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-todoru2/Pods-todoru2.modulemap";
@@ -1452,11 +2028,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		197BCF390B95421CF2F7B3A612065C84 /* Build configuration list for PBXNativeTarget "Pods-todoru2" */ = {
+		08FA97292C8522C3EE2C8019BBF432CF /* Build configuration list for PBXNativeTarget "ElasticTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				238AFFF9735FE909ED70312BABBD0473 /* Debug */,
-				D3605FA9D5AAFD0DA5F55D2930E28CB5 /* Release */,
+				08E998ED08899A865B0CB7C9EC10D2D6 /* Debug */,
+				311AA682610F8C294B08FE1E99595F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1464,17 +2040,8 @@
 		1BD46A8370B4A1751E252ABFD33E9487 /* Build configuration list for PBXNativeTarget "Pods-todoru2UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				520E56ECFE811F38AB5A6ADCF71C63EF /* Debug */,
-				8119CFAB6C672CA9CE37B216D7B1DBF6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B54672B9133C1921660C3D9B849FF2F /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BAB347CB5CB8574E0628663D0605604 /* Debug */,
-				4FEB4408F6C1222CF06CD7D1353CFDB7 /* Release */,
+				1878732F805895CA8BAFDC77F0B4620B /* Debug */,
+				DF87633A99DA19A19D9E11C5B7A3C155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1482,8 +2049,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE9439C22469D35336242DD983DB5C5F /* Debug */,
-				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+				73D845169C007274504228832AD8E243 /* Debug */,
+				5184430A2EB74B2F1AD2C0FC42C7F5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BA88982265D1A014E331BC1CE2DFF25 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE61599836FB5B8C66AD8871AA5FDE6 /* Debug */,
+				092C018ED46D03C2B38AF713779D7AAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A62B9FF951408248CF8D143F5F291A0 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157F9885101C5BF5D4E89983EC1C5769 /* Debug */,
+				9A27E234095779BA1E43023A2994343F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1497,11 +2082,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B09A2D86A11849CA03C5735E01BE0A34 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+		AB59E3B7E5AF0A73F7FFD756847F33D7 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FD42F32FC3136E919F2AB39A651C40E /* Debug */,
-				12FEA9E7D90584086D41C39353384292 /* Release */,
+				0770797C168542C03BDB956E1E87F05F /* Debug */,
+				600FEC170F62243E6864C4BD9AD27F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83873BA94FE388589471F5BA2D5053C /* Build configuration list for PBXNativeTarget "Pods-todoru2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6D29111AF699F631040DD5A07D5B1A5 /* Debug */,
+				F4C7BB13959E01D3B964FD63C81509A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1509,8 +2103,8 @@
 		DEB6FD50C703F36E87B3113B31EB12C1 /* Build configuration list for PBXNativeTarget "Pods-todoru2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				681689953FB89F91A688D1E81B9A054F /* Debug */,
-				3702779FF98B49356CA3A48449646CAF /* Release */,
+				A31AEF491D62275F7BEC8B55299997EE /* Debug */,
+				249FC6212F1212A48761D816ABF23E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1529,6 +2123,15 @@
 			buildConfigurations = (
 				989F7944327ADBDE4C39777729675AE2 /* Debug */,
 				8AA444D9B3DE9C29543A27CA8BEE10B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D52F8639EF2ABC6503E79517391AA4 /* Build configuration list for PBXNativeTarget "MotionAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				821BEC71860096D0D33C7DCBF7786BA8 /* Debug */,
+				20318B13E81F6315969EAE7E72FE7963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

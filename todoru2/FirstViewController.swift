@@ -11,116 +11,111 @@ import BubbleTransition
 import MCSwipeTableViewCell
 import XLPagerTabStrip
 import BTNavigationDropdownMenu
+import ElasticTransition
 
 
-class FirstViewController:  UIViewController, UIViewControllerTransitioningDelegate, UITableViewDataSource{
+ class FirstViewController: ElasticModalViewController, UIViewControllerTransitioningDelegate, UITableViewDataSource{
+    
+    var customColor : UIColor!
+    
+    func getRandomColor(){
+        let randomRed:CGFloat = CGFloat(drand48())
+        let randomGreen:CGFloat = CGFloat(drand48())
+        let randomBlue:CGFloat = CGFloat(drand48())
+        customColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+    }
     
     @IBOutlet var tableView : UITableView!
     @IBOutlet var toadd : UIButton!
     
+    var contentLength:CGFloat = 0
     
     var todoArray:[Dictionary<String,Any>] = []
     var contentArray:[String] = []
     let saveData = UserDefaults.standard
     var itemsCount: Int = 0
-    var keiken: Int = 0
+    var exp = Int()
     var selectedcontent = String()
-    
+  
+//    var dismissByBackgroundDrag = true
+ 
     var menuView: BTNavigationDropdownMenu!
 
     var selectedtodoArray : [Dictionary<String,Any>] = []
     var timelytext = String()
     var timelynumber = Int()
-    
-    //BubbleTransitionの設定
-    
     let transition = BubbleTransition()
+    let transition2 = ElasticTransition()
     var startingPoint = CGPoint.zero
-    var duration = 10.0
+    var duration = 0.5
     var transitionMode: BubbleTransitionMode = .present
     var bubbleColor: UIColor = .yellow
+    var start = CGPoint()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //BubbleTransition用
         let controller = segue.destination
         controller.transitioningDelegate = self
         controller.modalPresentationStyle = .custom
+        
     }
-    
+
     // MARK: UIViewControllerTransitioningDelegate
-    
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
         transition.transitionMode = .present
-        transition.startingPoint = toadd.center
-        transition.bubbleColor = UIColor.rgb(r: 25, g: 148, b: 252, alpha: 1.0)
+        transition.startingPoint = start
+        transition.bubbleColor = customColor
         return transition
     }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transition.transitionMode = .dismiss
-        transition.startingPoint = toadd.center
-        transition.bubbleColor = toadd.backgroundColor!
-        return transition
-    }
-    
     
     
     //TableViewの設定
-    
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        
-        
         return selectedtodoArray.count
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         // create
         let cell = tableView.dequeueReusableCell(withIdentifier: "customTableViewCell", for: indexPath) as! customTableViewCell
-    
         let nowIndexPathDictionary: (AnyObject) = selectedtodoArray[indexPath.row] as (AnyObject)
-//        let exp : AnyObject = saveData.integer(forKey: "keikenchi") as AnyObject
-        
+
 
         cell.name.text = nowIndexPathDictionary["task"] as? String
         cell.importance.text = nowIndexPathDictionary["importance"] as? String
-        
         
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
         cell.selectionStyle = .none
         
         cell.defaultColor = .lightGray
-        
         if cell.importance.text == String(1){
-            
             cell.backgroundColor = UIColor.red
         }
         
         cell.secondTrigger = 0.5
         
-        cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "check")!), color: .green, mode: .exit, state: .state1, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
-            
+        cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "check")), color: .green, mode: .exit, state: .state1, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
             
             if let cell = cell, let indexPath = tableView.indexPath(for: cell) {
-                
-          
                 
                 // 該当のセルを削除
                 self.selectedtodoArray.remove(at: indexPath.row)
                 self.tableView.deleteRows(at: [indexPath], with: .fade)
+                self.exp = self.exp + 50
                 
                 self.todoArray = self.selectedtodoArray
                 self.saveData.set(self.todoArray, forKey:"todo")
+                self.saveData.set(self.exp, forKey:"exp")
+                print(self.exp)
             }
             })
         cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "cross")), color: .blue, mode: .exit, state: .state2, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
-            
             
             if let cell = cell, let indexPath = tableView.indexPath(for: cell) {
                 
@@ -137,7 +132,6 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
                 let storyboard: UIStoryboard = self.storyboard!
                 let nextView = storyboard.instantiateViewController(withIdentifier: "next") as! EditViewController
                 self.present(nextView, animated: true, completion: nil)
-                
                             }
         })
         
@@ -156,26 +150,20 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        getRandomColor()
         
         if saveData.array(forKey: "todo") != nil{
             todoArray = saveData.array(forKey: "todo") as! [Dictionary<String, Any>]
-            
         }
-        
-        
-        
         if saveData.array(forKey: "content") != nil{
-            
             contentArray = saveData.array(forKey: "content") as! [String]
-            
         }
+        exp = saveData.integer(forKey: "exp")
         
         contentArray.insert("All",at: 0)
-        
         selectedtodoArray = todoArray
-
+        
         //Dropdownmenuの設定
-    
         let items = contentArray
        
         self.navigationController?.navigationBar.isTranslucent = false
@@ -201,46 +189,24 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
             print(self.selectedcontent)
             
             if self.selectedcontent == "All" {
-                
                 self.selectedtodoArray = self.todoArray
-                
                 self.tableView.reloadData()
-                
             }else{
-                
                 //contents毎に表示するためにデータにfilterをかける
                 self.selectedtodoArray =  self.todoArray.filter{ $0["content"] as! String == self.selectedcontent}
-                
                 self.tableView.reloadData()
-                
             }
             print(self.selectedtodoArray)
         }
-        
         self.navigationItem.titleView = menuView
-
-        
         print(todoArray)
-        tableView.reloadData()
-        
+        self.tableView.reloadData()
     }
     
-//    func prepareforSegue(segue: UIStoryboardSegue, sender: Any){
-//
-//        let EditViewController = segue.destination as! EditViewController
-//        
-//        EditViewController.task = timelytext
-//        
-//        print(timelytext)
-//    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        if saveData.array(forKey: "todo") != nil{
-//            todoArray = saveData.array(forKey: "todo")! as [AnyObject]
-//
-//        }
+    override func viewDidAppear(_ animated: Bool) {
         
         tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -249,8 +215,16 @@ class FirstViewController:  UIViewController, UIViewControllerTransitioningDeleg
     }
 
     @IBAction func toadd(_ sender : UIButton){
+        start = CGPoint(x: 339.0, y: 22.0)
         performSegue(withIdentifier: "toadd", sender: nil)
+        
     }
     
+    @IBAction func tosetting(_ sender : UIButton){
+        start = CGPoint(x: 16, y: 7.0)
+        performSegue(withIdentifier: "tosetting", sender: nil)
+        
+    }
+
 }
 

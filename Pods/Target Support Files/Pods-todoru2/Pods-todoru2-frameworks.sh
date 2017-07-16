@@ -86,12 +86,18 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BubbleTransition/BubbleTransition.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ElasticTransition/ElasticTransition.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MCSwipeTableViewCell/MCSwipeTableViewCell.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MotionAnimation/MotionAnimation.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XLPagerTabStrip/XLPagerTabStrip.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BubbleTransition/BubbleTransition.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ElasticTransition/ElasticTransition.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MCSwipeTableViewCell/MCSwipeTableViewCell.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MotionAnimation/MotionAnimation.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XLPagerTabStrip/XLPagerTabStrip.framework"
 fi

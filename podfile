@@ -10,6 +10,8 @@ pod 'BubbleTransition', '~> 2.0.0'
 pod 'MCSwipeTableViewCell', '~> 2.1.4'
 pod 'XLPagerTabStrip', '~> 7.0'
 pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigationDropdownMenu.git', :branch => 'swift-3.0'
+pod 'TextFieldEffects'
+pod 'ElasticTransition'
   target 'todoru2Tests' do
     inherit! :search_paths
     # Pods for testing

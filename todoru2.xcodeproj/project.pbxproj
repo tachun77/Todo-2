@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2703C7411F17C9F60034BFFE /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703C7401F17C9F60034BFFE /* settingViewController.swift */; };
 		270CD19D1ED817C100790669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD19C1ED817C100790669 /* AppDelegate.swift */; };
 		270CD19F1ED817C100790669 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD19E1ED817C100790669 /* FirstViewController.swift */; };
 		270CD1A41ED817C100790669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270CD1A21ED817C100790669 /* Main.storyboard */; };
@@ -17,9 +18,11 @@
 		270CD1CD1ED820F400790669 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD1CC1ED820F400790669 /* AddTodoViewController.swift */; };
 		270CD1D11ED8882E00790669 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD1D01ED8882E00790669 /* customTableViewCell.swift */; };
 		2715681B1F05578800B208B3 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2715681A1F05578800B208B3 /* EditViewController.swift */; };
+		271568611F0BF60B00B208B3 /* editCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271568601F0BF60B00B208B3 /* editCollectionViewCell.swift */; };
 		2720A8871EDAEF7D0095638F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2720A8861EDAEF7D0095638F /* UIColorExtension.swift */; };
 		2720A88B1EDB31CB0095638F /* contentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2720A88A1EDB31CB0095638F /* contentsViewController.swift */; };
 		2720A8951EDBEC6B0095638F /* contentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */; };
+		2733E0591F177EBE00E554FE /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2733E0581F177EBE00E554FE /* Icon-App-40x40@3x.png */; };
 		A5675AD24072159D6ADBA3A9 /* Pods_todoru2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7000653B661214F0D6113E /* Pods_todoru2.framework */; };
 		B454AF5FD1B535AAE22C7F12 /* Pods_todoru2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C8AD20F71F747B2257CB0C /* Pods_todoru2Tests.framework */; };
 		F83D52C2C317EA71AF60EE33 /* Pods_todoru2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDD9A9D4DB315EB16D6EDA4 /* Pods_todoru2UITests.framework */; };
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2703C7401F17C9F60034BFFE /* settingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		270CD1991ED817C100790669 /* todoru2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoru2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270CD19C1ED817C100790669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		270CD19E1ED817C100790669 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -59,9 +63,11 @@
 		270CD1CC1ED820F400790669 /* AddTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		270CD1D01ED8882E00790669 /* customTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 		2715681A1F05578800B208B3 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		271568601F0BF60B00B208B3 /* editCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editCollectionViewCell.swift; sourceTree = "<group>"; };
 		2720A8861EDAEF7D0095638F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2720A88A1EDB31CB0095638F /* contentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contentsViewController.swift; sourceTree = "<group>"; };
 		2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		2733E0581F177EBE00E554FE /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
 		5DDD9A9D4DB315EB16D6EDA4 /* Pods_todoru2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FECF26C8C0D332E2DD7F4F /* Pods-todoru2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoru2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D7000653B661214F0D6113E /* Pods_todoru2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,10 +139,13 @@
 				2715681A1F05578800B208B3 /* EditViewController.swift */,
 				270CD1CC1ED820F400790669 /* AddTodoViewController.swift */,
 				2720A88A1EDB31CB0095638F /* contentsViewController.swift */,
+				271568601F0BF60B00B208B3 /* editCollectionViewCell.swift */,
 				270CD1A21ED817C100790669 /* Main.storyboard */,
+				2703C7401F17C9F60034BFFE /* settingViewController.swift */,
 				2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */,
 				270CD1A51ED817C100790669 /* Assets.xcassets */,
 				270CD1A71ED817C100790669 /* LaunchScreen.storyboard */,
+				2733E0581F177EBE00E554FE /* Icon-App-40x40@3x.png */,
 				270CD1AA1ED817C100790669 /* Info.plist */,
 			);
 			path = todoru2;
@@ -307,6 +316,7 @@
 				270CD1A91ED817C100790669 /* LaunchScreen.storyboard in Resources */,
 				270CD1A61ED817C100790669 /* Assets.xcassets in Resources */,
 				270CD1A41ED817C100790669 /* Main.storyboard in Resources */,
+				2733E0591F177EBE00E554FE /* Icon-App-40x40@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,9 +467,11 @@
 				2715681B1F05578800B208B3 /* EditViewController.swift in Sources */,
 				2720A88B1EDB31CB0095638F /* contentsViewController.swift in Sources */,
 				270CD1CD1ED820F400790669 /* AddTodoViewController.swift in Sources */,
+				271568611F0BF60B00B208B3 /* editCollectionViewCell.swift in Sources */,
 				270CD1D11ED8882E00790669 /* customTableViewCell.swift in Sources */,
 				2720A8951EDBEC6B0095638F /* contentsCollectionViewCell.swift in Sources */,
 				270CD19D1ED817C100790669 /* AppDelegate.swift in Sources */,
+				2703C7411F17C9F60034BFFE /* settingViewController.swift in Sources */,
 				270CD19F1ED817C100790669 /* FirstViewController.swift in Sources */,
 				2720A8871EDAEF7D0095638F /* UIColorExtension.swift in Sources */,
 			);
@@ -617,6 +629,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4ZLV67V2DX;
 				INFOPLIST_FILE = todoru2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tatsuya-Fukushima.todoru2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -632,6 +645,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4ZLV67V2DX;
 				INFOPLIST_FILE = todoru2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Tatsuya-Fukushima.todoru2";
 				PRODUCT_NAME = "$(TARGET_NAME)";

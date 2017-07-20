@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAS-6w-bhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5999999999999" y="-1117.6911544227887"/>
+            <point key="canvasLocation" x="2476" y="-243"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="G86-kn-byB">
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDc-RY-l48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480.8000000000002" y="-1118.5907046476761"/>
+            <point key="canvasLocation" x="673" y="-1075"/>
         </scene>
         <!--Settings-->
         <scene sceneID="hNz-n2-bh7">
@@ -217,9 +217,6 @@
                                 <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="toadd:" destination="9pv-A4-QxB" eventType="touchUpInside" id="o7u-2m-XsQ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -260,27 +257,26 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="toadd:" destination="9pv-A4-QxB" eventType="touchUpInside" id="QNJ-rN-cS3"/>
+                                    <action selector="toadd:" destination="9pv-A4-QxB" eventType="touchUpInside" id="79c-Y1-K1Y"/>
                                 </connections>
                             </button>
                             <connections>
-                                <segue destination="SOk-yu-zIq" kind="modal" identifier="toadd" id="7sg-FE-xEh"/>
+                                <segue destination="SOk-yu-zIq" kind="modal" identifier="add" id="1cx-Cr-W3p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Wnf-fa-db3" id="TAB-Ws-6HI"/>
-                        <outlet property="toadd" destination="bzK-xW-7Rv" id="MqS-GE-zzE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2496.8000000000002" y="-321.58920539730138"/>
+            <point key="canvasLocation" x="1510" y="-243"/>
         </scene>
-        <!--Add Task-->
+        <!--add-->
         <scene sceneID="oE9-2W-5OC">
             <objects>
-                <viewController id="SOk-yu-zIq" customClass="AddTodoViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="add" title="add" id="SOk-yu-zIq" customClass="AddTodoViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJk-wg-yoQ"/>
                         <viewControllerLayoutGuide type="bottom" id="3N6-CB-QRM"/>
@@ -464,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pdg-5L-Ib6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3376.8000000000002" y="-321.58920539730138"/>
+            <point key="canvasLocation" x="1510" y="-1075"/>
         </scene>
         <!--Contents View Controller-->
         <scene sceneID="NmI-qv-i3J">
@@ -527,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmY-zq-kiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4237.6000000000004" y="-322.48875562218893"/>
+            <point key="canvasLocation" x="2476" y="-1075"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m1y-EF-QiW">
@@ -546,10 +542,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nG-gA-ye6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1557.5999999999999" y="-321.58920539730138"/>
+            <point key="canvasLocation" x="673" y="-243"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zAp-xn-6gL"/>
+        <segue reference="xu4-rW-Gbg"/>
     </inferredMetricsTieBreakers>
 </document>

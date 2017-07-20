@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import BubbleTransition
 import MCSwipeTableViewCell
 import XLPagerTabStrip
 import BTNavigationDropdownMenu
 import ElasticTransition
 
 
- class FirstViewController: ElasticModalViewController, UIViewControllerTransitioningDelegate, UITableViewDataSource{
+ class FirstViewController: UIViewController, ElasticMenuTransitionDelegate, UIViewControllerTransitioningDelegate, UITableViewDataSource{
     
     var customColor : UIColor!
     
@@ -44,32 +43,19 @@ import ElasticTransition
     var selectedtodoArray : [Dictionary<String,Any>] = []
     var timelytext = String()
     var timelynumber = Int()
-    let transition = BubbleTransition()
-    let transition2 = ElasticTransition()
+    let transition = ElasticTransition()
     var startingPoint = CGPoint.zero
-    var duration = 0.5
-    var transitionMode: BubbleTransitionMode = .present
-    var bubbleColor: UIColor = .yellow
-    var start = CGPoint()
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //BubbleTransition用
-        let controller = segue.destination
-        controller.transitioningDelegate = self
-        controller.modalPresentationStyle = .custom
-        
-    }
+    var dismissByBackgroundTouch = true
+    var dismissByBackgroundDrag = true
+    var dismissByForegroundDrag = true
 
-    // MARK: UIViewControllerTransitioningDelegate
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        transition.transitionMode = .present
-        transition.startingPoint = start
-        transition.bubbleColor = customColor
-        return transition
-    }
     
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destination
+        vc.transitioningDelegate = self as? UIViewControllerTransitioningDelegate
+        vc.modalPresentationStyle = .custom
+    }
     
     //TableViewの設定
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -128,6 +114,7 @@ import ElasticTransition
                 let timely = [self.timelytext,self.timelynumber] as [Any]
                 self.saveData.set(timely, forKey:"timely")
                 
+            
                 //segueをstroyboard上で引かないでsegueを発動させるコード
                 let storyboard: UIStoryboard = self.storyboard!
                 let nextView = storyboard.instantiateViewController(withIdentifier: "next") as! EditViewController
@@ -151,6 +138,10 @@ import ElasticTransition
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         getRandomColor()
+        transition.sticky = true
+        transition.showShadow = true
+        transition.panThreshold = 0.3
+        transition.transformType = .translateMid
         
         if saveData.array(forKey: "todo") != nil{
             todoArray = saveData.array(forKey: "todo") as! [Dictionary<String, Any>]
@@ -215,13 +206,16 @@ import ElasticTransition
     }
 
     @IBAction func toadd(_ sender : UIButton){
-        start = CGPoint(x: 339.0, y: 22.0)
-        performSegue(withIdentifier: "toadd", sender: nil)
-        
+        //segueをstroyboard上で引かないでsegueを発動させるコード
+//        let storyboard: UIStoryboard = self.storyboard!
+//        let nextView = storyboard.instantiateViewController(withIdentifier: "add") as! AddTodoViewController
+//        self.present(nextView, animated: true, completion: nil)¥
+        performSegue(withIdentifier: "add", sender: nil)
     }
     
     @IBAction func tosetting(_ sender : UIButton){
-        start = CGPoint(x: 16, y: 7.0)
+        transition.edge = .left
+        transition.startingPoint = sender.center
         performSegue(withIdentifier: "tosetting", sender: nil)
         
     }

@@ -11,7 +11,7 @@ import ElasticTransition
 import BubbleTransition
 import TextFieldEffects
 
-class AddTodoViewController: UIViewController, ElasticMenuTransitionDelegate,UIViewControllerTransitioningDelegate,UICollectionViewDataSource, UICollectionViewDelegate {
+class AddTodoViewController: ElasticModalViewController,UIViewControllerTransitioningDelegate,UICollectionViewDataSource, UICollectionViewDelegate {
     
     var customColor : UIColor!
     
@@ -45,10 +45,10 @@ class AddTodoViewController: UIViewController, ElasticMenuTransitionDelegate,UIV
     let rgr = UIScreenEdgePanGestureRecognizer()
     
    
-    var contentLength:CGFloat = 0
-    var dismissByBackgroundTouch = true
-    var dismissByBackgroundDrag = true
-    var dismissByForegroundDrag = true
+//    var contentLength:CGFloat = 0
+//    var dismissByBackgroundTouch = true
+//    var dismissByBackgroundDrag = true
+//    var dismissByForegroundDrag = true
     
     public var sticky:Bool = true
     public var startingPoint:CGPoint?

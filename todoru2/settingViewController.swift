@@ -14,6 +14,9 @@ class settingViewController:  ElasticModalViewController {
     var exp = Int()
     let saveData = UserDefaults.standard
     var transition = ElasticTransition()
+    var contentLength:CGFloat = 400
+    var dismissByBackgroundTouch = true
+    var dismissByBackgroundDrag = true
     
     @IBOutlet var explabel : UILabel!
 
@@ -24,15 +27,6 @@ class settingViewController:  ElasticModalViewController {
         
         exp = saveData.integer(forKey: "exp")
         explabel.text = String(exp)
-        
-        transition.sticky = true
-        transition.showShadow = true
-        transition.panThreshold = 0.6
-        transition.transformType = .subtle
-        transition.edge = .bottom
-        
-        transition.overlayColor = UIColor(white: 0, alpha: 0.5)
-        transition.shadowColor = UIColor(white: 0, alpha: 0.5)
     }
     
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

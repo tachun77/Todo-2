@@ -43,19 +43,70 @@ import ElasticTransition
     var selectedtodoArray : [Dictionary<String,Any>] = []
     var timelytext = String()
     var timelynumber = Int()
-    let transition = ElasticTransition()
-    var startingPoint = CGPoint.zero
+    var transition = ElasticTransition()
+ 
     
-    var dismissByBackgroundTouch = true
-    var dismissByBackgroundDrag = true
-    var dismissByForegroundDrag = true
-
-    
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let vc = segue.destination
-        vc.transitioningDelegate = self as? UIViewControllerTransitioningDelegate
-        vc.modalPresentationStyle = .custom
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        getRandomColor()
+        transition.sticky = true
+        transition.showShadow = true
+        transition.panThreshold = 0.3
+        transition.transformType = .translateMid
+        
+        
+        if saveData.array(forKey: "todo") != nil{
+            todoArray = saveData.array(forKey: "todo") as! [Dictionary<String, Any>]
+        }
+        if saveData.array(forKey: "content") != nil{
+            contentArray = saveData.array(forKey: "content") as! [String]
+        }
+        exp = saveData.integer(forKey: "exp")
+        
+        contentArray.insert("All",at: 0)
+        selectedtodoArray = todoArray
+        
+        //Dropdownmenuの設定
+        let items = contentArray
+        
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: "Todo List", items: items as [AnyObject])
+        menuView.cellHeight = 50
+        menuView.cellBackgroundColor = self.navigationController?.navigationBar.barTintColor
+        menuView.cellSelectionColor = UIColor(red: 0.0/255.0, green:160.0/255.0, blue:195.0/255.0, alpha: 1.0)
+        menuView.shouldKeepSelectedCellColor = true
+        menuView.cellTextLabelColor = UIColor.white
+        menuView.cellTextLabelFont = UIFont(name: "Avenir-Heavy", size: 17)
+        menuView.cellTextLabelAlignment = .left // .Center // .Right // .Left
+        menuView.arrowPadding = 15
+        menuView.animationDuration = 0.5
+        menuView.maskBackgroundColor = UIColor.black
+        menuView.maskBackgroundOpacity = 0.3
+        menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+            
+            self.selectedcontent = self.contentArray[indexPath]
+            print("Did select item at index: \(indexPath)")
+            print(self.selectedcontent)
+            
+            if self.selectedcontent == "All" {
+                self.selectedtodoArray = self.todoArray
+                self.tableView.reloadData()
+            }else{
+                //contents毎に表示するためにデータにfilterをかける
+                self.selectedtodoArray =  self.todoArray.filter{ $0["content"] as! String == self.selectedcontent}
+                self.tableView.reloadData()
+            }
+            print(self.selectedtodoArray)
+        }
+        self.navigationItem.titleView = menuView
+        print(todoArray)
+        self.tableView.reloadData()
     }
+
     
     //TableViewの設定
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -133,66 +184,8 @@ import ElasticTransition
         tableView.deleteRows(at: [self.tableView.indexPath(for: cell)!], with: .fade)
         tableView.endUpdates()
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        getRandomColor()
-        transition.sticky = true
-        transition.showShadow = true
-        transition.panThreshold = 0.3
-        transition.transformType = .translateMid
-        
-        if saveData.array(forKey: "todo") != nil{
-            todoArray = saveData.array(forKey: "todo") as! [Dictionary<String, Any>]
-        }
-        if saveData.array(forKey: "content") != nil{
-            contentArray = saveData.array(forKey: "content") as! [String]
-        }
-        exp = saveData.integer(forKey: "exp")
-        
-        contentArray.insert("All",at: 0)
-        selectedtodoArray = todoArray
-        
-        //Dropdownmenuの設定
-        let items = contentArray
-       
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        
-        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: "Todo List", items: items as [AnyObject])
-        menuView.cellHeight = 50
-        menuView.cellBackgroundColor = self.navigationController?.navigationBar.barTintColor
-        menuView.cellSelectionColor = UIColor(red: 0.0/255.0, green:160.0/255.0, blue:195.0/255.0, alpha: 1.0)
-        menuView.shouldKeepSelectedCellColor = true
-        menuView.cellTextLabelColor = UIColor.white
-        menuView.cellTextLabelFont = UIFont(name: "Avenir-Heavy", size: 17)
-        menuView.cellTextLabelAlignment = .left // .Center // .Right // .Left
-        menuView.arrowPadding = 15
-        menuView.animationDuration = 0.5
-        menuView.maskBackgroundColor = UIColor.black
-        menuView.maskBackgroundOpacity = 0.3
-        menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
-            
-            self.selectedcontent = self.contentArray[indexPath]
-            print("Did select item at index: \(indexPath)")
-            print(self.selectedcontent)
-            
-            if self.selectedcontent == "All" {
-                self.selectedtodoArray = self.todoArray
-                self.tableView.reloadData()
-            }else{
-                //contents毎に表示するためにデータにfilterをかける
-                self.selectedtodoArray =  self.todoArray.filter{ $0["content"] as! String == self.selectedcontent}
-                self.tableView.reloadData()
-            }
-            print(self.selectedtodoArray)
-        }
-        self.navigationItem.titleView = menuView
-        print(todoArray)
-        self.tableView.reloadData()
-    }
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -210,15 +203,30 @@ import ElasticTransition
 //        let storyboard: UIStoryboard = self.storyboard!
 //        let nextView = storyboard.instantiateViewController(withIdentifier: "add") as! AddTodoViewController
 //        self.present(nextView, animated: true, completion: nil)¥
-        performSegue(withIdentifier: "add", sender: nil)
+        performSegue(withIdentifier: "add", sender: self)
     }
     
     @IBAction func tosetting(_ sender : UIButton){
-        transition.edge = .left
+       transition.edge = .left
         transition.startingPoint = sender.center
-        performSegue(withIdentifier: "tosetting", sender: nil)
+        performSegue(withIdentifier: "tosetting", sender: self)
         
     }
 
+    func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "tosetting"{
+            transition.edge = .left
+        let vc = segue.destination
+        vc.transitioningDelegate = self as UIViewControllerTransitioningDelegate
+        vc.modalPresentationStyle = .custom
+        }else{
+            
+            let vc = segue.destination
+            vc.transitioningDelegate = self as UIViewControllerTransitioningDelegate
+            vc.modalPresentationStyle = .custom
+        }
+
+    }
 }
 

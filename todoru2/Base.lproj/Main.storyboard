@@ -275,10 +275,60 @@
             </objects>
             <point key="canvasLocation" x="1510" y="-243"/>
         </scene>
+        <!--Add Content View Controller-->
+        <scene sceneID="huG-mM-vaq">
+            <objects>
+                <viewController id="0eb-cd-zRB" customClass="AddContentViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ndb-kI-ykc"/>
+                        <viewControllerLayoutGuide type="bottom" id="1y1-QN-GxS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Fq-wF-fuS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-36-awx">
+                                <rect key="frame" x="164" y="542" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="save" destination="0eb-cd-zRB" eventType="touchUpInside" id="j6x-qB-EVH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Write new content here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-yn-9BT" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="136" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.41926824201736779" blue="0.40116280528248538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="newcontentTextField" destination="Akc-yn-9BT" id="knG-Ua-uFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm9-Qd-WYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4000000000001" y="-1819.3403298350827"/>
+        </scene>
         <!--add-->
         <scene sceneID="oE9-2W-5OC">
             <objects>
-                <viewController storyboardIdentifier="add" title="add" id="SOk-yu-zIq" customClass="AddTodoViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddTodo" title="add" id="SOk-yu-zIq" customClass="AddTodoViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VJk-wg-yoQ"/>
                         <viewControllerLayoutGuide type="bottom" id="3N6-CB-QRM"/>
@@ -340,42 +390,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="toaddcontent" destination="SOk-yu-zIq" eventType="touchUpInside" id="3na-Y2-Xci"/>
+                                    <action selector="toaddcontent" destination="SOk-yu-zIq" eventType="touchUpInside" id="db3-L8-r6Y"/>
+                                    <segue destination="0eb-cd-zRB" kind="modal" identifier="toaddcontent" id="ero-K3-1Mb"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d32-Dd-1vh">
-                                <rect key="frame" x="16" y="66" width="343" height="570"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yy-g4-7Sv">
-                                        <rect key="frame" x="149" y="463" width="45" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="cancel"/>
-                                        <connections>
-                                            <action selector="canceladdcontent:" destination="SOk-yu-zIq" eventType="touchUpInside" id="lT2-oV-1EP"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWi-gf-pwC">
-                                        <rect key="frame" x="123" y="315" width="97" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="endeditingWithSender:" destination="SOk-yu-zIq" eventType="editingDidEndOnExit" id="p4o-oF-adP"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13N-Zw-XrL">
-                                        <rect key="frame" x="156" y="409" width="31" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="追加"/>
-                                        <connections>
-                                            <action selector="addcontent:" destination="SOk-yu-zIq" eventType="touchUpInside" id="a3a-Pn-UTX"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Write your Task here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-ia-scq" customClass="AkiraTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="16" y="91" width="343" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -451,8 +469,6 @@
                     <connections>
                         <outlet property="cancel" destination="jwa-8L-DWF" id="kXH-tf-uGU"/>
                         <outlet property="collectionView" destination="10E-p5-kU6" id="qpJ-bh-8im"/>
-                        <outlet property="newView" destination="d32-Dd-1vh" id="zTh-kA-KxB"/>
-                        <outlet property="newcontentTextField" destination="jWi-gf-pwC" id="A7U-yJ-wBc"/>
                         <outlet property="taskTextField" destination="7HY-ia-scq" id="CDX-ps-5T8"/>
                     </connections>
                 </viewController>

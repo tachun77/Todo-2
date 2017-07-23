@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2703C7411F17C9F60034BFFE /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703C7401F17C9F60034BFFE /* settingViewController.swift */; };
+		2703C7431F2501690034BFFE /* AddContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703C7421F2501690034BFFE /* AddContentViewController.swift */; };
 		270CD19D1ED817C100790669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD19C1ED817C100790669 /* AppDelegate.swift */; };
 		270CD19F1ED817C100790669 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270CD19E1ED817C100790669 /* FirstViewController.swift */; };
 		270CD1A41ED817C100790669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270CD1A21ED817C100790669 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		2703C7401F17C9F60034BFFE /* settingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		2703C7421F2501690034BFFE /* AddContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContentViewController.swift; sourceTree = "<group>"; };
 		270CD1991ED817C100790669 /* todoru2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoru2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270CD19C1ED817C100790669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		270CD19E1ED817C100790669 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				2720A88A1EDB31CB0095638F /* contentsViewController.swift */,
 				271568601F0BF60B00B208B3 /* editCollectionViewCell.swift */,
 				270CD1A21ED817C100790669 /* Main.storyboard */,
+				2703C7421F2501690034BFFE /* AddContentViewController.swift */,
 				2703C7401F17C9F60034BFFE /* settingViewController.swift */,
 				2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */,
 				270CD1A51ED817C100790669 /* Assets.xcassets */,
@@ -467,6 +470,7 @@
 				2715681B1F05578800B208B3 /* EditViewController.swift in Sources */,
 				2720A88B1EDB31CB0095638F /* contentsViewController.swift in Sources */,
 				270CD1CD1ED820F400790669 /* AddTodoViewController.swift in Sources */,
+				2703C7431F2501690034BFFE /* AddContentViewController.swift in Sources */,
 				271568611F0BF60B00B208B3 /* editCollectionViewCell.swift in Sources */,
 				270CD1D11ED8882E00790669 /* customTableViewCell.swift in Sources */,
 				2720A8951EDBEC6B0095638F /* contentsCollectionViewCell.swift in Sources */,

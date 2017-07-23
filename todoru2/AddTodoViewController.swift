@@ -37,8 +37,6 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
     
     @IBOutlet var cancel : UIButton!
     @IBOutlet var collectionView : UICollectionView!
-    @IBOutlet var newView : UIView!
-    
     
     var transition = ElasticTransition()
     let lgr = UIScreenEdgePanGestureRecognizer()
@@ -133,13 +131,18 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         if saveData.array(forKey: "todo") != nil{
             todoArray = saveData.array(forKey: "todo")! as [AnyObject]
         }
+        
+        if saveData.array(forKey: "content") != nil{
+            contentArray = saveData.array(forKey: "content") as! [String]
+        }
+      
+        
         view.backgroundColor = customColor
         collectionView.backgroundColor = customColor
         taskTextField.backgroundColor = customColor
         
         importance = String(1)
         
-        newView.isHidden = true
         
         // customization of ElasticTransition
         transition.sticky = true
@@ -152,12 +155,12 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
     
         // gesture recognizer
         lgr.addTarget(self, action: #selector(AddTodoViewController.handlePan(_:)))
-//        rgr.addTarget(self, action: #selector(AddTodoViewController.handleRightPan(_:)))
+
         lgr.edges = .left
-//        rgr.edges = .right
+
         view.addGestureRecognizer(lgr)
-//        view.addGestureRecognizer(rgr)
-  
+
+        collectionView.reloadData()
     }
     
     func handlePan(_ pan:UIPanGestureRecognizer){
@@ -169,25 +172,18 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         }
     }
     
-//    func handleRightPan(_ pan:UIPanGestureRecognizer){
-//        if pan.state == .began{
-//            transition.edge = .right
-//            transition.startInteractiveTransition(self, segueIdentifier: "about", gestureRecognizer: pan)
-//        }else{
-//            _ = transition.updateInteractiveTransition(gestureRecognizer: pan)
-//        }
-//    }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("VIEWWILLAPPEAR")
         if saveData.array(forKey: "content") != nil{
-            
             contentArray = saveData.array(forKey: "content") as! [String]
         }
         collectionView.reloadData()
     }
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -233,52 +229,10 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         
     }
     
-    @IBAction func addcontent(_ sender : UIButton){
-        
-        if newcontentTextField.text!.isEmpty == true {
-            
-            print("empty")
-            let alert = UIAlertController(
-                title : "",
-                message : "Contentが空欄です",
-                preferredStyle : UIAlertControllerStyle.alert)
-            alert.addAction(
-                UIAlertAction(
-                    title: "OK",
-                    style: UIAlertActionStyle.default,
-                    handler : nil
-                )
-            )
-            self.present(alert, animated : true, completion : nil)
-        }else{
-        contentArray.append(newcontentTextField.text!)
-        saveData.set(contentArray,forKey:"content")
-        
-        print("\(contentArray.count)")
-        
-        collectionView.reloadData()
-        newView.isHidden = true
-        }
-    }
-    
+
     @IBAction func toaddcontent(){
         
-        newView.isHidden = false
-        
-    }
-    
-    @IBAction func canceladdcontent(_ sender: UIButton){
-        
-        newView.isHidden = true
-    }
-    @IBAction func codeBtnTouched(_ sender: AnyObject) {
-        
-        let transition = BubbleTransition()
-        transition.transitionMode = .present
-        transition.startingPoint = cancel.center
-        transition.bubbleColor = customColor
-        
-       dismiss(animated: true, completion: nil )
+        performSegue(withIdentifier: "toaddcontent", sender: nil)
     }
     
 

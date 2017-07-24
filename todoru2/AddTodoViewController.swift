@@ -35,7 +35,6 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
     var decidedcontent = String()
     var decidedcontent2 = String()
     
-    @IBOutlet var cancel : UIButton!
     @IBOutlet var collectionView : UICollectionView!
     
     var transition = ElasticTransition()
@@ -48,13 +47,7 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
 //    var dismissByBackgroundDrag = true
 //    var dismissByForegroundDrag = true
     
-    public var sticky:Bool = true
-    public var startingPoint:CGPoint?
-    public var damping:CGFloat = 0.0
-    public var stiffness:CGFloat = 0.6
-    public var radiusFactor:CGFloat = 10
-    public var containerColor:UIColor = UIColor(red: 152/255, green: 174/255, blue: 196/255, alpha: 1.0)
-    public var overlayColor:UIColor = UIColor(red: 152/255, green: 174/255, blue: 196/255, alpha: 0.5)
+
 
 //    var nextdecidedcontent = String()
     
@@ -87,7 +80,7 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         }else{
             
             let controller = segue.destination
-            controller.transitioningDelegate = self
+            controller.transitioningDelegate = transition
             controller.modalPresentationStyle = .custom
 //            let vc = segue.destination
 //            vc.transitioningDelegate = transition
@@ -174,14 +167,14 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
     
 
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("VIEWWILLAPPEAR")
-        if saveData.array(forKey: "content") != nil{
-            contentArray = saveData.array(forKey: "content") as! [String]
-        }
-        collectionView.reloadData()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        print("VIEWWILLAPPEAR")
+//        if saveData.array(forKey: "content") != nil{
+//            contentArray = saveData.array(forKey: "content") as! [String]
+//        }
+//        collectionView.reloadData()
+//    }
     
 
     override func didReceiveMemoryWarning() {
@@ -232,9 +225,15 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
 
     @IBAction func toaddcontent(){
         
+        transition.edge = .bottom
+        
         performSegue(withIdentifier: "toaddcontent", sender: nil)
     }
     
+    @IBAction func cancel(){
+        
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import ElasticTransition
 
-class AddContentViewController: UIViewController {
+class AddContentViewController: ElasticModalViewController {
     
     let saveData = UserDefaults.standard
     var contentArray = [String]()
     
     @IBOutlet var newcontentTextField: UITextField!
     
+    var transition = ElasticTransition()
+    var dismissByBackgroundTouch = true
+    var dismissByBackgroundDrag = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +31,22 @@ class AddContentViewController: UIViewController {
             
         }else{
             
-            
         }
 
+        transition.sticky = true
+        transition.showShadow = true
+        transition.panThreshold = 0.6
+        transition.transformType = .subtle
+        
+        transition.overlayColor = UIColor(white: 0, alpha: 0.5)
+        transition.shadowColor = UIColor(white: 0, alpha: 0.5)    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let controller = segue.destination
+        controller.transitioningDelegate = transition
+        controller.modalPresentationStyle = .custom
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,10 +78,17 @@ class AddContentViewController: UIViewController {
             nextView.contentArray = saveData.object(forKey:"content") as! [String]
             nextView.collectionView.reloadData()
            
+            transition.edge = .bottom
             dismiss(animated: true, completion: nil)
-
         }
     }
+    
+    @IBAction func back(sender:UIButton){
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+
 
 
     /*

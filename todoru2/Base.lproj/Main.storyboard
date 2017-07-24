@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SOk-yu-zIq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Xl-pt-uYB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -89,6 +89,17 @@
                                     <segue destination="4Xl-pt-uYB" kind="modal" id="FuE-6U-aoh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaI-Wj-0CU">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel" destination="Okj-HP-caa" eventType="touchUpInside" id="BbT-oi-S0y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -100,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAS-6w-bhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476" y="-243"/>
+            <point key="canvasLocation" x="673" y="576"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="G86-kn-byB">
@@ -154,7 +165,7 @@
         <!--Settings-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Settings" id="9pv-A4-QxB" customClass="FirstViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" title="Settings" id="9pv-A4-QxB" customClass="FirstViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -247,17 +258,11 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="No2-Xd-xpS">
                                 <rect key="frame" x="319" y="2" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds " value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="toadd:" destination="9pv-A4-QxB" eventType="touchUpInside" id="79c-Y1-K1Y"/>
                                 </connections>
@@ -323,6 +328,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="save" destination="0eb-cd-zRB" eventType="touchUpInside" id="ERO-cF-aVI"/>
+                                    <segue destination="SOk-yu-zIq" kind="showDetail" id="Dxk-gL-2xV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -402,7 +408,7 @@
                                 </state>
                                 <connections>
                                     <action selector="toaddcontent" destination="SOk-yu-zIq" eventType="touchUpInside" id="db3-L8-r6Y"/>
-                                    <segue destination="0eb-cd-zRB" kind="modal" identifier="toaddcontent" id="gZn-jq-53v"/>
+                                    <segue destination="0eb-cd-zRB" kind="show" identifier="toaddcontent" id="gZn-jq-53v"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Write your Task here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-ia-scq" customClass="AkiraTextField" customModule="TextFieldEffects">
@@ -528,9 +534,12 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTJ-ud-zVA">
-                                <rect key="frame" x="171" y="617" width="32" height="30"/>
+                                <rect key="frame" x="167" y="617" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="save"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="mcd-mM-tJv" eventType="touchUpInside" id="bs2-Tg-YFX"/>
                                     <segue destination="4Xl-pt-uYB" kind="modal" identifier="complete" id="ORC-ZW-zF2"/>
@@ -547,7 +556,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmY-zq-kiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476" y="-1075"/>
+            <point key="canvasLocation" x="2476" y="-1075.4122938530736"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m1y-EF-QiW">
@@ -570,6 +579,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zAp-xn-6gL"/>
+        <segue reference="FuE-6U-aoh"/>
+        <segue reference="1cx-Cr-W3p"/>
     </inferredMetricsTieBreakers>
 </document>

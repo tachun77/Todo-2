@@ -53,9 +53,7 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
         if saveData.array(forKey: "content") != nil{
             contentArray = saveData.array(forKey: "content") as! [String]
         }
-        
-//        collectionView.reloadData()
-        
+
         taskTextField.text = timelyArray[0] as? String
         
         timelynumber = timelyArray[1] as! Int
@@ -90,7 +88,6 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
         cell.contentslabel.text = contentArray[indexPath.row]
         cell.contentslabel.textColor = UIColor.white
         
-        
         return cell
         
     }
@@ -98,22 +95,20 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath)
-
-    
-    
-        selectedcontent = contentArray[indexPath.row]
     
     touch = touch + 1
     
     if touch % 2 == 1{
     cell?.layer.borderWidth = 5.0
     cell?.layer.borderColor = UIColor.red.cgColor
+        
+    selectedcontent = contentArray[indexPath.row]
     } else {
         
         cell?.layer.borderWidth = 0
         
     }
-        print(selectedcontent)
+    print(selectedcontent)
     print(touch)
 
     }
@@ -169,6 +164,20 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
         
         saveData.set(todoArray, forKey:"todo")
          
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        super.viewWillDisappear(true)
+        
+        let firstView = self.storyboard?.instantiateViewController(withIdentifier: "first") as! FirstViewController
+        _ = UINavigationController(rootViewController: firstView)
+        firstView.tableView.reloadData()
+    }
+    
+    @IBAction func cancel(){
+        
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation

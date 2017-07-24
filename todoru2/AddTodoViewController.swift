@@ -160,6 +160,7 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         if pan.state == .began{
             transition.edge = .left
             transition.startInteractiveTransition(self, segueIdentifier: "modoru", gestureRecognizer: pan)
+            
         }else{
             _ = transition.updateInteractiveTransition(gestureRecognizer: pan)
         }

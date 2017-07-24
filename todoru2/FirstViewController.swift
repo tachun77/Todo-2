@@ -170,6 +170,7 @@ import ElasticTransition
                 let storyboard: UIStoryboard = self.storyboard!
                 let nextView = storyboard.instantiateViewController(withIdentifier: "next") as! EditViewController
                 self.present(nextView, animated: true, completion: nil)
+                
                             }
         })
         
@@ -185,9 +186,14 @@ import ElasticTransition
         tableView.endUpdates()
     }
     
-    
-    
     override func viewDidAppear(_ animated: Bool) {
+        
+        tableView.reloadData()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
         tableView.reloadData()
         

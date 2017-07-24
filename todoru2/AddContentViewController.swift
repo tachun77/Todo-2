@@ -74,6 +74,7 @@ class AddContentViewController: ElasticModalViewController {
         contentArray.append(newcontentTextField.text!)
         saveData.set(contentArray,forKey:"content")
             
+            
             let nextView = presentingViewController as! AddTodoViewController
             nextView.contentArray = saveData.object(forKey:"content") as! [String]
             nextView.collectionView.reloadData()

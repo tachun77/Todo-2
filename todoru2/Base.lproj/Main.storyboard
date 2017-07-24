@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Xl-pt-uYB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SOk-yu-zIq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -314,26 +314,22 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backWithSender:" destination="0eb-cd-zRB" eventType="touchUpInside" id="CHg-kI-hCC"/>
+                                    <action selector="backWithSender:" destination="0eb-cd-zRB" eventType="touchUpInside" id="LcO-Hp-2aF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-36-awx">
-                                <rect key="frame" x="156" y="559" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-8c-Bpd">
+                                <rect key="frame" x="164" y="573" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Add">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="save" destination="0eb-cd-zRB" eventType="touchUpInside" id="j6x-qB-EVH"/>
-                                    <segue destination="SOk-yu-zIq" kind="modal" identifier="back" id="CgP-oi-6I7"/>
+                                    <action selector="save" destination="0eb-cd-zRB" eventType="touchUpInside" id="ERO-cF-aVI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.41926824201736779" blue="0.40116280528248538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="newcontentTextField" destination="Akc-yn-9BT" id="knG-Ua-uFj"/>
+                        <outlet property="newcontentTextField" destination="Akc-yn-9BT" id="nQj-cO-wGM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lm9-Qd-WYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -406,7 +402,7 @@
                                 </state>
                                 <connections>
                                     <action selector="toaddcontent" destination="SOk-yu-zIq" eventType="touchUpInside" id="db3-L8-r6Y"/>
-                                    <segue destination="0eb-cd-zRB" kind="show" identifier="toaddcontent" id="ero-K3-1Mb"/>
+                                    <segue destination="0eb-cd-zRB" kind="modal" identifier="toaddcontent" id="gZn-jq-53v"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Write your Task here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-ia-scq" customClass="AkiraTextField" customModule="TextFieldEffects">
@@ -574,7 +570,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CgP-oi-6I7"/>
         <segue reference="zAp-xn-6gL"/>
     </inferredMetricsTieBreakers>
 </document>

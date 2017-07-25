@@ -189,13 +189,22 @@ import ElasticTransition
     override func viewDidAppear(_ animated: Bool) {
         
         tableView.reloadData()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         
         tableView.reloadData()
+//        let indexpath: IndexPath = IndexPath(row: 0, section: 0)
+//        tableView.selectRow(at: indexpath,animated:false,scrollPosition:.bottom)
+//        var dispatchTime = DispatchTime.now()
+//        dispatchTime = dispatchTime + 0.1
+//        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+//            
+//            self.tableView.deselectRow(at: indexpath, animated: true)
+//            
+//        }
+
         
     }
 

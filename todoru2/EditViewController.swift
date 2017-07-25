@@ -166,14 +166,14 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
          
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        
-        super.viewWillDisappear(true)
-        
-        let firstView = self.storyboard?.instantiateViewController(withIdentifier: "first") as! FirstViewController
-        _ = UINavigationController(rootViewController: firstView)
-        firstView.tableView.reloadData()
-    }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        
+//        super.viewWillDisappear(true)
+//        
+//        let firstView = self.storyboard?.instantiateViewController(withIdentifier: "first") as! FirstViewController
+//        let presentingNavigationController = UINavigationController(rootViewController: firstView)
+//        firstView.tableView.reloadData()
+//    }
     
     @IBAction func cancel(){
         

@@ -90,6 +90,11 @@ class AddContentViewController: ElasticModalViewController {
     }
     
 
+    @IBAction func endediting(sender : UIButton){
+        
+        newcontentTextField.endEditing(true);
+        
+    }
 
 
     /*

@@ -29,7 +29,6 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
     var keiken: Int = 0
     
     @IBOutlet var taskTextField : UITextField!
-    @IBOutlet var newcontentTextField : UITextField!
     var importance : String = ""
     
     var decidedcontent = String()
@@ -50,45 +49,7 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
 
 
 //    var nextdecidedcontent = String()
-    
-    //セル選択時に呼び出されるメソッド
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath, sender: UICollectionView) {
-        
-        decidedcontent2 = contentArray[indexPath.row]
-        saveData.set(decidedcontent2,forKey:"content2")
-        
-        print(decidedcontent2)
-        
-        transition.edge = .right
-        transition.startingPoint = sender.center
-        performSegue(withIdentifier:"tonextview",sender: nil)
-//        nextdecidedcontent = decidedcontent2
 
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "tonextview"{
-            let contentsViewController:contentsViewController = segue.destination as! contentsViewController
-            contentsViewController.writtentask = taskTextField.text!
-            
-            let vc = segue.destination
-            vc.transitioningDelegate = transition
-            vc.modalPresentationStyle = .custom
-        }else{
-            
-            let controller = segue.destination
-            controller.transitioningDelegate = transition
-            controller.modalPresentationStyle = .custom
-//            let vc = segue.destination
-//            vc.transitioningDelegate = transition
-//            vc.modalPresentationStyle = .custom
-
-        }
-
-    }
     
     //データの個数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -112,6 +73,25 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         cell.contentslabel.textColor = UIColor.white
         
         return cell
+        
+    }
+    
+    //セル選択時に呼び出されるメソッド
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        decidedcontent2 = contentArray[indexPath.row]
+        saveData.set(decidedcontent2,forKey:"content2")
+        
+        print("選んだ項目は"+decidedcontent2)
+        
+        transition.edge = .right
+        
+        performSegue(withIdentifier: "tocontents", sender: nil)
+//        //segueをstroyboard上で引かないでsegueを発動させるコード
+//        let storyboard: UIStoryboard = self.storyboard!
+//        let nextView = storyboard.instantiateViewController(withIdentifier: "contents") as! contentsViewController
+//        self.present(nextView, animated: true, completion: nil)
         
     }
     
@@ -205,10 +185,10 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
             self.present(alert, animated : true, completion : nil)
          } else {
         
-        todoArray.append(todoDictionary as AnyObject)
-        saveData.set(todoArray, forKey:"todo")
-        saveData.set(keiken, forKey:"keiken" )
-        saveData.synchronize()
+//        todoArray.append(todoDictionary as AnyObject)
+//        saveData.set(todoArray, forKey:"todo")
+//        saveData.set(keiken, forKey:"keiken" )
+//        saveData.synchronize()
         print(todoArray)
             
             performSegue(withIdentifier: "complete", sender: nil)
@@ -236,6 +216,27 @@ class AddTodoViewController: ElasticModalViewController,UIViewControllerTransiti
         dismiss(animated: true, completion: nil)
     }
 
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    if segue.identifier == "tocontents"{
+        let contentsViewController:contentsViewController = segue.destination as! contentsViewController
+        contentsViewController.writtentask = taskTextField.text!
+        contentsViewController.content = decidedcontent2
+        
+        let vc = segue.destination
+        vc.transitioningDelegate = transition
+        vc.modalPresentationStyle = .custom
+    }else{
+        
+        let controller = segue.destination
+        controller.transitioningDelegate = transition
+        controller.modalPresentationStyle = .custom
+        //            let vc = segue.destination
+        //            vc.transitioningDelegate = transition
+        //            vc.modalPresentationStyle = .custom
+        
+    }
+}
     /*
     // MARK: - Navigation
 

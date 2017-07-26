@@ -27,6 +27,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="endeditingWithSender:" destination="Okj-HP-caa" eventType="editingDidEndOnExit" id="qhz-fn-Ibv"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-tH-gFU">
                                 <rect key="frame" x="16" y="513" width="337" height="29"/>
@@ -81,9 +84,11 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2Z-8h-WeL">
-                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <rect key="frame" x="171" y="617" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="save" destination="Okj-HP-caa" eventType="touchUpInside" id="mDI-rR-Chb"/>
                                     <segue destination="4Xl-pt-uYB" kind="modal" id="FuE-6U-aoh"/>
@@ -101,7 +106,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92113402611375383" green="0.72611874592808734" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hgg-2I-wzY"/>
                     <connections>
@@ -112,6 +117,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAS-6w-bhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="673" y="576"/>
+        </scene>
+        <!--Edit Contents View Controller-->
+        <scene sceneID="n1S-qo-OnK">
+            <objects>
+                <viewController id="MUf-2e-2rQ" customClass="editContentsViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hVx-FU-Ikf"/>
+                        <viewControllerLayoutGuide type="bottom" id="71D-Rk-P0t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gSA-3w-Y0U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fVH-Nh-iPr">
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="editcell" id="7gi-Ch-kHc" customClass="editContentsTableViewCell" customModule="todoru2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7gi-Ch-kHc" id="mOS-21-daf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaA-ak-Pdx">
+                                                    <rect key="frame" x="8" y="0.0" width="327" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentsLabel" destination="TaA-ak-Pdx" id="q5J-cH-1gm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="MUf-2e-2rQ" id="3xm-74-tBc"/>
+                                    <outlet property="delegate" destination="MUf-2e-2rQ" id="dSH-w4-5Dx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fVH-Nh-iPr" id="p0Z-hv-Wsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yt-dY-4KL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231.19999999999999" y="-1075.4122938530736"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="G86-kn-byB">
@@ -150,6 +209,14 @@
                                     <segue destination="4Xl-pt-uYB" kind="modal" identifier="back" id="xu4-rW-Gbg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYw-PZ-DEl">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="MUf-2e-2rQ" kind="presentation" id="QJm-Z9-vuy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91941341440000002" green="0.89152506769999995" blue="0.19420394269999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -160,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDc-RY-l48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="-1075"/>
+            <point key="canvasLocation" x="673" y="-1075"/>
         </scene>
         <!--Settings-->
         <scene sceneID="hNz-n2-bh7">
@@ -226,11 +293,6 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="c4t-vR-7xM"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzK-xW-7Rv">
-                                <rect key="frame" x="164" y="617" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -310,6 +372,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="endeditingWithSender:" destination="0eb-cd-zRB" eventType="editingDidEndOnExit" id="MWV-9q-IiV"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmw-2w-BUY">
                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -323,12 +388,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-8c-Bpd">
-                                <rect key="frame" x="164" y="573" width="46" height="30"/>
+                                <rect key="frame" x="172" y="573" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="save" destination="0eb-cd-zRB" eventType="touchUpInside" id="ERO-cF-aVI"/>
-                                    <segue destination="SOk-yu-zIq" kind="showDetail" id="Dxk-gL-2xV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -358,9 +424,6 @@
                                 <rect key="frame" x="54" y="526" width="266" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
-                                <connections>
-                                    <action selector="save:" destination="SOk-yu-zIq" eventType="touchUpInside" id="upA-pG-cYa"/>
-                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="10E-p5-kU6">
                                 <rect key="frame" x="16" y="220" width="343" height="366"/>
@@ -391,7 +454,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="contentslabel" destination="kbt-og-O6y" id="GBk-te-cNw"/>
-                                            <segue destination="mcd-mM-tJv" kind="modal" identifier="tonextview" id="fyC-a0-g5n"/>
+                                            <segue destination="mcd-mM-tJv" kind="modal" identifier="tocontents" id="PLU-8k-COB"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -495,7 +558,7 @@
         <!--Contents View Controller-->
         <scene sceneID="NmI-qv-i3J">
             <objects>
-                <viewController id="mcd-mM-tJv" customClass="contentsViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="contents" id="mcd-mM-tJv" customClass="contentsViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RUO-sh-WwF"/>
                         <viewControllerLayoutGuide type="bottom" id="qNh-yJ-4M0"/>
@@ -579,7 +642,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FuE-6U-aoh"/>
-        <segue reference="1cx-Cr-W3p"/>
+        <segue reference="xu4-rW-Gbg"/>
     </inferredMetricsTieBreakers>
 </document>

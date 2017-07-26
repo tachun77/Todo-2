@@ -179,6 +179,12 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
         
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func endediting(sender : UIButton){
+        
+        taskTextField.endEditing(true);
+        
+    }
     /*
     // MARK: - Navigation
 

@@ -97,7 +97,7 @@ import ElasticTransition
                 self.tableView.reloadData()
             }else{
                 //contents毎に表示するためにデータにfilterをかける
-                self.selectedtodoArray =  self.todoArray.filter{ $0["content"] as! String == self.selectedcontent}
+                self.selectedtodoArray =  self.todoArray.filter{ ($0["content"] as! String) == self.selectedcontent}
                 self.tableView.reloadData()
             }
             print(self.selectedtodoArray)

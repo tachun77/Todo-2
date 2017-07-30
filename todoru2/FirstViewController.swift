@@ -217,7 +217,7 @@ import ElasticTransition
         //segueをstroyboard上で引かないでsegueを発動させるコード
 //        let storyboard: UIStoryboard = self.storyboard!
 //        let nextView = storyboard.instantiateViewController(withIdentifier: "add") as! AddTodoViewController
-//        self.present(nextView, animated: true, completion: nil)¥
+//        self.present(nextView, animated: true, completion: nil)
         performSegue(withIdentifier: "add", sender: self)
     }
     

@@ -35,6 +35,8 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
     
     @IBOutlet var collectionView : UICollectionView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getRandomColor()
@@ -157,17 +159,59 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
     }
     
     @IBAction func save(){
+        
+        
     
         let todoDictionary = ["task":taskTextField.text!,"content":selectedcontent,"importance":importance]
         todoArray.remove(at: timelynumber)
         todoArray.insert(todoDictionary, at:timelynumber)
         
         saveData.set(todoArray, forKey:"todo")
-         
+//        let alert = UIAlertController(
+//            title : "",
+//            message : "編集完了しました！",
+//            preferredStyle : UIAlertControllerStyle.alert)
+//        alert.addAction(
+//            UIAlertAction(
+//                title: "OK",
+//                style: UIAlertActionStyle.default,
+//                handler : {(action: UIAlertAction!)-> Void in
+//                    self.performSegue(withIdentifier: "tomain", sender: nil)
+//            }
+//            )
+//        )
+//        
+//        self.present(alert, animated : true, completion : nil)
+        
     }
     
+    override func shouldPerformSegue(withIdentifier identifier:String, sender: Any?) -> Bool {
+       if identifier == "tomain"{
+        let alert = UIAlertController(
+            title : "",
+            message : "編集完了しました！",
+            preferredStyle : UIAlertControllerStyle.alert)
+        alert.addAction(
+            UIAlertAction(
+                title: "OK",
+                style: UIAlertActionStyle.default,
+                handler : {(action: UIAlertAction!)-> Void in
+                    self.performSegue(withIdentifier: "tomain", sender: nil)
+            }
+            )
+        )
+        
+        self.present(alert, animated : true, completion : nil)
+    
+        }else{
+        
+    
+    }
+        
+        return false
+    }
 //    override func viewWillDisappear(_ animated: Bool) {
-//        
+//
 //        super.viewWillDisappear(true)
 //        
 //        let firstView = self.storyboard?.instantiateViewController(withIdentifier: "first") as! FirstViewController
@@ -177,7 +221,7 @@ class EditViewController: ElasticModalViewController, UICollectionViewDataSource
     
     @IBAction func cancel(){
         
-        dismiss(animated: true, completion: nil)
+     performSegue(withIdentifier: "tomain", sender: nil)
     }
     
     @IBAction func endediting(sender : UIButton){

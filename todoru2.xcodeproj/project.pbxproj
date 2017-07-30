@@ -26,6 +26,8 @@
 		2733E0591F177EBE00E554FE /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2733E0581F177EBE00E554FE /* Icon-App-40x40@3x.png */; };
 		27F3B3861F28935E00998DC9 /* editContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B3851F28935E00998DC9 /* editContentsViewController.swift */; };
 		27F3B3881F2893EA00998DC9 /* editContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B3871F2893EA00998DC9 /* editContentsTableViewCell.swift */; };
+		27F3B38A1F2E187000998DC9 /* notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B3891F2E187000998DC9 /* notification.swift */; };
+		27F3B38C1F2E1A2500998DC9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F3B38B1F2E1A2500998DC9 /* icon.png */; };
 		A5675AD24072159D6ADBA3A9 /* Pods_todoru2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7000653B661214F0D6113E /* Pods_todoru2.framework */; };
 		B454AF5FD1B535AAE22C7F12 /* Pods_todoru2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C8AD20F71F747B2257CB0C /* Pods_todoru2Tests.framework */; };
 		F83D52C2C317EA71AF60EE33 /* Pods_todoru2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDD9A9D4DB315EB16D6EDA4 /* Pods_todoru2UITests.framework */; };
@@ -74,6 +76,8 @@
 		2733E0581F177EBE00E554FE /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
 		27F3B3851F28935E00998DC9 /* editContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editContentsViewController.swift; sourceTree = "<group>"; };
 		27F3B3871F2893EA00998DC9 /* editContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editContentsTableViewCell.swift; sourceTree = "<group>"; };
+		27F3B3891F2E187000998DC9 /* notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notification.swift; sourceTree = "<group>"; };
+		27F3B38B1F2E1A2500998DC9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5DDD9A9D4DB315EB16D6EDA4 /* Pods_todoru2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FECF26C8C0D332E2DD7F4F /* Pods-todoru2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoru2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D7000653B661214F0D6113E /* Pods_todoru2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,9 +155,11 @@
 				27F3B3851F28935E00998DC9 /* editContentsViewController.swift */,
 				2703C7421F2501690034BFFE /* AddContentViewController.swift */,
 				2703C7401F17C9F60034BFFE /* settingViewController.swift */,
+				27F3B3891F2E187000998DC9 /* notification.swift */,
 				2720A8941EDBEC6B0095638F /* contentsCollectionViewCell.swift */,
 				270CD1A51ED817C100790669 /* Assets.xcassets */,
 				270CD1A71ED817C100790669 /* LaunchScreen.storyboard */,
+				27F3B38B1F2E1A2500998DC9 /* icon.png */,
 				2733E0581F177EBE00E554FE /* Icon-App-40x40@3x.png */,
 				270CD1AA1ED817C100790669 /* Info.plist */,
 			);
@@ -323,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				270CD1A91ED817C100790669 /* LaunchScreen.storyboard in Resources */,
+				27F3B38C1F2E1A2500998DC9 /* icon.png in Resources */,
 				270CD1A61ED817C100790669 /* Assets.xcassets in Resources */,
 				270CD1A41ED817C100790669 /* Main.storyboard in Resources */,
 				2733E0591F177EBE00E554FE /* Icon-App-40x40@3x.png in Resources */,
@@ -485,6 +492,7 @@
 				27F3B3861F28935E00998DC9 /* editContentsViewController.swift in Sources */,
 				2703C7411F17C9F60034BFFE /* settingViewController.swift in Sources */,
 				270CD19F1ED817C100790669 /* FirstViewController.swift in Sources */,
+				27F3B38A1F2E187000998DC9 /* notification.swift in Sources */,
 				2720A8871EDAEF7D0095638F /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

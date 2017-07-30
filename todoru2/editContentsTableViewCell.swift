@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MCSwipeTableViewCell
 
-class editContentsTableViewCell: UITableViewCell {
+class editContentsTableViewCell: MCSwipeTableViewCell {
     
     @IBOutlet var contentsLabel : UILabel!
     

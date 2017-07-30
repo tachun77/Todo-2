@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MCSwipeTableViewCell
 
 class editContentsViewController: UIViewController , UITableViewDataSource,UITableViewDelegate{
 
@@ -44,6 +45,18 @@ class editContentsViewController: UIViewController , UITableViewDataSource,UITab
         // create
         let cell = tableView.dequeueReusableCell(withIdentifier: "editcell", for: indexPath) as! editContentsTableViewCell
         cell.contentsLabel.text = contentArray[indexPath.row]
+        
+        cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "check")), color: .green, mode: .exit, state: .state1, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in
+            
+            if let cell = cell, let indexPath = tableView.indexPath(for: cell) {
+                
+                // 該当のセルを削除
+                self.contentArray.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+                self.saveData.set(self.contentArray,forKey:"content")
+            }
+        })
+
         return cell
     }
 

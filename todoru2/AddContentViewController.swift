@@ -70,20 +70,33 @@ class AddContentViewController: ElasticModalViewController {
             )
             self.present(alert, animated : true, completion : nil)
         }else{
-    
-        contentArray.append(newcontentTextField.text!)
-        saveData.set(contentArray,forKey:"content")
+          
+            contentArray.append(newcontentTextField.text!)
+            saveData.set(contentArray,forKey:"content")
             
             
             let nextView = presentingViewController as! AddTodoViewController
             nextView.contentArray = saveData.object(forKey:"content") as! [String]
             nextView.collectionView.reloadData()
-           
-            transition.edge = .bottom
-            dismiss(animated: true, completion: nil)
-        }
+            
+                let alert = UIAlertController(
+                    title : "",
+                    message : "項目追加完了しました！",
+                    preferredStyle : UIAlertControllerStyle.alert)
+                alert.addAction(
+                    UIAlertAction(
+                        title: "OK",
+                        style: UIAlertActionStyle.default,
+                        handler : {(action: UIAlertAction!)-> Void in
+                            self.dismiss(animated: true, completion: nil)
+                    }
+                    )
+                )
+            
+                self.present(alert, animated : true, completion : nil)
     }
-    
+}
+
     @IBAction func back(sender:UIButton){
         
         dismiss(animated: true, completion: nil)

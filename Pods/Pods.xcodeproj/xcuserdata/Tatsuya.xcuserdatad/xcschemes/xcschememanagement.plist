@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RAMPaperSwitch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,7 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>36DFC256CC8338F58D26335BBC651076</key>
+		<key>0FC29DC4A1D24B07C470A5193F7C1A76</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E62E393A5649EFA44A0C3AFD56257D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5046869DA2D82DD3D488468FDEB71C85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E6B36F4A0302932E83975112DEC1984</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +102,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7240B44ADA7C299C0DFFFAF35383DDFD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>7372CA79CE92E7AC032175441663EBE4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9F2CA59D318CC50BC7AC13B792DE5AA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,12 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFE627AA57687C258E3E0CEADFB4BE0F</key>
+		<key>BA64D4AD25B70E647F2046D65DD533BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1633C6FDC515BF7D5EB199AA1C33720</key>
+		<key>CFE627AA57687C258E3E0CEADFB4BE0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

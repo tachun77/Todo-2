@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAS-6w-bhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="576"/>
+            <point key="canvasLocation" x="673" y="520"/>
         </scene>
         <!--Edit Contents View Controller-->
         <scene sceneID="n1S-qo-OnK">
@@ -229,6 +229,10 @@
                                 <rect key="frame" x="16" y="197" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9i-6q-jat">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AdA-WW-Ce1" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
                                         <rect key="frame" x="286" y="49" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -240,7 +244,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="notificationWithSender:" destination="GbV-ml-me1" eventType="valueChanged" id="2Ox-jR-dnp"/>
+                                            <action selector="notificationWithSender:" destination="GbV-ml-me1" eventType="touchUpInside" id="vJO-R1-bOH"/>
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAv-cd-jjR">
@@ -257,12 +261,16 @@
                                 <rect key="frame" x="15" y="333" width="344" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="het-Wy-rPS">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="het-Wy-rPS" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
                                         <rect key="frame" x="287" y="49" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="1" green="0.0" blue="0.028078071959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="cheerupWithSender:" destination="GbV-ml-me1" eventType="touchUpInside" id="RXp-x7-prb"/>
+                                        </connections>
                                     </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSo-Wt-5Zn">
-                                        <rect key="frame" x="151" y="54" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="おじさん応援モード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSo-Wt-5Zn">
+                                        <rect key="frame" x="94" y="54" width="156" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -294,9 +302,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="M0x-JE-a6d"/>
                     <connections>
+                        <outlet property="cheeruplabel" destination="mSo-Wt-5Zn" id="qQZ-kq-p7X"/>
+                        <outlet property="cheerupview" destination="wHn-8j-nhk" id="yd7-vG-xt0"/>
                         <outlet property="explabel" destination="Jbp-m3-85L" id="RwG-sD-xgs"/>
+                        <outlet property="notificationimage" destination="E9i-6q-jat" id="2bS-7n-JeB"/>
                         <outlet property="notificationlabel" destination="KAv-cd-jjR" id="JQf-KF-isJ"/>
-                        <outlet property="switchbutton" destination="AdA-WW-Ce1" id="YGg-x4-cFy"/>
+                        <outlet property="notificationview" destination="hbC-X4-O70" id="LmQ-wo-1dU"/>
+                        <outlet property="switchbutton" destination="AdA-WW-Ce1" id="2yu-Eu-yke"/>
+                        <outlet property="switchbutton2" destination="het-Wy-rPS" id="q3b-vr-ICi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDc-RY-l48" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -419,7 +432,7 @@
         <!--Add Content View Controller-->
         <scene sceneID="huG-mM-vaq">
             <objects>
-                <viewController id="0eb-cd-zRB" customClass="AddContentViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0eb-cd-zRB" customClass="AddContentViewController" customModule="todoru2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ndb-kI-ykc"/>
                         <viewControllerLayoutGuide type="bottom" id="1y1-QN-GxS"/>
@@ -428,28 +441,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Write new content here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-yn-9BT" customClass="AkiraTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="16" y="136" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="endeditingWithSender:" destination="0eb-cd-zRB" eventType="editingDidEndOnExit" id="MWV-9q-IiV"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmw-2w-BUY">
                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -471,6 +462,31 @@
                                     <action selector="save" destination="0eb-cd-zRB" eventType="touchUpInside" id="ERO-cF-aVI"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Write new content here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-yn-9BT" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="16" y="68" width="343" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="endeditingWithSender:" destination="0eb-cd-zRB" eventType="editingDidEndOnExit" id="MWV-9q-IiV"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.41926824201736779" blue="0.40116280528248538" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -481,6 +497,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lm9-Qd-WYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1498.4000000000001" y="-1819.3403298350827"/>
+        </scene>
+        <!--Aboutme View Controller-->
+        <scene sceneID="n62-p9-CMf">
+            <objects>
+                <viewController storyboardIdentifier="aboutme" id="zZj-2c-isH" customClass="aboutmeViewController" customModule="todoru2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hbk-mH-oyx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Njt-rQ-KmE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AF8-Ey-jFo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuY-7F-7tn">
+                                <rect key="frame" x="149" y="568" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="魔法を使う"/>
+                                <connections>
+                                    <action selector="magic" destination="zZj-2c-isH" eventType="touchUpInside" id="mz2-Sz-k0W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-ht-jS2">
+                                <rect key="frame" x="156" y="617" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="時を戻す"/>
+                                <connections>
+                                    <action selector="time" destination="zZj-2c-isH" eventType="touchUpInside" id="cZA-oi-OkC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXk-bq-2Jy">
+                                <rect key="frame" x="164" y="347" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="4Xl-pt-uYB" kind="modal" id="5qq-Y2-CpH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inq-zD-BV9">
+                                <rect key="frame" x="172" y="515" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="nice"/>
+                                <connections>
+                                    <action selector="nice" destination="zZj-2c-isH" eventType="touchUpInside" id="8o2-o6-GPR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIE-tY-uoC" customClass="AVPlayerView">
+                                <rect key="frame" x="67" y="123" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jp-Js-pPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2296" y="-1819"/>
         </scene>
         <!--add-->
         <scene sceneID="oE9-2W-5OC">

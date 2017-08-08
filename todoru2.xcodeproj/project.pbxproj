@@ -28,6 +28,11 @@
 		27F3B3881F2893EA00998DC9 /* editContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B3871F2893EA00998DC9 /* editContentsTableViewCell.swift */; };
 		27F3B38A1F2E187000998DC9 /* notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B3891F2E187000998DC9 /* notification.swift */; };
 		27F3B38C1F2E1A2500998DC9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F3B38B1F2E1A2500998DC9 /* icon.png */; };
+		27F3B38E1F2E3D1F00998DC9 /* aboutmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B38D1F2E3D1F00998DC9 /* aboutmeViewController.swift */; };
+		27F3B3901F38511F00998DC9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 27F3B38F1F38511F00998DC9 /* data.json */; };
+		27F3B3941F385D8D00998DC9 /* コンポ 1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 27F3B3931F385D8D00998DC9 /* コンポ 1.mov */; };
+		27F3B3961F3860BD00998DC9 /* nice.mov in Resources */ = {isa = PBXBuildFile; fileRef = 27F3B3951F3860BD00998DC9 /* nice.mov */; };
+		27F3B3981F386D5000998DC9 /* nice.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27F3B3971F386D5000998DC9 /* nice.mp4 */; };
 		A5675AD24072159D6ADBA3A9 /* Pods_todoru2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7000653B661214F0D6113E /* Pods_todoru2.framework */; };
 		B454AF5FD1B535AAE22C7F12 /* Pods_todoru2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C8AD20F71F747B2257CB0C /* Pods_todoru2Tests.framework */; };
 		F83D52C2C317EA71AF60EE33 /* Pods_todoru2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDD9A9D4DB315EB16D6EDA4 /* Pods_todoru2UITests.framework */; };
@@ -78,6 +83,11 @@
 		27F3B3871F2893EA00998DC9 /* editContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = editContentsTableViewCell.swift; sourceTree = "<group>"; };
 		27F3B3891F2E187000998DC9 /* notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notification.swift; sourceTree = "<group>"; };
 		27F3B38B1F2E1A2500998DC9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		27F3B38D1F2E3D1F00998DC9 /* aboutmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutmeViewController.swift; sourceTree = "<group>"; };
+		27F3B38F1F38511F00998DC9 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		27F3B3931F385D8D00998DC9 /* コンポ 1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "コンポ 1.mov"; sourceTree = "<group>"; };
+		27F3B3951F3860BD00998DC9 /* nice.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = nice.mov; sourceTree = "<group>"; };
+		27F3B3971F386D5000998DC9 /* nice.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice.mp4; sourceTree = "<group>"; };
 		5DDD9A9D4DB315EB16D6EDA4 /* Pods_todoru2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FECF26C8C0D332E2DD7F4F /* Pods-todoru2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoru2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todoru2UITests/Pods-todoru2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D7000653B661214F0D6113E /* Pods_todoru2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoru2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,15 +152,20 @@
 		270CD19B1ED817C100790669 /* todoru2 */ = {
 			isa = PBXGroup;
 			children = (
+				27F3B38F1F38511F00998DC9 /* data.json */,
 				2720A8861EDAEF7D0095638F /* UIColorExtension.swift */,
 				270CD1D01ED8882E00790669 /* customTableViewCell.swift */,
 				270CD19C1ED817C100790669 /* AppDelegate.swift */,
 				270CD19E1ED817C100790669 /* FirstViewController.swift */,
 				2715681A1F05578800B208B3 /* EditViewController.swift */,
+				27F3B3971F386D5000998DC9 /* nice.mp4 */,
 				270CD1CC1ED820F400790669 /* AddTodoViewController.swift */,
 				2720A88A1EDB31CB0095638F /* contentsViewController.swift */,
 				271568601F0BF60B00B208B3 /* editCollectionViewCell.swift */,
 				270CD1A21ED817C100790669 /* Main.storyboard */,
+				27F3B38D1F2E3D1F00998DC9 /* aboutmeViewController.swift */,
+				27F3B3951F3860BD00998DC9 /* nice.mov */,
+				27F3B3931F385D8D00998DC9 /* コンポ 1.mov */,
 				27F3B3871F2893EA00998DC9 /* editContentsTableViewCell.swift */,
 				27F3B3851F28935E00998DC9 /* editContentsViewController.swift */,
 				2703C7421F2501690034BFFE /* AddContentViewController.swift */,
@@ -329,10 +344,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				270CD1A91ED817C100790669 /* LaunchScreen.storyboard in Resources */,
+				27F3B3901F38511F00998DC9 /* data.json in Resources */,
 				27F3B38C1F2E1A2500998DC9 /* icon.png in Resources */,
 				270CD1A61ED817C100790669 /* Assets.xcassets in Resources */,
 				270CD1A41ED817C100790669 /* Main.storyboard in Resources */,
+				27F3B3941F385D8D00998DC9 /* コンポ 1.mov in Resources */,
 				2733E0591F177EBE00E554FE /* Icon-App-40x40@3x.png in Resources */,
+				27F3B3981F386D5000998DC9 /* nice.mp4 in Resources */,
+				27F3B3961F3860BD00998DC9 /* nice.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +504,7 @@
 				270CD1CD1ED820F400790669 /* AddTodoViewController.swift in Sources */,
 				2703C7431F2501690034BFFE /* AddContentViewController.swift in Sources */,
 				271568611F0BF60B00B208B3 /* editCollectionViewCell.swift in Sources */,
+				27F3B38E1F2E3D1F00998DC9 /* aboutmeViewController.swift in Sources */,
 				270CD1D11ED8882E00790669 /* customTableViewCell.swift in Sources */,
 				2720A8951EDBEC6B0095638F /* contentsCollectionViewCell.swift in Sources */,
 				270CD19D1ED817C100790669 /* AppDelegate.swift in Sources */,

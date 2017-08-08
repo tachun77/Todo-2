@@ -13,6 +13,7 @@ pod 'BTNavigationDropdownMenu', :git => 'https://github.com/PhamBaTho/BTNavigati
 pod 'TextFieldEffects'
 pod 'ElasticTransition'
 pod 'RAMPaperSwitch'
+pod 'lottie-ios'
   target 'todoru2Tests' do
     inherit! :search_paths
     # Pods for testing

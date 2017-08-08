@@ -11,6 +11,8 @@ import MCSwipeTableViewCell
 import XLPagerTabStrip
 import BTNavigationDropdownMenu
 import ElasticTransition
+import AVFoundation
+import AVKit
 
 
  class FirstViewController: UIViewController, ElasticMenuTransitionDelegate, UIViewControllerTransitioningDelegate, UITableViewDataSource{
@@ -35,6 +37,7 @@ import ElasticTransition
     var itemsCount: Int = 0
     var exp = Int()
     var selectedcontent = String()
+    var cheerup_on : Bool = false
   
 //    var dismissByBackgroundDrag = true
  
@@ -44,6 +47,8 @@ import ElasticTransition
     var timelytext = String()
     var timelynumber = Int()
     var transition = ElasticTransition()
+    
+    var avPlayer: AVPlayer!
  
     
     override func viewDidLoad() {
@@ -55,7 +60,9 @@ import ElasticTransition
         transition.panThreshold = 0.3
         transition.transformType = .translateMid
         
-        
+        if saveData.object(forKey:"cheerup") != nil{
+        cheerup_on = saveData.bool(forKey:"cheerup")
+        }
         if saveData.array(forKey: "todo") != nil{
             todoArray = saveData.array(forKey: "todo") as! [Dictionary<String, Any>]
         }
@@ -106,7 +113,7 @@ import ElasticTransition
         print(todoArray)
         self.tableView.reloadData()
     }
-
+    
     
     //TableViewの設定
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -150,6 +157,26 @@ import ElasticTransition
                 self.saveData.set(self.todoArray, forKey:"todo")
                 self.saveData.set(self.exp, forKey:"exp")
                 print(self.exp)
+   
+                
+                self.cheerup_on = self.saveData.bool(forKey:"cheerup")
+                if self.cheerup_on == true{
+                
+                let bundlePath = Bundle.main.path(forResource: "nice", ofType: "mp4")
+                self.avPlayer = AVPlayer(url: URL(fileURLWithPath: bundlePath!))
+                let playerLayer = AVPlayerLayer(player: self.avPlayer)
+                playerLayer.frame = CGRect(x: 0, y: 150, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width * 3.0 / 4.0)
+                self.view.layer.addSublayer(playerLayer)
+                self.avPlayer.play()
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    // 0.5秒後に実行したい処理
+                    playerLayer.isHidden = true
+                    print("二秒後")
+                    }
+                }else{
+                    
+                }
             }
             })
         cell.setSwipeGestureWith(UIImageView(image: UIImage(named: "cross")), color: .blue, mode: .exit, state: .state2, completionBlock: { (cell: MCSwipeTableViewCell!, state: MCSwipeTableViewCellState!, mode: MCSwipeTableViewCellMode!) -> Void in

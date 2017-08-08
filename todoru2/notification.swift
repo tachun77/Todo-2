@@ -9,24 +9,30 @@
 import UIKit
 import UserNotifications
 
+let saveData = UserDefaults.standard
+var todoArray = [Any]()
+var todocount : Int = 0
+
 func notification(){
     
-     let date = DateComponents(hour:9, minute:00)
+    todoArray = saveData.object(forKey: "todo") as! [Any]
+    todocount = todoArray.count
     
+    //通知を初期化(繰り返し同じ通知がこないように)
+    // 通知の削除
+    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["morning"])
+    
+     let date = DateComponents(hour:9, minute:00)
     // 通知内容の作成
     let contents = UNMutableNotificationContent()
     contents.title = "This is title."
     //        contents.subtitle = "This is subtitle."
-    contents.body = "You have 3 Tasks to finish!"
-        
+    contents.body = "You have "+String(todocount)+" Tasks to finish!"
         print("作動")
-        
-    // トリガーの作成(5秒後に通知実行)
-//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
     //トリガー(指定の時間)
     let trigger = UNCalendarNotificationTrigger.init(dateMatching: date, repeats :true)
         // リクエストの作成
-        let identifier = NSUUID().uuidString
+        let identifier = "morning"
         let request = UNNotificationRequest(identifier: identifier, content: contents, trigger: trigger)
     
         // リクエスト実行
@@ -36,20 +42,27 @@ func notification(){
 }
 func notification2(){
     
+    todoArray = saveData.object(forKey: "todo") as! [Any]
+    todocount = todoArray.count
+    
+    //通知を初期化(繰り返し同じ通知がこないように)
+    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["evening"])
+    
     let date = DateComponents(hour:23, minute:00)
     
     // 通知内容の作成
     let contents = UNMutableNotificationContent()
     contents.title = "This is title."
     //        contents.subtitle = "This is subtitle."
-    contents.body = "You have 3 Tasks left!"
+    contents.body = "You have "+String(todocount)+" Tasks left!"
     
     print("作動")
+    
     
     //トリガー(指定の時間)
     let trigger = UNCalendarNotificationTrigger.init(dateMatching: date, repeats :true)
     // リクエストの作成
-    let identifier = NSUUID().uuidString
+    let identifier = "evening"
     let request = UNNotificationRequest(identifier: identifier, content: contents, trigger: trigger)
     
     // リクエスト実行
@@ -58,10 +71,23 @@ func notification2(){
     }
 }
 
+extension UNUserNotificationCenter {
+    func removeNotificationsCompletely(withIdentifiers identifiers: [String]) {
+        self.removePendingNotificationRequests(withIdentifiers: identifiers)
+        self.removeDeliveredNotifications(withIdentifiers: identifiers)
+    }
+}
+
     func disnotification(){
         
-        NotificationCenter.default.removeObserver((Any).self)
+        // Pendingのものを全て削除
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        // Deliveredのものを全て削除
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
         
     }
+
+
+
     
     

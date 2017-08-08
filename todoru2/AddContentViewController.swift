@@ -70,6 +70,15 @@ class AddContentViewController: ElasticModalViewController {
             )
             self.present(alert, animated : true, completion : nil)
         }else{
+            
+            if newcontentTextField.text == "さくしゃはふくしまたつや"{
+                
+                //            segueをstroyboard上で引かないでsegueを発動させるコード
+                let storyboard: UIStoryboard = self.storyboard!
+                let nextView = storyboard.instantiateViewController(withIdentifier: "aboutme") as! aboutmeViewController
+                self.present(nextView, animated: true, completion: nil)
+                
+            }else{
           
             contentArray.append(newcontentTextField.text!)
             saveData.set(contentArray,forKey:"content")
@@ -94,12 +103,15 @@ class AddContentViewController: ElasticModalViewController {
                 )
             
                 self.present(alert, animated : true, completion : nil)
+            }
+        }
     }
-}
 
     @IBAction func back(sender:UIButton){
         
+        
         dismiss(animated: true, completion: nil)
+        
     }
     
 

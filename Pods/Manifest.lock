@@ -3,6 +3,7 @@ PODS:
   - BubbleTransition (2.0.2)
   - ElasticTransition (3.1.1):
     - MotionAnimation (~> 0.1.2)
+  - lottie-ios (2.0.3)
   - MCSwipeTableViewCell (2.1.4)
   - MotionAnimation (0.1.2)
   - RAMPaperSwitch (2.0.5)
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - BTNavigationDropdownMenu (from `https://github.com/PhamBaTho/BTNavigationDropdownMenu.git`, branch `swift-3.0`)
   - BubbleTransition (~> 2.0.0)
   - ElasticTransition
+  - lottie-ios
   - MCSwipeTableViewCell (~> 2.1.4)
   - RAMPaperSwitch
   - TextFieldEffects
@@ -32,12 +34,13 @@ SPEC CHECKSUMS:
   BTNavigationDropdownMenu: 093f3cbfad1572f2c222bdf8d17584d1e13380d4
   BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
   ElasticTransition: 6c4e4739e32480c864217db912100f3657f6447a
+  lottie-ios: 445f77c7f661f95587e49095a1ac7de43f0da896
   MCSwipeTableViewCell: 1b303e16c3a26b1982f3a68386e9b8c5fc8344c3
   MotionAnimation: ff5c8fc2e429d7e10d46ae86819ba9759846c343
   RAMPaperSwitch: 8e547186be122e858aa060596708f0dcbfe7593f
   TextFieldEffects: 8706f53525f1ce51c8921b7af32237caab50c467
   XLPagerTabStrip: 9be80a66c6b7d60306b2c0a6004965016d68f813
 
-PODFILE CHECKSUM: 7820cf2c8218821f0266b320eb8323d072686842
+PODFILE CHECKSUM: 9c3c7c82de42b09b876ad9b733096fe7a571c5cc
 
 COCOAPODS: 1.0.1
